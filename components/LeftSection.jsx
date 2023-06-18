@@ -27,7 +27,7 @@ const LeftSection = () => {
           selectedLink === "I'm Social" ? "text-navy-light" : "text-navy-accent"
         }`}
       >
-        I'm Social
+        I&apos;m Social
       </p>
 
       <div className="flex flex-col gap-3">
