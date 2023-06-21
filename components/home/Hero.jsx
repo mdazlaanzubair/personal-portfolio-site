@@ -1,9 +1,11 @@
 const Hero = () => {
   return (
-    <div className="hero py-20 md:py-24 justify-start">
+    <div id="home-section" className="hero py-20 md:py-24 justify-start">
       <div className="hero-content">
         <div className="max-w-full lg:px-20">
-          <h1 className="text-navy-accent tracking-widest mb-3">Hi, myself</h1>
+          <h1 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
+            Hi, myself
+          </h1>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
             <span className="inline-block sm:hidden">Muhd.</span>
             <span className="hidden sm:inline-block">Muhammad</span> Azlaan,
@@ -16,11 +18,10 @@ const Hero = () => {
             designing things for the web.
           </p>
           <p className="mb-5 font-normal leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
-            Currently, focusing on building accessible and human-centered
-            products to help my clients establishing their online presence.
+            My aim is to help people establish their online presence.
           </p>
           <a
-            href="#"
+            href="#about-section"
             className="group text-primary font-semibold leading-loose"
           >
             <span className="relative overflow-x-hidden inline-flex">

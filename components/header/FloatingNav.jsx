@@ -9,8 +9,8 @@ import { TiVideo as VideoCall } from "react-icons/ti";
 
 const FloatingNav = () => {
   const social_links = [
-    { title: "Home", link: "#Home", Icon: HomeIcon },
-    { title: "About", link: "#About", Icon: About },
+    { title: "Home", link: "#home-section", Icon: HomeIcon },
+    { title: "About", link: "#about-section", Icon: About },
     { title: "Work ", link: "#Work", Icon: Work },
     { title: "Contact", link: "#Contact", Icon: Contact },
     { title: "Resume", link: "#Resume", Icon: Resume },

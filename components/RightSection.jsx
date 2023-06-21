@@ -9,8 +9,8 @@ import { TiVideo as VideoCall } from "react-icons/ti";
 
 const RightSection = () => {
   const social_links = [
-    { title: "Home", link: "#Home", Icon: HomeIcon },
-    { title: "About", link: "#About", Icon: About },
+    { title: "Home", link: "#home-section", Icon: HomeIcon },
+    { title: "About", link: "#about-section", Icon: About },
     { title: "Work ", link: "#Work", Icon: Work },
     { title: "Contact", link: "#Contact", Icon: Contact },
     { title: "Resume", link: "#Resume", Icon: Resume },
@@ -30,7 +30,6 @@ const RightSection = () => {
             <a
               href={link}
               className="btn btn-ghost border-2 text-lg hover:border-primary hover:bg-transparent btn-circle text-navy-slate-dark hover:text-navy-accent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-200 cursor-pointer"
-              target="_blank"
             >
               <Icon />
             </a>
