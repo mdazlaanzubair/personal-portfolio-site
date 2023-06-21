@@ -1,13 +1,10 @@
-"use client";
-
 import {
-  TfiGithub as Github,
-  TfiFacebook as Facebook,
-  TfiTwitterAlt as Twitter,
-  TfiLinkedin as Linkedin,
-} from "react-icons/tfi";
-import { RiInstagramFill as Instagram } from "react-icons/ri";
-import { useState } from "react";
+  FiGithub as Github,
+  FiFacebook as Facebook,
+  FiTwitter as Twitter,
+  FiLinkedin as Linkedin,
+  FiInstagram as Instagram,
+} from "react-icons/fi";
 
 const LeftSection = () => {
   const social_links = [
@@ -18,33 +15,21 @@ const LeftSection = () => {
     { title: "Linkedin", link: "#Linkedin", Icon: Linkedin },
   ];
 
-  const [selectedLink, setSelectedLink] = useState("I'm Social");
-
   return (
-    <div className="flex flex-col items-center max-h-[80vh] justify-between gap-5 fixed left-5 bottom-0 ">
-      <p
-        className={`text-xs text-sideways rotate-180 tracking-wider transition-colors duration-500 ${
-          selectedLink === "I'm Social" ? "text-navy-light" : "text-navy-accent"
-        }`}
-      >
-        I&apos;m Social
-      </p>
-
-      <div className="flex flex-col gap-3">
+    <div className="flex flex-col items-center max-h-[80vh] justify-between gap-5 fixed left-10 bottom-0 z-10">
+      <div className="flex flex-col">
         {social_links.map((social_link, index) => {
           const { title, link, Icon } = social_link;
           return (
             <div
-              className="tooltip hover:tooltip-open tooltip-right tooltip-success"
+              className="tooltip hover:tooltip-open tooltip-right "
               data-tip={title}
               key={index}
             >
               <a
                 href={link}
-                className="btn btn-ghost btn-sm bg-navy hover:bg-navy-light btn-circle text-navy-slate-dark hover:text-navy-accent hover:-translate-y-1 transition-all ease-in-out duration-500 cursor-pointer"
+                className="btn btn-ghost text-lg hover:bg-transparent btn-circle text-navy-slate-light hover:text-primary hover:-translate-y-2 hover:-translate-x-1 transition-all ease-in-out duration-500 cursor-pointer"
                 target="_blank"
-                onMouseOver={() => setSelectedLink(title)}
-                onMouseLeave={() => setSelectedLink("I'm Social")}
               >
                 <Icon />
               </a>
@@ -52,7 +37,7 @@ const LeftSection = () => {
           );
         })}
 
-        <span className="w-0.5 h-20 mx-auto shrink my-2 bg-navy-light"></span>
+        <span className="w-0.5 h-20 mx-auto shrink my-2 bg-navy-slate-dark"></span>
       </div>
     </div>
   );

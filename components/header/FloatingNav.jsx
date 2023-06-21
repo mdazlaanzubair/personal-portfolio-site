@@ -15,6 +15,7 @@ const FloatingNav = () => {
     { title: "Contact", link: "#Contact", Icon: Contact },
     { title: "Resume", link: "#Resume", Icon: Resume },
     { title: "Video Call", link: "#VideoCall", Icon: VideoCall },
+    { title: "Video Call", link: "#VideoCall", Icon: VideoCall },
   ];
 
   return (

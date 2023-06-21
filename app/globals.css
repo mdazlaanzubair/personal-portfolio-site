@@ -13,17 +13,3 @@ body {
   writing-mode: vertical-lr;
   text-orientation: sideways;
 }
-
-.search-light {
-  position: absolute;
-  border-radius: 100%;
-  width: 40vw;
-  height: 80vh;
-  background: radial-gradient(600px, #233554, transparent 100%);
-  top: 50%;
-  left: 50%;
-  z-index: 300;
-  opacity: 0.1;
-  /* background-color: #233554; */
-  box-shadow: 0px 0px 40px 20px #233554;
-}
