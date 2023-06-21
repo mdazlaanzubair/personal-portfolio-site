@@ -45,7 +45,7 @@ const About = () => {
           </p>
           <p className="mb-5 font-normal leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
             I have a deep appreciation for minimal and clean designs, as they
-            effectively convey a brand's message and identity.
+            effectively convey a brand&apos;s message and identity.
           </p>
           <p className="mb-5 font-semibold leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
             To be precise, I do:
