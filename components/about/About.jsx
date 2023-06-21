@@ -50,7 +50,7 @@ const About = () => {
           <p className="mb-5 font-semibold leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
             To be precise, I do:
           </p>
-          <div className="grid grid-cols-2 gap-0 justify-start mb-10">
+          <div className="grid grid-cols-2 gap-0 justify-center mb-10">
             {about_skills.map((skill, index) => {
               const { title, Icon } = skill;
               return (
@@ -58,7 +58,7 @@ const About = () => {
                   <span className="text-accent-focus text-3xl">
                     <Icon />
                   </span>
-                  <span className="font-medium uppercase tracking-wider">
+                  <span className="font-medium uppercase tracking-wider text-sm">
                     {title}
                   </span>
                 </div>
