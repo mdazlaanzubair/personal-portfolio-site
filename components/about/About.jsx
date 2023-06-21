@@ -1,7 +1,4 @@
-import {
-  AiOutlineAntDesign as GraphicIcon,
-  // AiFillRobot as Scraping,
-} from "react-icons/ai";
+import { AiOutlineAntDesign as GraphicIcon } from "react-icons/ai";
 import { FaLaptopCode as Development } from "react-icons/fa";
 import { SiWritedotas as Writing } from "react-icons/si";
 import { TbRobot as Scraping } from "react-icons/tb";
@@ -50,11 +47,14 @@ const About = () => {
           <p className="mb-5 font-semibold leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
             To be precise, I do:
           </p>
-          <div className="grid grid-cols-2 gap-0 justify-center mb-10">
+          <div className="grid grid-cols-2 lg:grid-cols-2 gap-0 justify-center mb-10">
             {about_skills.map((skill, index) => {
               const { title, Icon } = skill;
               return (
-                <div className="alert bg-transparent border-none" key={index}>
+                <div
+                  className="flex flex-row justify-start gap-5 items-center py-3"
+                  key={index}
+                >
                   <span className="text-accent-focus text-3xl">
                     <Icon />
                   </span>
