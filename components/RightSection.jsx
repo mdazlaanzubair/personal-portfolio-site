@@ -6,11 +6,13 @@ import {
 import { MdWork as Work } from "react-icons/md";
 import { FaFilePdf as Resume } from "react-icons/fa";
 import { TiVideo as VideoCall } from "react-icons/ti";
+import { MdDataSaverOff as ServiceIcon } from "react-icons/md";
 
 const RightSection = () => {
   const social_links = [
     { title: "Home", link: "#home-section", Icon: HomeIcon },
     { title: "About", link: "#about-section", Icon: About },
+    { title: "Services ", link: "#service-section", Icon: ServiceIcon },
     { title: "Work ", link: "#Work", Icon: Work },
     { title: "Contact", link: "#Contact", Icon: Contact },
     { title: "Resume", link: "#Resume", Icon: Resume },

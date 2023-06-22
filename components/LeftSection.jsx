@@ -28,7 +28,7 @@ const LeftSection = () => {
             >
               <a
                 href={link}
-                className="btn btn-ghost text-lg hover:bg-transparent btn-circle text-navy-slate-light hover:text-primary hover:-translate-y-2 hover:-translate-x-1 transition-all ease-in-out duration-500 cursor-pointer"
+                className="btn btn-ghost text-xl hover:bg-transparent btn-circle text-navy-slate-light hover:text-primary hover:-translate-y-2 hover:-translate-x-1 transition-all ease-in-out duration-500 cursor-pointer"
                 target="_blank"
               >
                 <Icon />
@@ -37,7 +37,7 @@ const LeftSection = () => {
           );
         })}
 
-        <span className="w-0.5 h-20 mx-auto shrink my-2 bg-navy-slate-dark"></span>
+        <span className="w-0.5 h-24 mx-auto shrink my-2 bg-navy-slate-dark"></span>
       </div>
     </div>
   );

@@ -1,7 +1,4 @@
-import { AiOutlineAntDesign as GraphicIcon } from "react-icons/ai";
-import { FaLaptopCode as Development } from "react-icons/fa";
-import { SiWritedotas as Writing } from "react-icons/si";
-import { TbRobot as Scraping } from "react-icons/tb";
+import { BiChevronRight as ListIcon } from "react-icons/bi";
 
 import Animator from "../Animator";
 
@@ -9,10 +6,12 @@ import * as about_animation from "../../public/about_animation.json";
 
 const About = () => {
   const about_skills = [
-    { title: "Web Designing", Icon: GraphicIcon },
-    { title: "Web Development", Icon: Development },
-    { title: "Content Writing", Icon: Writing },
-    { title: "Web Scraping", Icon: Scraping },
+    "Designing",
+    "Development",
+    "Content Writing",
+    "Web Scraping",
+    "SEO",
+    "Consulting",
   ];
 
   return (
@@ -44,27 +43,37 @@ const About = () => {
             I have a deep appreciation for minimal and clean designs, as they
             effectively convey a brand&apos;s message and identity.
           </p>
-          <p className="mb-5 font-semibold leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
+          <p className="mb-3 font-semibold leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
             To be precise, I do:
           </p>
-          <div className="grid grid-cols-2 lg:grid-cols-2 gap-0 justify-center mb-10">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-0 justify-start mb-3">
             {about_skills.map((skill, index) => {
-              const { title, Icon } = skill;
               return (
                 <div
-                  className="flex flex-row justify-start gap-5 items-center py-3"
+                  className="flex flex-row gap-3 py-3 items-center text-navy-slate"
                   key={index}
                 >
-                  <span className="text-accent-focus text-3xl">
-                    <Icon />
+                  <span className="text-primary text-xl">
+                    <ListIcon />
                   </span>
-                  <span className="font-medium uppercase tracking-wider text-sm">
-                    {title}
-                  </span>
+
+                  <span className="font- text-xs">{skill}</span>
                 </div>
               );
             })}
           </div>
+          <a
+            href="#about-section"
+            className="btn btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
+          >
+            Credentials
+          </a>
+          <a
+            href="#about-section"
+            className="btn btn-ghost text-primary hover:bg-transparent rounded-sm capitalize hover:translate-x-0.5 hover:translate-y-0.5 transition-all ease-in-out duration-300"
+          >
+            Portfolio
+          </a>
         </div>
       </div>
     </div>
