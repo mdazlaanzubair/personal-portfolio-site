@@ -35,7 +35,7 @@ const Header = () => {
       <div className="navbar-end flex-none">
         <ul className="menu menu-horizontal px-1">
           {nav_links.map((link, index) => (
-            <li className="group">
+            <li className="group" key={index}>
               <a href={link.url} className="hover:bg-transparent">
                 <span className="relative overflow-x-hidden inline-flex font-medium tracking-wider text-base text-navy-slate-dark group-hover:text-primary">
                   {link.title}
