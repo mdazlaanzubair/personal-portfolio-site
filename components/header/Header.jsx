@@ -23,7 +23,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="navbar px-10 fixed top-0 z-10 py-5 bg-base-100 shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-75">
+    <div className="navbar px-10 fixed top-0 z-10 py-2 bg-base-100 shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-75">
       <div className="navbar-start">
         <a
           className={`normal-case text-3xl font-black tracking-wider
@@ -37,7 +37,7 @@ const Header = () => {
           {nav_links.map((link, index) => (
             <li className="group" key={index}>
               <a href={link.url} className="hover:bg-transparent">
-                <span className="relative overflow-x-hidden inline-flex font-medium tracking-wider text-base text-navy-slate-dark group-hover:text-primary">
+                <span className="relative overflow-x-hidden inline-flex font-medium tracking-wider text-sm text-navy-slate-dark group-hover:text-primary">
                   {link.title}
                   <span className="absolute w-full h-0.5 bg-primary left-0 bottom-0 -translate-x-full group-hover:translate-x-0 transition-all ease-in-out duration-200"></span>
                 </span>
