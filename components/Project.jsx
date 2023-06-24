@@ -62,8 +62,8 @@ const Project = () => {
         {featured_projects.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row ${
-              index % 2 === 0 ? " lg:flex-row" : "lg:flex-row-reverse"
+            className={`flex flex-col lg:flex-row gap-5 lg:gap-0 ${
+              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
             <a
@@ -79,19 +79,16 @@ const Project = () => {
               </div>
             </a>
             <div
-              className={`w-full lg:w-1/2 h-auto flex flex-col justify-between z-10 ${
+              className={`w-full lg:w-1/2 flex flex-col justify-between z-10 ${
                 index % 2 === 0
                   ? "text-right lg:-ml-16 items-end"
                   : "lg:-mr-16 items-start"
               }`}
             >
-              <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
-                Featured Projects
-              </h3>
               <h1 className="text-2xl font-bold mb-5 text-navy-slate-light">
                 {project.title}
               </h1>
-              <p className="p-5 bg-base-100 rounded-sm text-sm shadow-lg">
+              <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm shadow-lg">
                 {project.desc}
               </p>
               <div className="flex flex-row flex-wrap gap-5 items-center">

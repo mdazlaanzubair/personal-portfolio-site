@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div
       className={`navbar px-8 gap-3 ${
-        scrollPos.y_axis > 50 ? "fixed top-0 z-10 bg-base-100 shadow-lg" : ""
+        scrollPos.y_axis > 50 ? "fixed top-0 z-50 bg-base-100 shadow-lg" : ""
       } backdrop-filter backdrop-blur-lg bg-opacity-75 transition-all ease-in-out duration-500`}
     >
       <div className="flex-1">
