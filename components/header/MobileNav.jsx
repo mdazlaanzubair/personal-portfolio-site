@@ -10,9 +10,9 @@ import ThemeToggler from "../ThemeToggler";
 const MobileNav = () => {
   const social_links = [
     { title: "About", link: "#about-section", Icon: About },
-    { title: "Services ", link: "#service-section", Icon: Service },
     { title: "Experience ", link: "#experience-section", Icon: Experience },
-    { title: "Work ", link: "#work-section", Icon: Work },
+    { title: "Services ", link: "#service-section", Icon: Service },
+    { title: "Projects ", link: "#project-section", Icon: Work },
     { title: "Contact", link: "#contact-section", Icon: Contact },
   ];
 

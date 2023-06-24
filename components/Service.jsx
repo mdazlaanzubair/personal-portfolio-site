@@ -44,10 +44,10 @@ const Service = () => {
   return (
     <div
       id="service-section"
-      className="hero min-h-screen py-20 md:py-24 justify-center"
+      className="hero min-h-screen py-20 md:py-24 justify-start"
     >
       <div className="hero-content">
-        <div className="min-h-scr lg:px-20 lg:text-center">
+        <div className="max-w-full lg:px-20">
           <h1 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             My offerings
           </h1>
@@ -57,7 +57,7 @@ const Service = () => {
           <h1 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
             I offer solutions that makes difference.
           </h1>
-          <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base lg:mx-auto">
+          <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base">
             I offer services to cater to your specific requirements. Whether
             you&apos;re a small business owner, entrepreneur, or individual
             looking to establish your online presence, I have the expertise to

@@ -23,11 +23,9 @@ const SpotLight = () => {
     <div
       className="w-full h-full absolute inset-0 overflow-hidden bg-fixed -z-10"
       style={{
-        background: `radial-gradient(600px at ${pointerPos.x_axis}px ${pointerPos.y_axis}px, rgba(41, 62, 112, 0.15),transparent 80%) fixed`,
+        background: `radial-gradient(300px at ${pointerPos.x_axis}px ${pointerPos.y_axis}px, rgba(69, 104, 186, 0.15),transparent 80%) fixed`,
       }}
-    >
-      {pointerPos.x_axis}, {pointerPos.y_axis}
-    </div>
+    ></div>
   );
 };
 
