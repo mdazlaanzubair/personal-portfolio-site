@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
-    <div id="home-section" className="hero py-20 md:py-24 justify-start">
+    <div
+      id="home-section"
+      className="hero min-h-screen py-20 md:py-24 justify-start"
+    >
       <div className="hero-content">
         <div className="max-w-full lg:px-20">
           <h1 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">

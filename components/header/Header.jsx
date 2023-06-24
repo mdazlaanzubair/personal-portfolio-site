@@ -1,58 +1,50 @@
 "use client";
 
-import FloatingNav from "./FloatingNav";
-import { useState } from "react";
-import FloatingNavBtn from "./FloatingNavBtn";
-import { Yesteryear } from "next/font/google";
+import { Saira_Stencil_One } from "next/font/google";
+import DesktopNav from "./DesktopNav";
+import { useGlobalContext } from "@/app/context/GlobalContext";
+import MobileNav from "./MobileNav";
+import NavToggler from "./NavToggler";
 
-const yesteryear = Yesteryear({
+const yesteryear = Saira_Stencil_One({
   subsets: ["latin"],
   style: "normal",
   weight: "400",
 });
 
 const Header = () => {
-  const [floatingNavToggle, setFloatingNavToggle] = useState(false);
-
-  const nav_links = [
-    { title: "Home", url: "#home-section" },
-    { title: "About", url: "#about-section" },
-    { title: "Services ", url: "#service-section" },
-    { title: "Work ", url: "#Work" },
-    { title: "Contact", url: "#Contact" },
-  ];
+  const { scrollPos } = useGlobalContext();
 
   return (
-    <div className="navbar px-10 fixed top-0 z-10 py-2 bg-base-100 shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-75">
-      <div className="navbar-start">
+    <div
+      className={`navbar px-10 gap-3 ${
+        scrollPos.y_axis > 100 ? "fixed top-0 z-10 bg-base-100 shadow-lg" : ""
+      } backdrop-filter backdrop-blur-lg bg-opacity-75 transition-all ease-in-out duration-500`}
+    >
+      <div className="flex-1">
         <a
-          className={`normal-case text-3xl font-black tracking-wider
-            ${yesteryear.className}`}
+          href="#home-section"
+          className="py-3 group hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
         >
-          Azlaan.
+          <div className="avatar placeholder mask mask-hexagon p-1.5 bg-navy-slate group-hover:bg-primary rounded-none transition-all ease-in-out duration-300">
+            <div className="w-11 rounded-none mask mask-hexagon bg-base-100 transition-all ease-in-out duration-300">
+              <span
+                className={`text-navy-slate group-hover:text-primary text-2xl transition-all ease-in-out duration-300 ${yesteryear.className}`}
+              >
+                A
+              </span>
+            </div>
+          </div>
         </a>
       </div>
-      <div className="navbar-end flex-none">
-        <ul className="menu menu-horizontal px-1">
-          {nav_links.map((link, index) => (
-            <li className="group" key={index}>
-              <a href={link.url} className="hover:bg-transparent">
-                <span className="relative overflow-x-hidden inline-flex font-medium tracking-wider text-sm text-navy-slate-dark group-hover:text-primary">
-                  {link.title}
-                  <span className="absolute w-full h-0.5 bg-primary left-0 bottom-0 -translate-x-full group-hover:translate-x-0 transition-all ease-in-out duration-200"></span>
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
-        <FloatingNavBtn
-          floatingNavToggle={floatingNavToggle}
-          setFloatingNavToggle={setFloatingNavToggle}
-        />
+      <div className="flex-none">
+        <div className="hidden lg:flex">
+          <DesktopNav />
+        </div>
+        <div className="flex lg:hidden">
+          <NavToggler />
+        </div>
       </div>
-
-      {/* mobile nav */}
-      {floatingNavToggle ? <FloatingNav /> : null}
     </div>
   );
 };

@@ -42,9 +42,12 @@ const Service = () => {
   ];
 
   return (
-    <div id="service-section" className="hero py-20 md:py-24 justify-center">
+    <div
+      id="service-section"
+      className="hero min-h-screen py-20 md:py-24 justify-center"
+    >
       <div className="hero-content">
-        <div className="max-w-full lg:px-20 lg:text-center">
+        <div className="min-h-scr lg:px-20 lg:text-center">
           <h1 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             My offerings
           </h1>
@@ -66,7 +69,7 @@ const Service = () => {
               const { title, desc, Icon } = service;
               return (
                 <div
-                  className="group card bg-base-100 shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+                  className="group card bg-base-100 rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
                   key={index}
                 >
                   <figure className="px-10 pt-10">
@@ -75,7 +78,7 @@ const Service = () => {
                     </span>
                   </figure>
                   <div className="card-body items-center text-center">
-                    <h2 className="card-title text-navy-slate-light">
+                    <h2 className="card-title text-navy-slate-light group-hover:text-primary transition-all ease-in-out duration-300">
                       {title}
                     </h2>
                     <p className="text-xs font-normal text-navy-slate mb-5">

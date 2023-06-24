@@ -25,7 +25,7 @@ module.exports = {
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
-    themes: ["night", "synthwave"],
+    themes: ["night", "synthwave", "corporate"],
     darkTheme: "night",
     base: true,
     styled: true,
