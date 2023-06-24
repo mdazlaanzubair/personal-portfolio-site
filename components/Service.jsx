@@ -12,32 +12,32 @@ const Service = () => {
     {
       Icon: GraphicDesignIcon,
       title: "Graphic Design",
-      desc: "Creating visually stunning graphics, logos, and branding materials that effectively represent your brand and leave a lasting impression.",
+      desc: "Create visually stunning graphics, logos, and branding materials that effectively represent your brand and leave a lasting impression.",
     },
     {
       Icon: WebDevIcon,
       title: "Web Development",
-      desc: "Building functional and responsive websites with clean code and seamless navigation to ensure an optimal user experience.",
+      desc: "Build functional and responsive websites with clean code and seamless navigation to ensure an optimal user experience.",
     },
     {
       Icon: SeoIcon,
-      title: "SEO & Speed Optimization",
-      desc: "Implementing search engine optimization techniques to improve your website's ranking on search engines. Also, optimize website speed for enhanced user experience.",
+      title: "SEO & Speed Optimize",
+      desc: "Implement search engine optimization techniques to improve your website's ranking on search engines and optimize website speed for enhanced user experience.",
     },
     {
       Icon: ShopIcon,
-      title: "Ecommerce Platforms",
-      desc: "Setting up and customizing ecommerce platforms to facilitate online sales, streamline product management, and enhance customer experiences.",
+      title: "E-commerce Platforms",
+      desc: "Set up and customize e-commerce platforms to facilitate online sales, streamline product management, and enhance customer experiences.",
     },
     {
       Icon: WritingIcon,
       title: "Content Writing",
-      desc: "Crafting engaging and persuasive web content, blog posts, and articles that effectively communicate your brand message and attract your audience.",
+      desc: "Craft engaging and persuasive web content, blog posts, and articles that effectively communicate your brand message and attract your audience.",
     },
     {
       Icon: ScrapingIcon,
       title: "Web Scraping",
-      desc: "Gathering valuable data from diverse online sources and delivering insights to support informed decision-making.",
+      desc: "Gather valuable data from diverse online sources and deliver insights to support informed decision-making.",
     },
   ];
 
@@ -57,7 +57,7 @@ const Service = () => {
           <h1 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
             I offer solutions that makes difference.
           </h1>
-          <p className="mb-5 font-normal leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base lg:mx-auto">
+          <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base lg:mx-auto">
             I offer services to cater to your specific requirements. Whether
             you&apos;re a small business owner, entrepreneur, or individual
             looking to establish your online presence, I have the expertise to
@@ -69,7 +69,7 @@ const Service = () => {
               const { title, desc, Icon } = service;
               return (
                 <div
-                  className="group card bg-base-100 rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+                  className="group card bg-transparent rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
                   key={index}
                 >
                   <figure className="px-10 pt-10">
@@ -78,10 +78,10 @@ const Service = () => {
                     </span>
                   </figure>
                   <div className="card-body items-center text-center">
-                    <h2 className="card-title text-navy-slate-light group-hover:text-primary transition-all ease-in-out duration-300">
+                    <h2 className="text-2xl font-bold text-navy-slate-light group-hover:text-primary transition-all ease-in-out duration-300">
                       {title}
                     </h2>
-                    <p className="text-xs font-normal text-navy-slate mb-5">
+                    <p className="text-xs leading-relaxed font-normal text-navy-slate-light mb-5">
                       {desc}
                     </p>
                     <div className="card-actions">

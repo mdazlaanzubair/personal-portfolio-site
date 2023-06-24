@@ -1,3 +1,4 @@
+import SpotLight from "@/components/SpotLight";
 import GlobalContextProvider from "./context/GlobalContext";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
@@ -16,8 +17,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <GlobalContextProvider>
-      <html lang="en" data-theme="night" className="overflow-x-hidden">
-        <body className={montserrat.className}>{children}</body>
+      <html lang="en" data-theme="night" className="overflow-x-hidden ">
+        <body className={`relative ${montserrat.className}`}>
+          {children}
+          <SpotLight />
+        </body>
       </html>
     </GlobalContextProvider>
   );

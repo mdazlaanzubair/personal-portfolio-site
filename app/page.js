@@ -3,10 +3,10 @@
 import { useEffect } from "react";
 import { useGlobalContext } from "./context/GlobalContext";
 import Footer from "@/components/Footer";
-import LeftSection from "@/components/LeftSection";
 import MainSection from "@/components/MainSection";
-import Header from "@/components/header/Header";
+import Header from "@/components/Header";
 import MobileNav from "@/components/header/MobileNav";
+import SocialNav from "@/components/header/SocialNav";
 
 export default function Home() {
   const { setScrollPos, navToggle } = useGlobalContext();
@@ -26,13 +26,16 @@ export default function Home() {
   return (
     <main>
       <Header />
+
       <div className="w-full min-h-screen flex justify-center items-top gap-20 px-5">
-        <div className="hidden relative lg:flex flex-shrink-0">
-          <LeftSection />
-        </div>
-        <div className="relative flex-grow">
+        <div className="flex-grow">
+          <div className="hidden relative lg:flex">
+            <SocialNav />
+          </div>
           <MainSection />
-          {navToggle ? <MobileNav /> : null}
+          <div className="flex relative lg:hidden">
+            {navToggle ? <MobileNav /> : null}
+          </div>
         </div>
       </div>
 

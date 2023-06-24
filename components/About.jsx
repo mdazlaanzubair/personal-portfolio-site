@@ -1,8 +1,8 @@
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 
-import Animator from "../Animator";
+import Animator from "./Animator";
 
-import * as about_animation from "../../public/about_animation.json";
+import * as about_animation from "../public/about_animation.json";
 import Link from "next/link";
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
             Referring to myself
           </h1>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
-            Who am I 
+            Who am I
           </h1>
           <h1 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-10">
             Know about me, myself & my skills.
@@ -68,18 +68,17 @@ const About = () => {
                 </div>
               );
             })}
-
-            <div className="flex flex-row gap-3 mt-5">
-              {nest_about_link.map((link, index) => (
-                <Link
-                  key={index}
-                  href={link.url}
-                  className="btn btn-sm md:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
-                >
-                  {link.title}
-                </Link>
-              ))}
-            </div>
+          </div>
+          <div className="flex flex-row flex-wrap gap-3 mt-5">
+            {nest_about_link.map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                className="btn btn-sm md:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
+              >
+                {link.title}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

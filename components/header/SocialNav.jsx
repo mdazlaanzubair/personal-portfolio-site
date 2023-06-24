@@ -6,7 +6,7 @@ import {
   FiInstagram as Instagram,
 } from "react-icons/fi";
 
-const LeftSection = () => {
+const SocialNav = () => {
   const social_links = [
     { title: "Github", link: "#Github", Icon: Github },
     { title: "Facebook", link: "#Facebook", Icon: Facebook },
@@ -16,7 +16,7 @@ const LeftSection = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center max-h-[80vh] justify-between gap-5 fixed left-10 bottom-0 z-10">
+    <div className="flex flex-col items-center max-h-[80vh] justify-between gap-5 fixed left-8 bottom-0 z-10">
       <div className="flex flex-col">
         {social_links.map((social_link, index) => {
           const { title, link, Icon } = social_link;
@@ -43,4 +43,4 @@ const LeftSection = () => {
   );
 };
 
-export default LeftSection;
+export default SocialNav;

@@ -5,6 +5,7 @@ import {
 } from "react-icons/ai";
 import { SiExpensify as Experience } from "react-icons/si";
 import { HiOutlineCog as Service } from "react-icons/hi";
+import ThemeToggler from "../ThemeToggler";
 
 const MobileNav = () => {
   const social_links = [
@@ -34,6 +35,7 @@ const MobileNav = () => {
           </a>
         );
       })}
+      <ThemeToggler />
     </div>
   );
 };

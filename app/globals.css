@@ -13,3 +13,10 @@ body {
   writing-mode: vertical-lr;
   text-orientation: sideways;
 }
+
+.dark-spotlight {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: hsl(218, 71%, 44%);
+}

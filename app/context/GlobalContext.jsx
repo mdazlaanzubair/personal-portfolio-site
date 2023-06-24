@@ -12,7 +12,7 @@ const GlobalContextProvider = ({ children }) => {
     y_axis: 0,
   });
 
-  const [pointePos, setPointePos] = useState({
+  const [pointerPos, setPointerPos] = useState({
     x_axis: 0,
     y_axis: 0,
   });
@@ -24,6 +24,8 @@ const GlobalContextProvider = ({ children }) => {
   const value = {
     scrollPos,
     setScrollPos,
+    pointerPos,
+    setPointerPos,
     theme,
     setTheme,
     navToggle,
