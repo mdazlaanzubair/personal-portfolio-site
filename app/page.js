@@ -28,14 +28,12 @@ export default function Home() {
       <Header />
 
       <div className="w-full min-h-screen flex justify-center items-top gap-20 px-5">
+        <div className="hidden relative lg:flex">
+          <SocialNav />
+        </div>
         <div className="flex-grow">
-          <div className="hidden relative lg:flex">
-            <SocialNav />
-          </div>
           <MainSection />
-          <div className="flex relative lg:hidden">
-            {navToggle ? <MobileNav /> : null}
-          </div>
+          {navToggle ? <MobileNav /> : null}
         </div>
       </div>
 

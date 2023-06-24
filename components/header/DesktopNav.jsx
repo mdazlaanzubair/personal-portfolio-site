@@ -1,9 +1,9 @@
 const DesktopNav = () => {
   const nav_links = [
     { title: "About", url: "#about-section" },
-    { title: "Experience ", url: "#experience-section" },
     { title: "Services ", url: "#service-section" },
-    { title: "Projects ", link: "#project-section" },
+    { title: "Experience ", url: "#experience-section" },
+    { title: "Projects ", url: "#project-section" },
     { title: "Contact", url: "#contact-section" },
   ];
 

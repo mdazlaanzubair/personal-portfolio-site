@@ -44,57 +44,53 @@ const Service = () => {
   return (
     <div
       id="service-section"
-      className="hero min-h-screen py-20 md:py-24 justify-start"
+      className="flex flex-col min-h-screen justify-start px-0 py-10 lg:px-10 lg:py-20"
     >
-      <div className="hero-content">
-        <div className="max-w-full lg:px-20">
-          <h1 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
-            My offerings
-          </h1>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
-            Services
-          </h1>
-          <h1 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
-            I offer solutions that makes difference.
-          </h1>
-          <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base">
-            I offer services to cater to your specific requirements. Whether
-            you&apos;re a small business owner, entrepreneur, or individual
-            looking to establish your online presence, I have the expertise to
-            deliver exceptional results.
-          </p>
+      <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
+        My offerings
+      </h3>
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
+        Services
+      </h1>
+      <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
+        I offer solutions that makes difference.
+      </h2>
+      <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base">
+        I offer services to cater to your specific requirements. Whether
+        you&apos;re a small business owner, entrepreneur, or individual looking
+        to establish your online presence, I have the expertise to deliver
+        exceptional results.
+      </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {services.map((service, index) => {
-              const { title, desc, Icon } = service;
-              return (
-                <div
-                  className="group card bg-transparent rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
-                  key={index}
-                >
-                  <figure className="px-10 pt-10">
-                    <span className="font-extralight text-3xl bg-neutral text-navy-slate-light group-hover:text-primary group-hover:bg-neutral-focus p-10 rounded-full transition-all ease-in-out duration-300">
-                      <Icon />
-                    </span>
-                  </figure>
-                  <div className="card-body items-center text-center">
-                    <h2 className="text-2xl font-bold text-navy-slate-light group-hover:text-primary transition-all ease-in-out duration-300">
-                      {title}
-                    </h2>
-                    <p className="text-xs leading-relaxed font-normal text-navy-slate-light mb-5">
-                      {desc}
-                    </p>
-                    <div className="card-actions">
-                      <button className="btn btn-wide btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300">
-                        Inquire
-                      </button>
-                    </div>
-                  </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {services.map((service, index) => {
+          const { title, desc, Icon } = service;
+          return (
+            <div
+              className="group card bg-transparent rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+              key={index}
+            >
+              <figure className="px-10 pt-10">
+                <span className="font-extralight text-3xl bg-neutral text-navy-slate-light group-hover:text-primary group-hover:bg-neutral-focus p-10 rounded-full transition-all ease-in-out duration-300">
+                  <Icon />
+                </span>
+              </figure>
+              <div className="card-body items-center text-center">
+                <h2 className="text-2xl font-bold text-navy-slate-light group-hover:text-primary transition-all ease-in-out duration-300">
+                  {title}
+                </h2>
+                <p className="text-xs leading-relaxed font-normal text-navy-slate-light mb-5">
+                  {desc}
+                </p>
+                <div className="card-actions">
+                  <button className="btn btn-wide btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300">
+                    Inquire
+                  </button>
                 </div>
-              );
-            })}
-          </div>
-        </div>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
