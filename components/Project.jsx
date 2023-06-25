@@ -3,39 +3,48 @@
 import { BiCodeAlt as CodeIcon } from "react-icons/bi";
 import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
 
+import epakaiImg from "@/public/featured_projects/epakai.png";
+import analyticsmartImg from "@/public/featured_projects/analyticsmart.png";
+import jomrunImg from "@/public/featured_projects/jomrun.png";
+
 const Project = () => {
   const featured_projects = [
     {
-      title: "Project Title 1",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta distinctio mollitia quidem, aperiam alias expedita in vitae, fugit eos at beatae eaque voluptas ipsam ipsa architecto tempore molestiae officia.",
-      url: "#",
-      img: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-      tech: ["react js", "next js", "mongoose", "atlas"],
+      title: "Epakai Commerce",
+      desc: `Epakai.com is an online store that sells bathroom and kitchen accessories. The website was build for Pakai Industries Berhad, a Malaysian company that has been in the sanitaryware industry for over 30 years.\n\nThe website was build for a Malaysian client in 2019. The website accepts payments via credit card, PayPal, and bank transfer, has a 4.5 out of 5-star rating on Google Reviews.`,
+      url: "https://epakai.com/",
+      img: epakaiImg.src,
+      tech: ["wordpress", "php", "sql"],
       links: [
-        { title: "Source Code", url: "#", Icon: CodeIcon },
-        { title: "Live View", url: "#", Icon: LiveViewIcon },
+        { title: "Live View", url: "https://epakai.com/", Icon: LiveViewIcon },
       ],
     },
     {
-      title: "Project Title 2",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta distinctio mollitia quidem, aperiam alias expedita in vitae, fugit eos at beatae eaque voluptas ipsam ipsa architecto tempore molestiae officia.",
-      url: "#",
-      img: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-      tech: ["react js", "next js", "mongoose", "atlas"],
+      title: "Analyticsmart",
+      desc: `Analyticsmart is a data analytics company that provides smart analytical services and solutions to businesses of all sizes.\n\nThe responsive website was made for a Canadian client in 2017. It's built on Wordpress and optimized for search engines.`,
+      url: "https://analyticsmart.com/",
+      img: analyticsmartImg.src,
+      tech: ["wordpress", "php", "sql"],
       links: [
-        { title: "Source Code", url: "#", Icon: CodeIcon },
-        { title: "Live View", url: "#", Icon: LiveViewIcon },
+        {
+          title: "Live View",
+          url: "https://analyticsmart.com/",
+          Icon: LiveViewIcon,
+        },
       ],
     },
     {
-      title: "Project Title 3",
-      desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta distinctio mollitia quidem, aperiam alias expedita in vitae, fugit eos at beatae eaque voluptas ipsam ipsa architecto tempore molestiae officia.",
-      url: "#",
-      img: "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-      tech: ["react js", "next js", "mongoose", "atlas"],
+      title: "JomRun",
+      desc: "JomRun is a Southeast Asia-based running app that helps users find and register for running events. The website is built on a number of technologies, along with some third-party services, such as Google Maps and Facebook, to provide users with additional functionality. Jomrun is built on a number of reliable and scalable technologies, which ensures that it will be able to handle the growing number of users.",
+      url: "https://www.jomrun.com/",
+      img: jomrunImg.src,
+      tech: ["html", "css", "javascript", "php", "MySQL"],
       links: [
-        { title: "Source Code", url: "#", Icon: CodeIcon },
-        { title: "Live View", url: "#", Icon: LiveViewIcon },
+        {
+          title: "Live View",
+          url: "https://www.jomrun.com/",
+          Icon: LiveViewIcon,
+        },
       ],
     },
   ];
@@ -58,28 +67,29 @@ const Project = () => {
         Here is my short-listed work that I delivered to my clients and as well
         as my personal projects.
       </p>
-      <div className="w-full flex flex-col gap-16 mt-5 justify-center">
+      <div className="w-full flex flex-col gap-16 my-5 justify-center">
         {featured_projects.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row gap-5 lg:gap-0 ${
+            className={`flex flex-col lg:flex-row gap-5 lg:my-5 lg:gap-0 ${
               index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
             }`}
           >
             <a
               href={project.url}
-              className="group w-full lg:w-1/2 h-auto relative"
+              target="_blank"
+              className="group w-full lg:w-3/4 relative"
             >
-              <div className="bg-primary-focus">
+              <div className="bg-base-100 shadow-2xl -z-10">
                 <img
-                  className="w-full h-full object-cover mix-blend-multiply opacity-75 hover:opacity-1 hover:mix-blend-normal transition-all ease-in-out duration-1000"
+                  className="w-full h-full object-cover mix-blend-color-dodge opacity-75 hover:opacity-1 hover:mix-blend-normal transition-all ease-in-out duration-1000"
                   src={project.img}
-                  alt="project image"
+                  alt="featured project image"
                 />
               </div>
             </a>
             <div
-              className={`w-full lg:w-1/2 flex flex-col justify-between z-10 ${
+              className={`w-full lg:w-1/2 flex flex-col justify-end z-10 ${
                 index % 2 === 0
                   ? "text-right lg:-ml-16 items-end"
                   : "lg:-mr-16 items-start"
@@ -88,7 +98,7 @@ const Project = () => {
               <h1 className="text-2xl font-bold mb-5 text-navy-slate-light">
                 {project.title}
               </h1>
-              <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm shadow-lg">
+              <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm lg:shadow-lg">
                 {project.desc}
               </p>
               <div className="flex flex-row flex-wrap gap-5 items-center">
@@ -105,6 +115,7 @@ const Project = () => {
                     <a
                       key={index}
                       href={url}
+                      target="_blank"
                       className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
                     >
                       <span className="text-navy-slate-light group-hover:text-primary">
@@ -117,6 +128,12 @@ const Project = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="flex flex-col justify-center items-center my-5">
+        <button className="btn btn-wide btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300">
+          Load More Projects
+        </button>
       </div>
     </div>
   );
