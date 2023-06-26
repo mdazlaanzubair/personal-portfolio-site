@@ -1,3 +1,6 @@
+import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
+import { BiCodeAlt } from "react-icons/bi";
+
 function FeaturedProjectCard({ project, index }) {
   return (
     <div
@@ -39,21 +42,29 @@ function FeaturedProjectCard({ project, index }) {
           ))}
         </div>
         <div className="flex flex-row flex-wrap items-center">
-          {project.links.map((link, index) => {
-            const { title, url, Icon } = link;
-            return (
-              <a
-                key={index}
-                href={url}
-                target="_blank"
-                className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
-              >
-                <span className="text-navy-slate-light group-hover:text-primary">
-                  <Icon />
-                </span>
-              </a>
-            );
-          })}
+          {project.url ? (
+            <a
+              href={project.url}
+              target="_blank"
+              className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
+            >
+              <span className="text-navy-slate-light group-hover:text-primary">
+                <LiveViewIcon />
+              </span>
+            </a>
+          ) : null}
+
+          {project.code ? (
+            <a
+              href={project.code}
+              target="_blank"
+              className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
+            >
+              <span className="text-navy-slate-light group-hover:text-primary">
+                <BiCodeAlt />
+              </span>
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
