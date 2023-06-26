@@ -9,11 +9,6 @@ body {
   padding: 0;
 }
 
-.text-sideways {
-  writing-mode: vertical-lr;
-  text-orientation: sideways;
-}
-
 .dark-spotlight {
   position: absolute;
   width: 100px;

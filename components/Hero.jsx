@@ -23,7 +23,7 @@ const Hero = () => {
       </p>
       <a
         href="#about-section"
-        className="group text-primary font-semibold leading-loose"
+        className="group text-primary max-w-32 font-semibold leading-loose"
       >
         <span className="relative overflow-x-hidden inline-flex">
           Explore more

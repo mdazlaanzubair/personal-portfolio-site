@@ -1,11 +1,12 @@
 "use client";
 
-import { BiCodeAlt as CodeIcon } from "react-icons/bi";
 import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
 
 import epakaiImg from "@/public/featured_projects/epakai.png";
 import analyticsmartImg from "@/public/featured_projects/analyticsmart.png";
 import jomrunImg from "@/public/featured_projects/jomrun.png";
+import FeaturedProjectCard from "./FeaturedProjectCard";
+import OtherProjectsCard from "./OtherProjectsCard";
 
 const Project = () => {
   const featured_projects = [
@@ -49,13 +50,37 @@ const Project = () => {
     },
   ];
 
+  const personal_projects = [
+    {
+      title: "Wildfire Tracker",
+      desc: `A basic implementation of Web GIS. This project is using the data that is coming from NASA's EONET API and plot it on Google Maps on their respective coordinated.`,
+      url: "https://fire-tracking.vercel.app/",
+      tech: ["react js", "NASA API", "google maps"],
+      code: "https://github.com/mdazlaanzubair/fire-tracking",
+    },
+    {
+      title: "Promptare",
+      desc: `A social media hub for Chat GPT users. Discover and share powerful prompts and commands to enhance your Chat GPT experience. `,
+      url: "https://promptare.vercel.app/",
+      tech: ["next js", "next auth", "mongo db", "chat gpt"],
+      code: "https://github.com/mdazlaanzubair/Promptare",
+    },
+    {
+      title: "Covid-19 Visualizer",
+      desc: `Web GIS project showcasing an interactive 3D visualization of COVID-19.`,
+      url: "https://track-covid-19.vercel.app/",
+      tech: ["javascript", "snowpack", "three js"],
+      code: "https://github.com/mdazlaanzubair/Covid-3d",
+    },
+  ];
+
   return (
     <div
       id="project-section"
       className="flex flex-col min-h-screen px-0 py-10 lg:px-10 lg:py-20 justify-start"
     >
       <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
-        Featured Projects
+        Client&apos;s Projects
       </h3>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
         Portfolio
@@ -67,73 +92,32 @@ const Project = () => {
         Here is my short-listed work that I delivered to my clients and as well
         as my personal projects.
       </p>
-      <div className="w-full flex flex-col gap-16 my-5 justify-center">
+      <div className="w-full flex flex-col gap-16 my-5 justify-center items-center">
         {featured_projects.map((project, index) => (
-          <div
-            key={index}
-            className={`flex flex-col lg:flex-row gap-5 lg:my-5 lg:gap-0 ${
-              index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-            }`}
-          >
-            <a
-              href={project.url}
-              target="_blank"
-              className="group w-full lg:w-3/4 relative"
-            >
-              <div className="bg-base-100 shadow-2xl -z-10">
-                <img
-                  className="w-full h-full object-cover mix-blend-color-dodge opacity-75 hover:opacity-1 hover:mix-blend-normal transition-all ease-in-out duration-1000"
-                  src={project.img}
-                  alt="featured project image"
-                />
-              </div>
-            </a>
-            <div
-              className={`w-full lg:w-1/2 flex flex-col justify-end z-10 ${
-                index % 2 === 0
-                  ? "text-right lg:-ml-16 items-end"
-                  : "lg:-mr-16 items-start"
-              }`}
-            >
-              <h1 className="text-2xl font-bold mb-5 text-navy-slate-light">
-                {project.title}
-              </h1>
-              <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm lg:shadow-lg">
-                {project.desc}
-              </p>
-              <div className="flex flex-row flex-wrap gap-5 items-center">
-                {project.tech.map((skill, index) => (
-                  <div key={index} className="text-primary">
-                    <span className="text-xs font-semibold">{skill}</span>
-                  </div>
-                ))}
-              </div>
-              <div className="flex flex-row flex-wrap items-center">
-                {project.links.map((link, index) => {
-                  const { title, url, Icon } = link;
-                  return (
-                    <a
-                      key={index}
-                      href={url}
-                      target="_blank"
-                      className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
-                    >
-                      <span className="text-navy-slate-light group-hover:text-primary">
-                        <Icon />
-                      </span>
-                    </a>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+          <FeaturedProjectCard key={index} index={index} project={project} />
         ))}
       </div>
 
-      <div className="flex flex-col justify-center items-center my-5">
-        <button className="btn btn-wide btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300">
-          Load More Projects
-        </button>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items- my-10">
+        <h2 className="text-center my-auto lg:text-left text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
+          Noteworthy Personal Projects.
+        </h2>
+        {personal_projects.map((project, index) => (
+          <OtherProjectsCard key={index} project={project} />
+        ))}
+        <div className="card bg-transparent rounded-sm">
+          <div className="card-body">
+            <a
+              href="#about-section"
+              className="group text-primary font-semibold leading-loose my-auto"
+            >
+              <span className="relative overflow-x-hidden inline-flex">
+                View the archive
+                <span className="absolute w-full h-0.5 bg-primary left-0 bottom-0 -translate-x-2/3 group-hover:translate-x-0 transition-all ease-in-out duration-200"></span>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
