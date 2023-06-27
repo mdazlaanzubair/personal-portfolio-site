@@ -28,7 +28,7 @@ function FeaturedProjectCard({ project, index }) {
             : "lg:-mr-16 items-start"
         }`}
       >
-        <h1 className="text-2xl font-bold mb-5 text-navy-slate-light">
+        <h1 className="text-2xl font-bold mb-5">
           {project.title}
         </h1>
         <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm lg:shadow-lg">
@@ -48,7 +48,7 @@ function FeaturedProjectCard({ project, index }) {
               target="_blank"
               className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
             >
-              <span className="text-navy-slate-light group-hover:text-primary">
+              <span className="group-hover:text-primary">
                 <LiveViewIcon />
               </span>
             </a>
@@ -60,7 +60,7 @@ function FeaturedProjectCard({ project, index }) {
               target="_blank"
               className="group btn btn-ghost btn-circle border-none text-xl hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
             >
-              <span className="text-navy-slate-light group-hover:text-primary">
+              <span className="group-hover:text-primary">
                 <BiCodeAlt />
               </span>
             </a>

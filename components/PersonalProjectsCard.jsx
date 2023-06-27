@@ -13,14 +13,14 @@ const OtherProjectsCard = ({ project }) => {
           <div className="flex flex-row justify-center items-center">
             <a
               href={project.url}
-              className="btn btn-ghost hover:bg-transparent text-xl text-navy-slate hover:text-primary btn-circle"
+              className="btn btn-ghost hover:bg-transparent text-xl hover:text-primary btn-circle"
               target="_blank"
             >
               <FiExternalLink />
             </a>
             <a
               href={project.code}
-              className="btn btn-ghost mr-3 hover:bg-transparent text-xl text-navy-slate hover:text-primary btn-circle"
+              className="btn btn-ghost mr-3 hover:bg-transparent text-xl hover:text-primary btn-circle"
               target="_blank"
             >
               <BiCodeAlt />

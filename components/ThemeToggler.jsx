@@ -1,18 +1,17 @@
-import { useGlobalContext } from "@/app/context/GlobalContext";
+"use client";
+
+import useTheme from "@/store/useTheme";
 
 const ThemeToggler = () => {
-  const { theme, setTheme } = useGlobalContext();
+  const toggleIsDark = useTheme((state) => state.toggleIsDark);
 
   return (
-    <label className="btn btn-ghost btn-circle hover:bg-transparent text-yellow-400 swap swap-rotate">
+    <label
+      className="btn btn-ghost btn-circle hover:bg-transparent text-yellow-400 swap swap-rotate"
+      onClick={toggleIsDark}
+    >
       {/* this hidden checkbox controls the state */}
-      <input
-        type="checkbox"
-        onClick={() => {
-          setTheme(!theme);
-          alert("Feature under construction!");
-        }}
-      />
+      <input type="checkbox" />
 
       {/* sun icon */}
       <svg

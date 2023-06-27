@@ -101,13 +101,13 @@ const Project = () => {
       <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
         Client&apos;s Projects
       </h3>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
         Portfolio
       </h1>
-      <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-5">
+      <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content mb-8 lg:mb-5">
         Let&apos;s sneak a peek at my work.
       </h2>
-      <p className="mb-5 font-light leading-loose text-navy-slate w-full md:max-w-2xl text-xs md:text-base">
+      <p className="mb-5 font-light leading-loose w-full md:max-w-2xl text-xs md:text-base">
         Here is my short-listed work that I delivered to my clients and as well
         as my personal projects.
       </p>
@@ -121,7 +121,7 @@ const Project = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items- my-10">
         <div className="card bg-transparent rounded-sm">
           <div className="card-body lg:text-right">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark my-3">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content my-3">
               Interested in exploring my personal.
             </h2>
             <a
@@ -140,7 +140,7 @@ const Project = () => {
         ))}
         <div className="card bg-transparent rounded-sm">
           <div className="card-body">
-            <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-navy-slate-dark my-3">
+            <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content my-3">
               Are you interested in exploring more.
             </h2>
             <button

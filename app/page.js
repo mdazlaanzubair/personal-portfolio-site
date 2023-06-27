@@ -7,6 +7,7 @@ import MainSection from "@/components/MainSection";
 import Header from "@/components/Header";
 import MobileNav from "@/components/header/MobileNav";
 import SocialNav from "@/components/header/SocialNav";
+import SocialMobileNav from "@/components/header/SocialMobileNav";
 
 export default function Home() {
   const { setScrollPos, navToggle } = useGlobalContext();
@@ -27,16 +28,15 @@ export default function Home() {
     <main>
       <Header />
 
-      <div className="w-full min-h-screen flex justify-center items-top gap-20 px-5">
-        <div className="hidden relative lg:flex">
+      <div className="w-full min-h-screen flex justify-center items-top gap-20 px-7 lg:px-20">
+        <div className="relative flex-grow">
           <SocialNav />
-        </div>
-        <div className="flex-grow">
           <MainSection />
           {navToggle ? <MobileNav /> : null}
         </div>
       </div>
 
+      <SocialMobileNav />
       <Footer />
     </main>
   );

@@ -7,18 +7,18 @@ const Hero = () => {
       <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
         Hi, myself
       </h3>
-      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-navy-slate-light">
+      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
         <span className="inline-block sm:hidden">Muhd.</span>
         <span className="hidden sm:inline-block">Muhammad</span> Azlaan,
       </h1>
-      <h2 className="text-3xl lg:text-5xl tracking-tight font-bold text-navy-slate-dark mb-8 lg:mb-12">
+      <h2 className="text-3xl lg:text-5xl tracking-tight font-bold text-neutral-content mb-8 lg:mb-12">
         I code web to establish your online presence.
       </h2>
-      <p className="mb-5 font-extralight leading-relaxed text-navy-slate-light w-full md:max-w-3xl text-lg md:text-2xl">
+      <p className="mb-5 font-extralight leading-relaxed w-full md:max-w-3xl text-lg md:text-2xl">
         I&apos;m a software engineer, specialized in building &amp; designing
         things for the web.
       </p>
-      <p className="mb-5 font-normal leading-loose text-navy-slate w-full md:max-w-3xl text-xs md:text-base">
+      <p className="mb-5 font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
         My aim is to help people establish their online presence.
       </p>
       <a

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, createContext, useContext } from "react";
+import { useState, createContext, useContext, useEffect } from "react";
 
 const GlobalContext = createContext({});
 
@@ -17,7 +17,7 @@ const GlobalContextProvider = ({ children }) => {
     y_axis: 0,
   });
 
-  const [theme, setTheme] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   const [navToggle, setNavToggle] = useState(false);
 
@@ -26,8 +26,8 @@ const GlobalContextProvider = ({ children }) => {
     setScrollPos,
     pointerPos,
     setPointerPos,
-    theme,
-    setTheme,
+    isDark,
+    setIsDark,
     navToggle,
     setNavToggle,
   };
