@@ -11,11 +11,11 @@ function FeaturedProjectCard({ project, index }) {
       <a
         href={project.url}
         target="_blank"
-        className="group w-full lg:w-3/4 relative"
+        className="group w-full lg:w-1/2 relative"
       >
-        <div className="bg-base-100 shadow-2xl -z-10">
+        <div className="bg-primary shadow-2xl -z-10">
           <img
-            className="w-full h-full object-cover mix-blend-color-dodge opacity-75 hover:opacity-1 hover:mix-blend-normal transition-all ease-in-out duration-1000"
+            className="w-full h-full object-cover mix-blend-darken hover:mix-blend-normal"
             src={project.img}
             alt="featured project image"
           />
@@ -28,9 +28,7 @@ function FeaturedProjectCard({ project, index }) {
             : "lg:-mr-16 items-start"
         }`}
       >
-        <h1 className="text-2xl font-bold mb-5">
-          {project.title}
-        </h1>
+        <h1 className="text-2xl font-bold mb-5">{project.title}</h1>
         <p className="py-5 lg:p-5 bg-base-100 rounded-sm text-sm lg:shadow-lg">
           {project.desc}
         </p>

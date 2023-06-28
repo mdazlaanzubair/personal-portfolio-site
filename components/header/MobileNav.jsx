@@ -1,3 +1,5 @@
+"use client";
+
 import { MdWorkOutline as Work } from "react-icons/md";
 import {
   AiOutlineIdcard as About,
@@ -5,9 +7,13 @@ import {
 } from "react-icons/ai";
 import { SiExpensify as Experience } from "react-icons/si";
 import { HiOutlineCog as Service } from "react-icons/hi";
+
 import ThemeToggler from "../ThemeToggler";
+import useNavStore from "@/store/NavStore";
 
 const MobileNav = () => {
+  const isMobileNav = useNavStore((state) => state.isMobileNav);
+
   const social_links = [
     { title: "About", url: "#about-section", Icon: About },
     { title: "Services ", url: "#service-section", Icon: Service },
@@ -16,8 +22,8 @@ const MobileNav = () => {
     { title: "Contact", url: "#contact-section", Icon: Contact },
   ];
 
-  return (
-    <div className="flex flex-row items-center px-3 max-h-[80vh] justify-between gap-3 fixed bottom-10 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full">
+  return isMobileNav ? (
+    <div className="flex lg:hidden flex-row items-center px-3 max-h-[80vh] justify-between gap-3 fixed bottom-10 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full">
       {social_links.map((social_link, index) => {
         const { title, url, Icon } = social_link;
         return (
@@ -37,7 +43,7 @@ const MobileNav = () => {
       })}
       <ThemeToggler />
     </div>
-  );
+  ) : null;
 };
 
 export default MobileNav;

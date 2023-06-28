@@ -1,19 +1,21 @@
 "use client";
 
 import { useEffect } from "react";
-import { useGlobalContext } from "@/app/context/GlobalContext";
-import useTheme from "@/store/useTheme";
+import usePointerStore from "@/store/PointerStore";
 
 const SpotLight = () => {
-  const { pointerPos, setPointerPos } = useGlobalContext();
-  const isDark = useTheme((state) => state.isDark);
-
+  const pointerPos = usePointerStore((state) => state.pointerPos);
+  const pointerTracker = usePointerStore((state) => state.pointerTracker);
 
   const handleCursorPointer = (event) => {
-    setPointerPos({
-      x_axis: event.clientX,
-      y_axis: event.clientY,
+    pointerTracker({
+      x: event.clientX,
+      y: event.clientY,
     });
+  };
+
+  const spotlight_styles = {
+    background: `radial-gradient(300px at ${pointerPos.x}px ${pointerPos.y}px, rgba(0, 230, 176, 0.15), transparent 80%) fixed`,
   };
 
   useEffect(() => {
@@ -24,13 +26,7 @@ const SpotLight = () => {
   return (
     <div
       className="hidden lg:flex w-full h-full absolute inset-0 overflow-hidden bg-fixed -z-10"
-      style={{
-        background: `radial-gradient(300px at ${pointerPos.x_axis}px ${
-          pointerPos.y_axis
-        }px, ${
-          isDark ? "rgba(69, 104, 186, 0.15)" : "rgb(252, 75, 119, 0.15)"
-        }, transparent 80%) fixed`,
-      }}
+      style={spotlight_styles}
     ></div>
   );
 };

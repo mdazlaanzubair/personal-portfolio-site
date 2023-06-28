@@ -1,11 +1,6 @@
-"use client";
-
 import SpotLight from "@/components/SpotLight";
-import GlobalContextProvider from "./context/GlobalContext";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
-import { useEffect } from "react";
-import useTheme from "@/store/useTheme";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -19,24 +14,14 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const isDark = useTheme((state) => state.isDark);
-
-  useEffect(() => {
-    const body = document.body;
-    body.setAttribute("data-theme", isDark ? "night" : "white");
-  }, [isDark]);
-
   return (
-    <GlobalContextProvider>
-      <html lang="en">
-        <body
-          data-theme={"night"}
-          className={`relative overflow-x-hidden text-base-content ${montserrat.className}`}
-        >
-          {children}
-          <SpotLight />
-        </body>
-      </html>
-    </GlobalContextProvider>
+    <html lang="en">
+      <body
+        className={`relative overflow-x-hidden text-base-content m-0 p-0 ${montserrat.className}`}
+      >
+        {children}
+        <SpotLight />
+      </body>
+    </html>
   );
 }

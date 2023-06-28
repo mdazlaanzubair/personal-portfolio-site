@@ -69,11 +69,11 @@ const Service = () => {
           const { title, desc, Icon } = service;
           return (
             <div
-              className="group card bg-transparent rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+              className="group card bg-transparent rounded-sm shadow hover: hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
               key={index}
             >
               <figure className="px-10 pt-10">
-                <span className="font-extralight text-3xl bg-neutral group-hover:text-primary group-hover:bg-neutral-focus p-10 rounded-full transition-all ease-in-out duration-300">
+                <span className="font-extralight text-3xl bg-primary bg-opacity-5 group-hover:text-primary p-10 rounded-full transition-all ease-in-out duration-300">
                   <Icon />
                 </span>
               </figure>

@@ -15,18 +15,18 @@ module.exports = {
       {
         night: {
           ...require("daisyui/src/theming/themes")["[data-theme=night]"],
-          primary: "#64ffda",
+          primary: "#00e6b0",
           "base-100": "#0a192f",
-          "base-content": "#ccd6f6",
-          "neutral-content": "#8892b0",
+          "base-content": "#f5f5f5",
+          "neutral-content": "#d9d9d9",
         },
 
         winter: {
           ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
-          primary: "#fc4b77",
-          "base-100": "#ffffff",
+          primary: "#00e6b0",
+          "base-100": "#f5f5f5",
           "base-content": "#0a192f",
-          "neutral-content": "#112240",
+          "neutral-content": "#122c54",
         },
       },
     ],

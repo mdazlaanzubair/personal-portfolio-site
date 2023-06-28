@@ -1,9 +1,9 @@
 "use client";
 
-import { useGlobalContext } from "@/app/context/GlobalContext";
 import { Saira_Stencil_One } from "next/font/google";
 import DesktopNav from "./header/DesktopNav";
 import NavToggler from "./header/NavToggler";
+import useScrollStore from "@/store/ScrollStore";
 
 const yesteryear = Saira_Stencil_One({
   subsets: ["latin"],
@@ -12,12 +12,12 @@ const yesteryear = Saira_Stencil_One({
 });
 
 const Header = () => {
-  const { scrollPos } = useGlobalContext();
+  const scrollPos = useScrollStore((state) => state.scrollPos);
 
   return (
     <div
       className={`navbar px-7 ${
-        scrollPos.y_axis > 50 ? "fixed top-0 z-50 bg-base-100 shadow-lg" : ""
+        scrollPos.y > 50 ? "fixed top-0 z-50 bg-base-100 shadow-lg" : ""
       } backdrop-filter backdrop-blur-lg bg-opacity-75 transition-all ease-in-out duration-500`}
     >
       <div className="flex-1">

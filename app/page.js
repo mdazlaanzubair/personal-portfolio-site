@@ -1,21 +1,25 @@
 "use client";
 
 import { useEffect } from "react";
-import { useGlobalContext } from "./context/GlobalContext";
+import GlobalContextProvider from "./context/GlobalContext";
+
 import Footer from "@/components/Footer";
 import MainSection from "@/components/MainSection";
 import Header from "@/components/Header";
 import MobileNav from "@/components/header/MobileNav";
 import SocialNav from "@/components/header/SocialNav";
 import SocialMobileNav from "@/components/header/SocialMobileNav";
+import useThemeStore from "@/store/ThemeStore";
+import useScrollStore from "@/store/ScrollStore";
 
 export default function Home() {
-  const { setScrollPos, navToggle } = useGlobalContext();
+  const isDark = useThemeStore((state) => state.isDarkMode);
+  const scrollTracker = useScrollStore((state) => state.scrollTracker);
 
   const handleScroll = () => {
-    setScrollPos({
-      x_axis: window.scrollX,
-      y_axis: window.scrollY,
+    scrollTracker({
+      x: window.scrollX,
+      y: window.scrollY,
     });
   };
 
@@ -25,19 +29,22 @@ export default function Home() {
   });
 
   return (
-    <main>
-      <Header />
+    <GlobalContextProvider>
+      <main data-theme={isDark ? "night" : "winter"}>
+        {/* <SpotLight /> */}
+        <Header />
 
-      <div className="w-full min-h-screen flex justify-center items-top gap-20 px-7 lg:px-20">
-        <div className="relative flex-grow">
-          <SocialNav />
-          <MainSection />
-          {navToggle ? <MobileNav /> : null}
+        <div className="w-full min-h-screen flex justify-center items-top gap-20 px-7 lg:px-20">
+          <div className="relative flex-grow">
+            <SocialNav />
+            <MainSection />
+            <MobileNav />
+          </div>
         </div>
-      </div>
 
-      <SocialMobileNav />
-      <Footer />
-    </main>
+        <SocialMobileNav />
+        <Footer />
+      </main>
+    </GlobalContextProvider>
   );
 }

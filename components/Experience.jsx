@@ -2,8 +2,6 @@
 
 import { GoTriangleRight as ListIcon } from "react-icons/go";
 
-import Animator from "./Animator";
-import * as about_animation from "../public/skills_animation.json";
 import { useState } from "react";
 
 const Experience = () => {
@@ -70,8 +68,8 @@ const Experience = () => {
       id="experience-section"
       className="flex flex-col lg:flex-row min-h-screen gap-5 px-0 py-10 lg:px-10 lg:py-20 justify-start"
     >
-      <div className="w-full flex flex-col lg:flex-row mt-5 gap-5 justify-center my-5">
-        <div className="flex flex-col shrink">
+      <div className="w-full grid grid-cols-1 lg:grid-cols-2 mt-5 gap-5 justify-start my-5">
+        <div className="flex flex-col max-w-xl">
           <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             Placements
           </h3>
@@ -86,7 +84,7 @@ const Experience = () => {
             with.
           </p>
         </div>
-        <div className="flex flex-col grow">
+        <div className="flex flex-col">
           <ul className="menu menu-horizontal w-full mb-5">
             {experiences.map((job, index) => (
               <li
