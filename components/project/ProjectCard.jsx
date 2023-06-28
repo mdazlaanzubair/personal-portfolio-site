@@ -2,7 +2,7 @@ import { CiFolderOn } from "react-icons/ci";
 import { FiExternalLink } from "react-icons/fi";
 import { BiCodeAlt } from "react-icons/bi";
 
-const OtherProjectsCard = ({ project }) => {
+const ProjectCard = ({ project }) => {
   return (
     <div className="card rounded-sm shadow-xl hover:shadow-base-200 hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300">
       <div className="card-body">
@@ -41,4 +41,4 @@ const OtherProjectsCard = ({ project }) => {
   );
 };
 
-export default OtherProjectsCard;
+export default ProjectCard;

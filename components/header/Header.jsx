@@ -1,8 +1,8 @@
 "use client";
 
 import { Saira_Stencil_One } from "next/font/google";
-import DesktopNav from "./header/DesktopNav";
-import NavToggler from "./header/NavToggler";
+import DesktopNav from "./DesktopNav";
+import NavToggler from "./NavToggler";
 import useScrollStore from "@/store/ScrollStore";
 
 const yesteryear = Saira_Stencil_One({

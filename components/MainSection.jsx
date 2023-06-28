@@ -1,8 +1,8 @@
-import Hero from "./Hero";
-import About from "./About";
+import Hero from "./hero/Hero";
+import About from "./about/About";
 import Service from "./Service";
-import Experience from "./Experience";
-import Project from "./Project";
+import Experience from "./experiance/Experience";
+import Project from "./project/Project";
 
 const MainSection = () => {
   return (

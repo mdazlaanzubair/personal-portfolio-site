@@ -3,9 +3,9 @@
 import { useEffect } from "react";
 import GlobalContextProvider from "./context/GlobalContext";
 
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 import MainSection from "@/components/MainSection";
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 import MobileNav from "@/components/header/MobileNav";
 import SocialNav from "@/components/header/SocialNav";
 import SocialMobileNav from "@/components/header/SocialMobileNav";

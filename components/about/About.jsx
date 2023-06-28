@@ -1,7 +1,7 @@
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 
-import Animator from "./Animator";
-import * as about_animation from "../public/about_animation.json";
+import Animator from "../Animator";
+import * as about_animation from "../../public/about_animation.json";
 
 import Link from "next/link";
 

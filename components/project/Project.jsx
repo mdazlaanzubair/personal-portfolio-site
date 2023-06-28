@@ -4,8 +4,9 @@ import epakaiImg from "@/public/featured_projects/epakai.png";
 import analyticsmartImg from "@/public/featured_projects/analyticsmart.png";
 import jomrunImg from "@/public/featured_projects/jomrun.png";
 import FeaturedProjectCard from "./FeaturedProjectCard";
-import OtherProjectsCard from "./PersonalProjectsCard";
+import OtherProjectsCard from "./ProjectCard";
 import { useEffect, useState } from "react";
+import ProjectCard from "./ProjectCard";
 
 const Project = () => {
   const all_projects = [
@@ -136,7 +137,7 @@ const Project = () => {
           </div>
         </div>
         {personalProjects.map((project, index) => (
-          <OtherProjectsCard key={index} project={project} />
+          <ProjectCard key={index} project={project} />
         ))}
         <div className="card bg-transparent rounded-sm">
           <div className="card-body">
