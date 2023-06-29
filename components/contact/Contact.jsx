@@ -58,12 +58,12 @@ const Contact = () => {
         </h2>
         <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
           I&apos;m passionate about creating your online appearance. Simply
-          choose a time that works best for you and schedule a meeting, we'll
-          connect to discuss your goals and ideas.
+          choose a time that works best for you and schedule a meeting,
+          we&apos;ll connect to discuss your goals and ideas.
         </p>
         <p className="mb-3 font-semibold leading-loose w-full md:max-w-3xl text-xs md:text-base">
           Whether you need help with web design, development, SEO, or anything
-          else related to establishing your online presence, I've got you
+          else related to establishing your online presence, I&apos;ve got you
           covered!
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-0 justify-start mb-3">
