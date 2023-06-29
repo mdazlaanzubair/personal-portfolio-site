@@ -87,22 +87,19 @@ const Experience = () => {
             Experience
           </h1>
           <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content mb-8 lg:mb-5">
-            Where I&apos;ve worked.
+            Where I&apos;ve professionally worked.
           </h2>
           <p className="mb-5 font-light leading-loose w-full md:max-w-2xl text-xs md:text-base">
-            Here are some wonderful companies and organizations I&apos;ve worked
-            with.
+            Here are some wonderful companies &amp; organizations I&apos;ve
+            worked with.
           </p>
+          <ExperienceTabBtn
+            experiences={experiences}
+            activeExperience={activeExperience}
+            setActiveExperience={setActiveExperience}
+          />
         </div>
         <div className="flex flex-col">
-          {experiences && experiences.length > 0 ? (
-            <ExperienceTabBtn
-              experiences={experiences}
-              activeExperience={activeExperience}
-              setActiveExperience={setActiveExperience}
-            />
-          ) : null}
-
           <ExperienceTab activeExperience={activeExperience} />
         </div>
       </div>

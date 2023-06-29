@@ -16,7 +16,7 @@ const SocialNav = () => {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col items-center max-h-[80vh] justify-between gap-5 fixed left-8 bottom-0 z-10">
+    <div className="hidden lg:flex flex-col items-center justify-center max-h-[80vh] gap-5 fixed left-8 top-{50%} translate-y-[50%] z-10">
       <div className="flex flex-col">
         {social_links.map((social_link, index) => {
           const { title, link, Icon } = social_link;
@@ -37,7 +37,7 @@ const SocialNav = () => {
           );
         })}
 
-        <span className="w-0.5 h-24 mx-auto shrink my-2 bg-neutral-content"></span>
+        {/* <span className="w-0.5 h-24 mx-auto shrink my-2 bg-neutral-content"></span> */}
       </div>
     </div>
   );

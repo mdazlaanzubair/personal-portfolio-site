@@ -5,6 +5,7 @@ import Experience from "./experiance/Experience";
 import Project from "./project/Project";
 import ExperienceContextProvider from "@/app/context/ExperienceContext";
 import ProjectContextProvider from "@/app/context/ProjectContext";
+import Contact from "./contact/Contact";
 
 const MainSection = () => {
   return (
@@ -18,6 +19,7 @@ const MainSection = () => {
       <ProjectContextProvider>
         <Project />
       </ProjectContextProvider>
+      <Contact />
     </>
   );
 };

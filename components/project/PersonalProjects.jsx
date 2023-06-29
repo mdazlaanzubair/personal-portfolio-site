@@ -33,7 +33,7 @@ const PersonalProjects = ({ personalProjects, showMore, setShowMore }) => {
             onClick={() => setShowMore(!showMore)}
           >
             <span className="relative overflow-x-hidden inline-flex">
-              {showMore ? "Hide" : "Show more"}
+              {showMore ? "Show less" : "Show more"}
               <span className="absolute w-full h-0.5 bg-primary left-0 bottom-0 -translate-x-2/3 group-hover:translate-x-0 transition-all ease-in-out duration-200"></span>
             </span>
           </button>

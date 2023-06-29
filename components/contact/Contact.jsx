@@ -1,15 +1,19 @@
+"use client";
+
 import { BiChevronRight as ListIcon } from "react-icons/bi";
-
-import Animator from "../Animator";
-import * as about_animation from "../../public/about_animation.json";
-
-import { FaFileArchive as Credentials } from "react-icons/fa";
-import { MdComment as Testimonial } from "react-icons/md";
-import { MdWork as Work } from "react-icons/md";
+import { HiMail as Email } from "react-icons/hi";
+import { AiFillInteraction as VideoCall } from "react-icons/ai";
+import { SiGooglemeet as Meeting } from "react-icons/si";
 
 import Link from "next/link";
+import Animator from "../Animator";
+import * as contact_animation_dark from "../../public/contact_animation_dark.json";
+import * as contact_animation_light from "../../public/contact_animation_light.json";
+import useThemeStore from "@/store/ThemeStore";
 
-const About = () => {
+const Contact = () => {
+  const isDarkMode = useThemeStore((state) => state.isDarkMode);
+
   const skill_tags = [
     "Designing",
     "Development",
@@ -20,41 +24,47 @@ const About = () => {
   ];
 
   const nest_about_link = [
-    { title: "Credentials ", url: "/about", Icon: Credentials },
-    { title: "Testimonial ", url: "#portfolio-section", Icon: Testimonial },
-    { title: "Work ", url: "#portfolio-section", Icon: Work },
+    {
+      title: "Sent Email",
+      url: "mailto:mdazlaan1996@gmail.com",
+      Icon: Email,
+    },
+    {
+      title: "Let's Interact",
+      url: "https://calendly.com/mdazlaanzubair/client-interaction-clone?month=2023-06",
+      Icon: VideoCall,
+    },
+    {
+      title: "Book a call",
+      url: "https://calendly.com/mdazlaanzubair/30min?month=2023-06",
+      Icon: Meeting,
+    },
   ];
 
   return (
     <div
-      id="about-section"
+      id="contact-section"
       className="flex flex-row min-h-screen justify-start gap-5 px-0 py-10 lg:px-10 lg:py-20"
     >
       <div>
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3">
-          Referring to myself
+          What&apos;s next
         </h3>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
-          Who am I
+          Reach Out
         </h1>
-        <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-bold text-neutral-content mb-8 lg:mb-10">
-          Know about me, myself & my skills.
+        <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-bold text-neutral-content mb-5">
+          Have a question, project idea, or just want to say hello?
         </h2>
         <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
-          Hello! myself{" "}
-          <strong title="mdazlaanzubair" className="text-primary">
-            Muhammad Azlaan Zubair
-          </strong>
-          , a dedicated web designer & developer. My expertise lies in crafting
-          clean, functional, and fully responsive websites that look amazing on
-          any device.
-        </p>
-        <p className="mb-5 font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
-          I have a deep appreciation for minimal and clean designs, as they
-          effectively convey a brand&apos;s message and identity.
+          I&apos;m passionate about creating your online appearance. Simply
+          choose a time that works best for you and schedule a meeting, we'll
+          connect to discuss your goals and ideas.
         </p>
         <p className="mb-3 font-semibold leading-loose w-full md:max-w-3xl text-xs md:text-base">
-          To be precise, I do:
+          Whether you need help with web design, development, SEO, or anything
+          else related to establishing your online presence, I've got you
+          covered!
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-0 justify-start mb-3">
           {skill_tags.map((tag, index) => {
@@ -79,6 +89,7 @@ const About = () => {
               <Link
                 key={index}
                 href={url}
+                target="_blank"
                 className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
               >
                 <span>
@@ -91,10 +102,14 @@ const About = () => {
         </div>
       </div>
       <div className="hidden max-w-full lg:flex">
-        <Animator animation={about_animation} />
+        <Animator
+          animation={
+            isDarkMode ? contact_animation_dark : contact_animation_light
+          }
+        />
       </div>
     </div>
   );
 };
 
-export default About;
+export default Contact;
