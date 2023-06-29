@@ -1,3 +1,4 @@
+import FlashLightToggler from "../FlashLightToggler";
 import ThemeToggler from "../ThemeToggler";
 
 const DesktopNav = () => {
@@ -22,6 +23,7 @@ const DesktopNav = () => {
         </li>
       ))}
       <ThemeToggler />
+      <FlashLightToggler />
     </ul>
   );
 };

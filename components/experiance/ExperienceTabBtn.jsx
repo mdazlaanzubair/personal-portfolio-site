@@ -1,27 +1,15 @@
-"use client";
-
-import useExperienceStore from "@/store/ExperienceStore";
-import { useEffect } from "react";
-
-const ExperienceTabBtn = () => {
-  const experiences = useExperienceStore((state) => state.experiences);
-  const activeExperience = useExperienceStore(
-    (state) => state.activeExperience
-  );
-
-  const setActiveExperience = useExperienceStore(
-    (state) => state.setActiveExperience
-  );
-
-  useEffect(() => setActiveExperience(experiences[0]), []);
-
-  return (
+const ExperienceTabBtn = ({
+  experiences,
+  activeExperience,
+  setActiveExperience,
+}) => {
+  return experiences && experiences.length > 0 ? (
     <ul className="menu menu-horizontal w-full">
-      {experiences?.map((experience, index) => (
+      {experiences.map((experience, index) => (
         <li
           key={index}
           className={`group border-b-2 text-xs lg:text-base ${
-            activeExperience.id === experience.id
+            activeExperience?.id === experience.id
               ? "border-primary"
               : "border-neutral-content hover:border-base-content"
           }`}
@@ -39,7 +27,7 @@ const ExperienceTabBtn = () => {
         </li>
       ))}
     </ul>
-  );
+  ) : null;
 };
 
 export default ExperienceTabBtn;

@@ -2,8 +2,10 @@
 
 import { useEffect } from "react";
 import usePointerStore from "@/store/PointerStore";
+import useFlashLightStore from "@/store/FlashLightStore";
 
 const SpotLight = () => {
+  const isLightOn = useFlashLightStore((state) => state.isLightOn);
   const pointerPos = usePointerStore((state) => state.pointerPos);
   const pointerTracker = usePointerStore((state) => state.pointerTracker);
 
@@ -25,7 +27,9 @@ const SpotLight = () => {
 
   return (
     <div
-      className="hidden lg:flex w-full h-full absolute inset-0 overflow-hidden bg-fixed -z-10"
+      className={`hidden ${
+        isLightOn ? "lg:flex" : "lg:hidden"
+      } w-full h-full absolute inset-0 overflow-hidden bg-fixed`}
       style={spotlight_styles}
     ></div>
   );
