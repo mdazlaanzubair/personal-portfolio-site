@@ -3,16 +3,19 @@ import About from "./about/About";
 import Service from "./service/Service";
 import Experience from "./experiance/Experience";
 import Project from "./project/Project";
-import ExperienceContextProvider from "@/app/context/ExperienceContext";
-import ProjectContextProvider from "@/app/context/ProjectContext";
+import ExperienceContextProvider from "@/context/ExperienceContext";
+import ProjectContextProvider from "@/context/ProjectContext";
 import Contact from "./contact/Contact";
+import ServiceContextProvider from "@/context/ServiceContext";
 
 const MainSection = () => {
   return (
     <>
       <Hero />
       <About />
-      <Service />
+      <ServiceContextProvider>
+        <Service />
+      </ServiceContextProvider>
       <ExperienceContextProvider>
         <Experience />
       </ExperienceContextProvider>

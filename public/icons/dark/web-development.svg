@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30.07 23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="15.03" y1="0" x2="15.03" y2="23" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d213f"/>
+      <stop offset=".27" stop-color="#0a192f"/>
+      <stop offset=".65" stop-color="#09162a"/>
+      <stop offset="1" stop-color="#040b15"/>
+    </linearGradient>
+  </defs>
+  <g id="Icons">
+    <path class="cls-1" d="M29.05,23H1.05c-.3,0-.7-.2-.9-.5-.2-.3-.2-.7,0-1l2-3c.2-.3,.5-.5,.9-.5H27.05c.4,0,.7,.2,.9,.6l2,3c.2,.3,.1,.7,0,1-.2,.2-.6,.4-.9,.4ZM26.05,0H4.05c-.6,0-1,.4-1,1V15c0,.6,.4,1,1,1H26.05c.6,0,1-.4,1-1V1c0-.6-.4-1-1-1ZM10.75,10.3c.4,.4,.4,1,0,1.4-.2,.2-.4,.3-.7,.3s-.5-.1-.7-.3l-3-3c-.4-.4-.4-1,0-1.4l3-3c.4-.4,1-.4,1.4,0s.4,1,0,1.4l-2.3,2.3,2.3,2.3Zm7.2-5.9l-4,8c-.2,.4-.5,.6-.9,.6-.2,0-.3,0-.4-.1-.5-.2-.7-.8-.4-1.3L16.25,3.6c.2-.5,.8-.7,1.3-.4,.4,.2,.6,.8,.4,1.2Zm5.8,4.3l-3,3c-.2,.2-.4,.3-.7,.3s-.5-.1-.7-.3c-.4-.4-.4-1,0-1.4l2.3-2.3-2.3-2.3c-.4-.4-.4-1,0-1.4s1-.4,1.4,0l3,3c.4,.4,.4,1,0,1.4Z"/>
+  </g>
+</svg>

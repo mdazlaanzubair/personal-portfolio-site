@@ -7,7 +7,7 @@ import FeaturedProject from "./FeaturedProjects";
 import OtherProjectsCard from "./ProjectCard";
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
-import { useProjectContext } from "@/app/context/ProjectContext";
+import { useProjectContext } from "@/context/ProjectContext";
 import PersonalProjects from "./PersonalProjects";
 
 const Project = () => {

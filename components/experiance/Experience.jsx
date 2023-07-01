@@ -2,7 +2,7 @@
 
 import ExperienceTab from "./ExperienceTab";
 import ExperienceTabBtn from "./ExperienceTabBtn";
-import { useExperienceContext } from "@/app/context/ExperienceContext";
+import { useExperienceContext } from "@/context/ExperienceContext";
 import { useEffect } from "react";
 
 const Experience = () => {
