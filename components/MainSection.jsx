@@ -12,16 +12,21 @@ const MainSection = () => {
   return (
     <>
       <Hero />
+
       <About />
+
       <ServiceContextProvider>
         <Service />
       </ServiceContextProvider>
+
       <ExperienceContextProvider>
         <Experience />
       </ExperienceContextProvider>
+
       <ProjectContextProvider>
         <Project />
       </ProjectContextProvider>
+
       <Contact />
     </>
   );

@@ -4,29 +4,23 @@ const ExperienceTabBtn = ({
   setActiveExperience,
 }) => {
   return experiences && experiences.length > 0 ? (
-    <ul className="menu menu-horizontal w-full">
+    <div className="tabs tabs-boxed bg-opacity-30 ml-auto">
       {experiences.map((experience, index) => (
-        <li
+        <a
           key={index}
-          className={`group border-b-2 text-xs lg:text-base ${
-            activeExperience?.id === experience.id
-              ? "border-primary"
-              : "border-neutral-content hover:border-base-content"
+          className={`tab tab-border ${
+            activeExperience.sys.id === experience.sys.id
+              ? "border-primary tab-active"
+              : ""
           }`}
           onClick={() => setActiveExperience(experience)}
         >
-          <a
-            className={`rounded-sm font-medium py-3 group-hover:bg-transparent ${
-              activeExperience.id === experience.id
-                ? "text-primary group-hover:text-primary"
-                : "text-neutral-content group-hover:text-base-content"
-            }`}
-          >
-            {experience.title}
-          </a>
-        </li>
+          {experience.fields.period.to === "Present"
+            ? "Recent"
+            : `Job ${index}.`}
+        </a>
       ))}
-    </ul>
+    </div>
   ) : null;
 };
 

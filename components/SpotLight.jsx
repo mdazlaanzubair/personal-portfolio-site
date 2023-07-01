@@ -17,7 +17,7 @@ const SpotLight = () => {
   };
 
   const spotlight_styles = {
-    background: `radial-gradient(300px at ${pointerPos.x}px ${pointerPos.y}px, rgba(0, 230, 176, 0.15), transparent 80%) fixed`,
+    background: `radial-gradient(600px at ${pointerPos.x}px ${pointerPos.y}px, rgba(29, 78, 216, 0.15), transparent 80%) fixed`,
   };
 
   useEffect(() => {

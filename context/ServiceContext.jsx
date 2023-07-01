@@ -1,6 +1,6 @@
 "use client";
 
-import client from "@/contentful/client";
+import { fetchContent } from "@/contentful/client";
 import { useState, createContext, useContext, useEffect } from "react";
 
 const ServiceContext = createContext({});
@@ -11,25 +11,19 @@ const ServiceContextProvider = ({ children }) => {
   // initial position coordinates
   const [services, setServices] = useState([]);
 
-  // fetch services content from content-ful
+  // fetch services content from contentful
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const data = await client.getEntries({ content_type: "service" });
-        setServices(data.items);
-      } catch (error) {
-        console.error(
-          "Error while fetching from contentful service table:\n\n",
-          error
-        );
-      }
-    };
-    fetchData();
+    fetchContent("service")
+      .then((data) => {
+        setServices(data);
+      })
+      .catch((err) =>
+        console.log("Error while fetching experience data:\n\n", err)
+      );
   }, []);
 
   const value = {
     services,
-    setServices,
   };
 
   return (
