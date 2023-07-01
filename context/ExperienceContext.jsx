@@ -1,6 +1,6 @@
 "use client";
 
-import client, { fetchContent } from "@/contentful/client";
+import { fetchContent } from "@/contentful/client";
 import { useState, createContext, useContext, useEffect } from "react";
 
 const ExperienceContext = createContext({});

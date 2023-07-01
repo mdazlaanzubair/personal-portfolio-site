@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import ExperienceTab from "./ExperienceTab";
 import ExperienceTabBtn from "./ExperienceTabBtn";
 import { useExperienceContext } from "@/context/ExperienceContext";
@@ -8,12 +7,6 @@ import { useExperienceContext } from "@/context/ExperienceContext";
 const Experience = () => {
   const { experiences, activeExperience, setActiveExperience } =
     useExperienceContext();
-
-  useEffect(() => {
-    console.log(experiences);
-    console.log(experiences[0]);
-    setActiveExperience(experiences[0]);
-  }, [experiences]);
 
   return (
     <div

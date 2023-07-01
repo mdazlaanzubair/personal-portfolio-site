@@ -1,6 +1,24 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
 
-const PersonalProjects = ({ personalProjects, showMore, setShowMore }) => {
+const PersonalProjects = ({
+  lessProjects,
+  allProjects,
+  showMore,
+  setShowMore,
+}) => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    if (showMore) {
+      setProjects(allProjects);
+    } else {
+      setProjects(lessProjects);
+    }
+  }, [showMore]);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-center items- my-10">
       <div className="card bg-transparent rounded-sm">
@@ -19,7 +37,7 @@ const PersonalProjects = ({ personalProjects, showMore, setShowMore }) => {
           </a>
         </div>
       </div>
-      {personalProjects.map((project, index) => (
+      {projects.map((project, index) => (
         <ProjectCard key={index} project={project} />
       ))}
       <div className="card bg-transparent rounded-sm">
