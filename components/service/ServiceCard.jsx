@@ -12,32 +12,26 @@ const ServiceCard = () => {
     ? services.map((service, index) => (
         <div
           key={index}
-          className="group card bg-transparent rounded-sm shadow hover: hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+          className="group card rounded-sm shadow hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
         >
-          <figure className="px-10 pt-10">
-            <span className="px-10 py-5">
+          <div className="card-body">
+            <div className="flex flex-col justify-between items-center">
               <img
                 src={
                   isDarkMode
                     ? "https:" + service.fields.lightIcon.fields.file.url
                     : "https:" + service.fields.darkIcon.fields.file.url
                 }
-                width={50}
-                height={50}
+                className="w-32 mb- mx-auto rounded-full group-hover:-rotate-6 group-hover:-translate-y-2 transition-all ease-in-out duration-300"
               />
-            </span>
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="text-2xl font-bold group-hover:text-primary transition-all ease-in-out duration-300">
-              {service.fields.title}
-            </h2>
-            <div className="text-xs leading-relaxed font-normal mb-5 text-left">
-              {documentToReactComponents(service.fields.description)}
-            </div>
-            <div className="card-actions">
-              <button className="btn btn-wide btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300">
-                Inquire
-              </button>
+              <div className="w-full h-full flex flex-col justify-between items-center">
+                <h2 className="text-2xl mb-3 font-bold group-hover:text-primary transition-all ease-in-out duration-300">
+                  {service.fields.title}
+                </h2>
+                <div className="text-xs leading-relaxed font-normal text-center">
+                  {documentToReactComponents(service.fields.description)}
+                </div>
+              </div>
             </div>
           </div>
         </div>
