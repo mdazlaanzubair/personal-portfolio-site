@@ -2,18 +2,17 @@
 
 import { useEffect, useState } from "react";
 import ProjectCard from "./ProjectCard";
+import { useProjectContext } from "@/context/ProjectContext";
 
-const PersonalProjects = ({
-  lessProjects,
-  allProjects,
-  showMore,
-  setShowMore,
-}) => {
+const PersonalProjects = () => {
   const [projects, setProjects] = useState([]);
+
+  const { personalProjects, lessProjects, showMore, setShowMore } =
+    useProjectContext();
 
   useEffect(() => {
     if (showMore) {
-      setProjects(allProjects);
+      setProjects(personalProjects);
     } else {
       setProjects(lessProjects);
     }

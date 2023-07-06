@@ -1,18 +1,7 @@
-"use client";
-
 import FeaturedProject from "./FeaturedProjects";
-import { useProjectContext } from "@/context/ProjectContext";
 import PersonalProjects from "./PersonalProjects";
 
 const Project = () => {
-  const {
-    featuredProjects,
-    personalProjects,
-    lessProjects,
-    showMore,
-    setShowMore,
-  } = useProjectContext();
-
   return (
     <div
       id="project-section"
@@ -34,14 +23,9 @@ const Project = () => {
         </p>
       </div>
 
-      <FeaturedProject projects={featuredProjects} />
+      <FeaturedProject />
 
-      <PersonalProjects
-        lessProjects={lessProjects}
-        allProjects={personalProjects}
-        showMore={showMore}
-        setShowMore={setShowMore}
-      />
+      <PersonalProjects />
     </div>
   );
 };

@@ -9,7 +9,7 @@ const NavToggler = () => {
   return (
     <div
       className="group w-7 flex flex-col overflow-x-hidden cursor-pointer"
-      onClick={() => mobileNavToggler}
+      onClick={mobileNavToggler}
     >
       <span
         className={`w-full my-1 h-1 transition-all ${

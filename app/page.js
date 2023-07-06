@@ -31,20 +31,23 @@ export default function Home() {
   return (
     <>
       <SpotLight />
+
       <main data-theme={isDark ? "night" : "winter"}>
         <Header />
 
         <div className="w-full min-h-screen flex justify-center items-top gap-20 px-7 lg:px-20">
           <div className="relative flex-grow">
             <SocialNav />
+
             <MainSection />
-            <MobileNav />
           </div>
         </div>
-
-        <SocialMobileNav />
-        <Footer />
       </main>
+
+      <SocialMobileNav />
+      <MobileNav />
+
+      <Footer />
     </>
   );
 }

@@ -1,11 +1,16 @@
+"use client";
+
+import { useProjectContext } from "@/context/ProjectContext";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
 
-function FeaturedProject({ projects }) {
-  return projects ?? projects.length > 0 ? (
+function FeaturedProject() {
+  const { featuredProjects } = useProjectContext();
+
+  return featuredProjects ?? featuredProjects.length > 0 ? (
     <div className="w-full flex flex-col gap-16 my-5 justify-center items-center">
-      {projects.map((project, index) => (
+      {featuredProjects.map((project, index) => (
         <div
           key={index}
           className={`flex flex-col lg:flex-row gap-5 lg:my-5 lg:gap-0 ${

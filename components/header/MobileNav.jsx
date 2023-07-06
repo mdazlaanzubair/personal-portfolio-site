@@ -10,6 +10,7 @@ import { HiOutlineCog as Service } from "react-icons/hi";
 
 import ThemeToggler from "../ThemeToggler";
 import useNavStore from "@/store/NavStore";
+import { useEffect } from "react";
 
 const MobileNav = () => {
   const isMobileNav = useNavStore((state) => state.isMobileNav);
@@ -22,8 +23,10 @@ const MobileNav = () => {
     { title: "Contact", url: "#contact-section", Icon: Contact },
   ];
 
+  useEffect(() => console.log(isMobileNav), [isMobileNav]);
+
   return isMobileNav ? (
-    <div className="flex lg:hidden flex-row items-center px-3 max-h-[80vh] justify-between gap-3 fixed bottom-10 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full">
+    <div className="flex lg:hidden flex-row items-center px-3 max-h-[80vh] justify-between gap-3 fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full">
       {social_links.map((social_link, index) => {
         const { title, url, Icon } = social_link;
         return (
