@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <div
       id="experience-section"
-      className="flex flex-col lg:flex-row min-h-screen gap-5 px-0 py-10 lg:px-10 lg:py-20 justify-start"
+      className="flex flex-col lg:flex-row min-h-screen gap-5 justify-start"
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 mt-5 gap-5 justify-start my-5">
         <div className="flex flex-col max-w-xl">

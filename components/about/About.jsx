@@ -5,7 +5,6 @@ import * as about_animation from "../../public/about_animation.json";
 
 import { FaFileArchive as Credentials } from "react-icons/fa";
 import { MdComment as Testimonial } from "react-icons/md";
-import { MdWork as Work } from "react-icons/md";
 
 import Link from "next/link";
 
@@ -22,13 +21,12 @@ const About = () => {
   const nest_about_link = [
     { title: "Credentials ", url: "/about", Icon: Credentials },
     { title: "Testimonial ", url: "#portfolio-section", Icon: Testimonial },
-    { title: "Work ", url: "#portfolio-section", Icon: Work },
   ];
 
   return (
     <div
       id="about-section"
-      className="flex flex-row min-h-screen justify-start gap-5 px-0 py-10 lg:px-10 lg:py-20"
+      className="flex flex-row min-h-screen justify-start gap-5"
     >
       <div>
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3">

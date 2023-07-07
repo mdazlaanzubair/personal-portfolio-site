@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div
       id="service-section"
-      className="flex flex-col min-h-screen justify-start px-0 py-10 lg:px-10 lg:py-20"
+      className="flex flex-col min-h-screen justify-start"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div className="div">

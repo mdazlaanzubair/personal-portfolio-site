@@ -1,9 +1,6 @@
 const Hero = () => {
   return (
-    <div
-      id="home-section"
-      className="flex flex-col min-h-screen justify-start px-0 py-10 lg:px-10 lg:py-20"
-    >
+    <div id="home-section" className="flex flex-col min-h-screen justify-start">
       <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
         Hi, myself
       </h3>

@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="flex flex-row min-h-screen justify-start gap-5 px-0 py-10 lg:px-10 lg:py-20"
+      className="flex flex-row min-h-screen justify-start gap-5"
     >
       <div>
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3">

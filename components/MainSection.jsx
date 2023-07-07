@@ -10,7 +10,7 @@ import ServiceContextProvider from "@/context/ServiceContext";
 
 const MainSection = () => {
   return (
-    <>
+    <div className="px-0 py-10 lg:px-10 lg:py-20">
       <Hero />
 
       <About />
@@ -28,7 +28,7 @@ const MainSection = () => {
       </ProjectContextProvider>
 
       <Contact />
-    </>
+    </div>
   );
 };
 
