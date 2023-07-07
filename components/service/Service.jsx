@@ -1,4 +1,3 @@
-"use client";
 import ServiceCard from "./ServiceCard";
 
 const Service = () => {
