@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <div
       id="project-section"
-      className="flex flex-col min-h-screen px-0 py-10 lg:px-10 lg:py-20 justify-start"
+      className="flex flex-col min-h-screen justify-start"
     >
       <div className="w-full flex flex-col my-5 justify-start items-start">
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">

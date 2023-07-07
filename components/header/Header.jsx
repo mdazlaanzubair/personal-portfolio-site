@@ -32,21 +32,6 @@ const Header = () => {
       } backdrop-filter backdrop-blur-lg bg-opacity-75 transition-all ease-in-out duration-500`}
     >
       <div className="flex-1">
-        {/* <a
-          href="#home-section"
-          className="py-3 group hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
-        >
-          <div className="avatar placeholder mask mask-hexagon p-1.5 bg-base-content group-hover:bg-primary rounded-none transition-all ease-in-out duration-300">
-            <div className="w-11 rounded-none mask mask-hexagon bg-base-100 transition-all ease-in-out duration-300">
-              <span
-                className={`group-hover:text-primary text-2xl transition-all ease-in-out duration-300 ${saira_Stencil_One.className}`}
-              >
-                A
-              </span>
-            </div>
-          </div>
-        </a> */}
-
         <a
           href="#home-section"
           className="py-3 px-1 group hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
