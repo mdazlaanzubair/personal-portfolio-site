@@ -20,11 +20,11 @@ function FeaturedProject() {
           <a
             href={project.fields.url}
             target="_blank"
-            className="group w-full lg:w-1/2 relative"
+            className="w-full lg:w-1/2 relative hover:-translate-x-1 hover:-translate-y-1 transition-all ease-in-out duration-300"
           >
-            <div className="bg-primary shadow-2xl -z-10">
+            <div className="shadow-2xl -z-10">
               <img
-                className="w-full h-full object-cover mix-blend-darken hover:mix-blend-normal"
+                className="w-full h-full object-cover"
                 src={"https:" + project.fields.image.fields.file.url}
                 alt="featured project image"
               />
