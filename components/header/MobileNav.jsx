@@ -1,12 +1,12 @@
 "use client";
 
-import { MdWorkOutline as Work } from "react-icons/md";
 import {
-  AiOutlineIdcard as About,
-  AiOutlinePhone as Contact,
-} from "react-icons/ai";
-import { SiExpensify as Experience } from "react-icons/si";
-import { HiOutlineCog as Service } from "react-icons/hi";
+  FiAtSign as About,
+  FiSettings as Service,
+  FiBriefcase as Experience,
+  FiBox as Work,
+  FiAtSign as Contact,
+} from "react-icons/fi";
 
 import ThemeToggler from "../ThemeToggler";
 import useNavStore from "@/store/NavStore";
@@ -15,7 +15,7 @@ import { useEffect } from "react";
 const MobileNav = () => {
   const isMobileNav = useNavStore((state) => state.isMobileNav);
 
-  const social_links = [
+  const nav_links = [
     { title: "About", url: "#about-section", Icon: About },
     { title: "Services ", url: "#service-section", Icon: Service },
     { title: "Experience ", url: "#experience-section", Icon: Experience },
@@ -26,9 +26,9 @@ const MobileNav = () => {
   useEffect(() => console.log(isMobileNav), [isMobileNav]);
 
   return isMobileNav ? (
-    <div className="flex lg:hidden flex-row items-center px-3 max-h-[80vh] justify-between gap-3 fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full">
-      {social_links.map((social_link, index) => {
-        const { title, url, Icon } = social_link;
+    <div className="flex lg:hidden flex-row items-center px-3 max-h-[80vh] justify-between gap-1 fixed bottom-2 left-1/2 -translate-x-1/2 bg-base-200 bg-opacity-50 rounded-full z-20">
+      {nav_links.map((nav_link, index) => {
+        const { title, url, Icon } = nav_link;
         return (
           <a
             key={index}

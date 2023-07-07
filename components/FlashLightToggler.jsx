@@ -16,7 +16,7 @@ const FlashLightToggler = () => {
   return (
     <button
       type="button"
-      className="text-primary text-xl btn btn-ghost btn-circle hover:bg-transparent"
+      className="text-primary hover:text-yellow-500 text-xl btn btn-ghost btn-circle hover:bg-transparent"
       onClick={flashLightToggler}
     >
       {isLightOn ? <LightOn /> : <LightOff />}
