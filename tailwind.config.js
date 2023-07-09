@@ -23,7 +23,7 @@ module.exports = {
 
         winter: {
           ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
-          primary: "#00e6b0",
+          primary: "#40C4FF",
           "base-100": "#f5f5f5",
           "base-content": "#0a192f",
           "neutral-content": "#3b4759",

@@ -16,7 +16,6 @@ const SocialContextProvider = ({ children }) => {
     fetchContent("social")
       .then((data) => {
         setSocialLinks(data);
-        console.log(data);
       })
       .catch((err) =>
         console.log("Error while fetching experience data:\n\n", err)

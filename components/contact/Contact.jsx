@@ -1,10 +1,5 @@
 "use client";
 
-import { BiChevronRight as ListIcon } from "react-icons/bi";
-import { HiMail as Email } from "react-icons/hi";
-import { AiFillInteraction as VideoCall } from "react-icons/ai";
-import { SiGooglemeet as Meeting } from "react-icons/si";
-
 import Link from "next/link";
 import Animator from "../Animator";
 import * as contact_animation_dark from "../../public/contact_animation_dark.json";
@@ -14,30 +9,18 @@ import useThemeStore from "@/store/ThemeStore";
 const Contact = () => {
   const isDarkMode = useThemeStore((state) => state.isDarkMode);
 
-  const skill_tags = [
-    "Designing",
-    "Development",
-    "Content Writing",
-    "Web Scraping",
-    "SEO",
-    "Consulting",
-  ];
-
   const nest_about_link = [
     {
       title: "Sent Email",
       url: "mailto:mdazlaan1996@gmail.com",
-      Icon: Email,
     },
     {
       title: "Let's Interact",
       url: "https://calendly.com/mdazlaanzubair/client-interaction-clone?month=2023-06",
-      Icon: VideoCall,
     },
     {
       title: "Book a call",
       url: "https://calendly.com/mdazlaanzubair/30min?month=2023-06",
-      Icon: Meeting,
     },
   ];
 
@@ -66,25 +49,9 @@ const Contact = () => {
           else related to establishing your online presence, I&apos;ve got you
           covered!
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-0 justify-start mb-3">
-          {skill_tags.map((tag, index) => {
-            return (
-              <div
-                className="flex flex-row gap-3 py-3 items-center"
-                key={index}
-              >
-                <span className="text-primary text-xl">
-                  <ListIcon />
-                </span>
-
-                <span className="font- text-xs">{tag}</span>
-              </div>
-            );
-          })}
-        </div>
         <div className="flex flex-row flex-wrap gap-3 mt-5">
           {nest_about_link.map((link, index) => {
-            const { title, url, Icon } = link;
+            const { title, url } = link;
             return (
               <Link
                 key={index}
@@ -92,9 +59,6 @@ const Contact = () => {
                 target="_blank"
                 className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
               >
-                <span>
-                  <Icon />
-                </span>
                 {title}
               </Link>
             );

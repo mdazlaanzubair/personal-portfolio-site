@@ -3,10 +3,7 @@ import { BiChevronRight as ListIcon } from "react-icons/bi";
 import Animator from "../Animator";
 import * as about_animation from "../../public/about_animation.json";
 
-import { FaFileArchive as Credentials } from "react-icons/fa";
-import { MdComment as Testimonial } from "react-icons/md";
-
-import Link from "next/link";
+import Button from "../Button";
 
 const About = () => {
   const skill_tags = [
@@ -16,11 +13,6 @@ const About = () => {
     "Web Scraping",
     "SEO",
     "Consulting",
-  ];
-
-  const nest_about_link = [
-    { title: "Credentials ", url: "/about", Icon: Credentials },
-    { title: "Testimonial ", url: "#portfolio-section", Icon: Testimonial },
   ];
 
   return (
@@ -70,22 +62,10 @@ const About = () => {
             );
           })}
         </div>
-        <div className="flex flex-row flex-wrap gap-3 mt-5">
-          {nest_about_link.map((link, index) => {
-            const { title, url, Icon } = link;
-            return (
-              <Link
-                key={index}
-                href={url}
-                className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
-              >
-                <span>
-                  <Icon />
-                </span>
-                {title}
-              </Link>
-            );
-          })}
+        <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
+          <Button type={"btn"} link={"/about"} text={"Credentials"} />
+          <Button type={"btn"} link={"/portfolio"} text={"Work Archive"} />
+          <Button type={"btn"} link={"#about-section"} text={"Resume"} />
         </div>
       </div>
       <div className="hidden max-w-full lg:flex">

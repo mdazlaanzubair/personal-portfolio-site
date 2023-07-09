@@ -7,37 +7,42 @@ import ExperienceContextProvider from "@/context/ExperienceContext";
 import ProjectContextProvider from "@/context/ProjectContext";
 import Contact from "./contact/Contact";
 import ServiceContextProvider from "@/context/ServiceContext";
+import Footer from "./footer/Footer";
 
 const MainSection = () => {
   return (
-    <div className="px-0 py-10 lg:px-10 lg:py-20">
+    <div className="w-full min-h-screen px-10 lg:px-32">
       <Hero />
 
-      <div className="my-10"></div>
+      <div className="my-20"></div>
 
       <About />
 
-      <div className="my-10"></div>
+      <div className="my-20"></div>
 
       <ServiceContextProvider>
         <Service />
       </ServiceContextProvider>
 
-      <div className="my-10"></div>
+      <div className="my-20"></div>
 
       <ExperienceContextProvider>
         <Experience />
       </ExperienceContextProvider>
 
-      <div className="my-10"></div>
+      <div className="my-20"></div>
 
       <ProjectContextProvider>
         <Project />
       </ProjectContextProvider>
 
-      <div className="my-10"></div>
+      <div className="my-20"></div>
 
       <Contact />
+
+      <div className="my-20"></div>
+
+      <Footer />
     </div>
   );
 };

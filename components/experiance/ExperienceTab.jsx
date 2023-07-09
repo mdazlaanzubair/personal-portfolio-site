@@ -13,7 +13,12 @@ const ExperienceTab = ({ activeExperience }) => {
         </h1>
         <h2 className="font-medium text-xs text-neutral-content tracking-widest">
           {activeExperience.fields.period.from} -{" "}
-          {activeExperience.fields.period.to}
+          {activeExperience.fields.period.to} -{" "}
+          <div className="badge badge-primary">
+            <span className="text-xs font-semibold">
+              {activeExperience.fields.type}
+            </span>
+          </div>
         </h2>
         <div className="my-3 text-sm leading-relaxed tracking-wider">
           {documentToReactComponents(activeExperience.fields.description)}
