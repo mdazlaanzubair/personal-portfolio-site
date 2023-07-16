@@ -5,7 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
 
-function FeaturedProject() {
+function FeaturedProject({}) {
   const { featuredProjects } = useProjectContext();
 
   return featuredProjects ?? featuredProjects.length > 0 ? (

@@ -29,7 +29,7 @@ const FloatingNav = () => {
   ];
 
   return (
-    <>
+    <nav>
       <div
         className={`${
           toggleNav ? "bottom-10" : "-bottom-full"
@@ -57,17 +57,19 @@ const FloatingNav = () => {
               </Link>
             );
           })}
-          <ThemeToggler />
         </div>
       </div>
-      <button
-        type="button"
-        className={`fixed top-3 right-3 btn btn-ghost btn-square text-2xl`}
-        onClick={() => setToggleNav(!toggleNav)}
-      >
-        {toggleNav ? <MdOutlineClose /> : <CgMenuGridR />}
-      </button>
-    </>
+      <div className="fixed top-3 right-3 flex flex-row gap-1 items-center justify-between">
+        <button
+          type="button"
+          className="btn btn-ghost btn-square text-2xl"
+          onClick={() => setToggleNav(!toggleNav)}
+        >
+          {toggleNav ? <MdOutlineClose /> : <CgMenuGridR />}
+        </button>
+        <ThemeToggler />
+      </div>
+    </nav>
   );
 };
 

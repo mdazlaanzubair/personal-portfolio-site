@@ -6,6 +6,7 @@ import MainSection from "@/components/MainSection";
 import FloatingNav from "@/components/navigations/FloatingNav";
 import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
+import SpotLight from "@/components/SpotLight";
 
 export default function Home() {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -25,9 +26,11 @@ export default function Home() {
 
   return (
     <main data-theme={isDark ? "night" : "winter"}>
-      <MainSection />
-
-      <FloatingNav />
+      <div className="bg-dark px-5 lg:px-16 py-5 lg:py-16">
+        {/* <SpotLight /> */}
+        <MainSection />
+        <FloatingNav />
+      </div>
     </main>
   );
 }

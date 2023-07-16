@@ -3,7 +3,7 @@ import { devtools } from "zustand/middleware";
 
 const useThemeStore = create(
   devtools((set) => ({
-    isDarkMode: true,
+    isDarkMode: false,
     darkModeToggler: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
   }))
 );

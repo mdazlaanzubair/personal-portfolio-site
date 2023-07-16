@@ -17,14 +17,20 @@ module.exports = {
           ...require("daisyui/src/theming/themes")["[data-theme=night]"],
           primary: "#00e6b0",
           "base-100": "#0a192f",
-          "base-content": "#f5f5f5",
+          ".bg-dark": {
+            "background-color": "#09162a",
+          },
+          "base-content": "#ffffff",
           "neutral-content": "#a6a6a6",
         },
 
         winter: {
           ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
           primary: "#40C4FF",
-          "base-100": "#f5f5f5",
+          ".bg-dark": {
+            "background-color": "#fafafa",
+          },
+          "base-100": "#ffffff",
           "base-content": "#0a192f",
           "neutral-content": "#3b4759",
         },

@@ -27,7 +27,7 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="flex flex-row min-h-screen justify-start gap-5"
+      className="flex flex-row min-h-screen justify-start gap-5 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
     >
       <div>
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3">

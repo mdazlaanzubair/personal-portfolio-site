@@ -3,8 +3,8 @@ import { GoTriangleRight as Bullet } from "react-icons/go";
 
 const ExperienceTab = ({ activeExperience }) => {
   return activeExperience && Object.keys(activeExperience).length > 0 ? (
-    <div className="card bg-transparent rounded-sm shadow-xl">
-      <div className="card-body">
+    <div className="card rounded-sm">
+      <div className="card-body pl-0">
         <h1 className="font-semibold text-lg">
           {activeExperience.fields.title}{" "}
           <span className="text-primary">

@@ -11,7 +11,7 @@ const ThemeToggler = () => {
   return (
     <button
       type="button"
-      className="text-yellow-500 text-xl"
+      className="btn btn-ghost btn-square text-2xl"
       onClick={darkModeToggler}
     >
       {isDark ? <Sun /> : <Moon />}

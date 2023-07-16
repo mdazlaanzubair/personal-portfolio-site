@@ -11,7 +11,7 @@ import Footer from "./footer/Footer";
 
 const MainSection = () => {
   return (
-    <div className="w-full min-h-screen px-10 lg:px-32">
+    <div className="container">
       <Hero />
 
       <div className="my-20"></div>

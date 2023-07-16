@@ -11,10 +11,10 @@ const Experience = () => {
   return (
     <div
       id="experience-section"
-      className="flex flex-col lg:flex-row min-h-screen gap-5 justify-start"
+      className="flex flex-col lg:flex-row min-h-screen gap-5 justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
     >
-      <div className="w-full grid grid-cols-1 lg:grid-cols-2 mt-5 gap-5 justify-start my-5">
-        <div className="flex flex-col max-w-xl">
+      <div className="w-full grid grid-cols-1 mt-5 gap-5 justify-start my-5">
+        <div className="flex flex-col w-full">
           <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             Placements
           </h3>
@@ -28,14 +28,14 @@ const Experience = () => {
             Here are some wonderful companies &amp; organizations I&apos;ve
             worked with.
           </p>
-        </div>
-        <div className="flex flex-col items-center justify-end">
-          <ExperienceTabBtn
-            experiences={experiences}
-            activeExperience={activeExperience}
-            setActiveExperience={setActiveExperience}
-          />
-          <ExperienceTab activeExperience={activeExperience} />
+          <div className="flex flex-col max-w-full items-center justify-start">
+            <ExperienceTabBtn
+              experiences={experiences}
+              activeExperience={activeExperience}
+              setActiveExperience={setActiveExperience}
+            />
+            <ExperienceTab activeExperience={activeExperience} />
+          </div>
         </div>
       </div>
     </div>

@@ -4,7 +4,10 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <div id="home-section" className="flex flex-col min-h-screen justify-start">
+    <div
+      id="home-section"
+      className="flex flex-col min-h-screen justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+    >
       <Header />
       <div className="max-w-full lg:max-w-2xl">
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">

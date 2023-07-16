@@ -4,21 +4,22 @@ const ExperienceTabBtn = ({
   setActiveExperience,
 }) => {
   return experiences && experiences.length > 0 ? (
-    <div className="tabs tabs-boxed bg-opacity-30 ml-auto">
+    <div className="flex flex-row flex-wrap items-center justify-start mr-auto">
       {experiences.map((experience, index) => (
-        <a
+        <button
+          type="button"
           key={index}
-          className={`tab tab-border ${
+          className={`btn btn-sm rounded-sm ${
             activeExperience.sys.id === experience.sys.id
-              ? "border-primary tab-active"
-              : ""
+              ? "btn-primary"
+              : "btn-ghost"
           }`}
           onClick={() => setActiveExperience(experience)}
         >
           {experience.fields.period.to === "Present"
             ? "Recent"
             : `Job ${index}.`}
-        </a>
+        </button>
       ))}
     </div>
   ) : null;
