@@ -25,7 +25,7 @@ const SpotLight = () => {
 
   return (
     <div
-      className="w-full h-full relative inset-0 overflow-hidden bg-fixed"
+      className="w-full h-full absolute inset- overflow-hidden bg-fixed"
       style={spotlight_styles}
     ></div>
   );

@@ -62,7 +62,7 @@ const FloatingNav = () => {
       <div className="fixed top-3 right-3 flex flex-row gap-1 items-center justify-between">
         <button
           type="button"
-          className="btn btn-ghost btn-square text-2xl"
+          className="fixed top-2 left-2 btn btn-ghost btn-square bg-base-100 hover:text-primary hover:bg-transparent text-2xl shadow"
           onClick={() => setToggleNav(!toggleNav)}
         >
           {toggleNav ? <MdOutlineClose /> : <CgMenuGridR />}

@@ -6,14 +6,14 @@ const Hero = () => {
   return (
     <div
       id="home-section"
-      className="flex flex-col min-h-screen justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="relative flex flex-col min-h-screen justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
     >
       <Header />
       <div className="max-w-full lg:max-w-2xl">
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
           Hi, myself
         </h3>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
           <span className="inline-block sm:hidden">Muhd.</span>
           <span className="hidden sm:inline-block">Muhammad</span> Azlaan,
         </h1>

@@ -12,7 +12,7 @@ const Service = () => {
           <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             Solutions
           </h3>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
             Services
           </h1>
           <p className="mb-5 font-light leading-loose w-full md:max-w-2xl text-xs md:text-base">

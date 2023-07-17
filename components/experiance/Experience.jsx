@@ -18,7 +18,7 @@ const Experience = () => {
           <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
             Placements
           </h3>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
             Experience
           </h1>
           <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content mb-8 lg:mb-5">

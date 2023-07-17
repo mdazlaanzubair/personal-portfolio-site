@@ -5,6 +5,7 @@ import Animator from "../Animator";
 import * as contact_animation_dark from "../../public/contact_animation_dark.json";
 import * as contact_animation_light from "../../public/contact_animation_light.json";
 import useThemeStore from "@/store/ThemeStore";
+import Button from "../Button";
 
 const Contact = () => {
   const isDarkMode = useThemeStore((state) => state.isDarkMode);
@@ -13,10 +14,7 @@ const Contact = () => {
     {
       title: "Sent Email",
       url: "mailto:mdazlaan1996@gmail.com",
-    },
-    {
-      title: "Let's Interact",
-      url: "https://calendly.com/mdazlaanzubair/client-interaction-clone?month=2023-06",
+      email: "mdazlaan1996@gmail.com",
     },
     {
       title: "Book a call",
@@ -33,7 +31,7 @@ const Contact = () => {
         <h3 className="text-accent-focus tracking-widest font-semibold mb-3">
           What&apos;s next
         </h3>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
           Reach Out
         </h1>
         <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-bold text-neutral-content mb-5">
@@ -49,18 +47,19 @@ const Contact = () => {
           else related to establishing your online presence, I&apos;ve got you
           covered!
         </p>
-        <div className="flex flex-row flex-wrap gap-3 mt-5">
+        <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
           {nest_about_link.map((link, index) => {
-            const { title, url } = link;
-            return (
-              <Link
+            const { title, url, email } = link;
+            return email ? (
+              <Button key={index} link={url} type="link" text={email} />
+            ) : (
+              <Button
                 key={index}
-                href={url}
+                link={url}
+                type="btn"
                 target="_blank"
-                className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
-              >
-                {title}
-              </Link>
+                text={title}
+              />
             );
           })}
         </div>
