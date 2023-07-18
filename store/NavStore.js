@@ -3,9 +3,11 @@ import { devtools } from "zustand/middleware";
 
 const useNavStore = create(
   devtools((set) => ({
-    isMobileNav: false,
-    mobileNavToggler: () =>
-      set((state) => ({ isMobileNav: !state.isMobileNav })),
+    toggleNav: true,
+    navToggler: () => set((state) => ({ toggleNav: !state.toggleNav })),
+
+    activeNav: "Home",
+    navActivator: (nav_title) => set(() => ({ activeNav: nav_title })),
   }))
 );
 

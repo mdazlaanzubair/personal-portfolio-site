@@ -1,32 +1,25 @@
-import { FiExternalLink as LiveViewIcon } from "react-icons/fi";
+import Link from "next/link";
 
 const FeaturedProject = ({ url, title, desc, imgUrl, skills }) => {
   return (
-    <div className="group relative card rounded-sm bg-base-100">
-      <div className="card-body rounded-sm shadow group-hover:shadow-xl transition-all ease-in-out duration-300">
-        <a href={url} target="_blank">
+    <Link href={url} target="_blank" className="group">
+      <div className="card rounded-sm bg-base-100">
+        <div className="card-body rounded-sm shadow-sm group-hover:shadow-xl transition-all ease-in-out duration-300">
           <img src={"https:" + imgUrl} alt="Shoes" className="w-full" />
-        </a>
-        <div className="details mt-10">
-          <h2 className="text-base lg:text-xl font-bold mb-3">{title}</h2>
-          <p className="text-xs lg:text-sm">{desc}</p>
-          <div className="flex flex-row flex-wrap gap-5 items-center">
-            {skills.map((skill, index) => (
-              <div key={index} className="text-primary">
-                <span className="text-xs font-semibold">{skill}</span>
-              </div>
-            ))}
+          <div className="details mt-10">
+            <h2 className="text-base lg:text-xl font-bold mb-3">{title}</h2>
+            <span className="paragraph block text-xs lg:text-sm">{desc}</span>
+            <div className="flex flex-row flex-wrap gap-1 justify-end items-center mt-5">
+              {skills.map((skill, index) => (
+                <div key={index} className="badge badge-primary">
+                  <span className="text-xs font-semibold">{skill}</span>
+                </div>
+              ))}
+            </div>
           </div>
-          <a
-            href={url}
-            target="_blank"
-            className="absolute top-2 right-2 group btn btn-ghost btn-circle border-none text-xl hover:text-primary hover:border-primary hover:bg-transparent hover:-translate-y-2 hover:translate-x-1 transition-all ease-in-out duration-300 cursor-pointer"
-          >
-            <LiveViewIcon />
-          </a>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

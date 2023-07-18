@@ -30,7 +30,7 @@ const Project = () => {
       </div>
 
       {featuredProjects ?? featuredProjects.length > 0 ? (
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5 justify-between items-center">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 mb-5 justify-between items-start">
           {featuredProjects.map((project, index) => (
             <FeaturedProject
               key={index}
@@ -44,7 +44,7 @@ const Project = () => {
         </div>
       ) : null}
 
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-5">
         <Button type={"btn"} link={"/archive"} text={"View more"} />
       </div>
     </div>

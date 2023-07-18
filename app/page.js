@@ -6,6 +6,8 @@ import FloatingNav from "@/components/navigations/FloatingNav";
 import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
 import SpotLight from "@/components/SpotLight";
+import SideNav from "@/components/navigations/SideNav";
+import SocialNav from "@/components/navigations/SocialNav";
 
 export default function Home() {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -26,9 +28,11 @@ export default function Home() {
   return (
     <main data-theme={isDark ? "night" : "winter"}>
       {/* <SpotLight /> */}
-      <div className="bg-dark px-5 lg:px-16 py-5 lg:py-16">
+      <div className="bg-dark pl-16 pr-2 lg:px-16 py-16">
+        <SocialNav />
+        {/* <FloatingNav /> */}
+        <SideNav />
         <MainSection />
-        <FloatingNav />
       </div>
     </main>
   );

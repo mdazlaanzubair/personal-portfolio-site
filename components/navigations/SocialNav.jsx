@@ -7,9 +7,9 @@ const SocialNav = () => {
   const { socialLinks } = useSocialContext();
 
   return socialLinks && socialLinks.length > 0 ? (
-    <div className="flex flex-row items-center">
+    <div className="flex flex-row items-center z-20">
       I&apos;m Social
-      {socialLinks.map((socialLink, index) => {
+      {/* {socialLinks.map((socialLink, index) => {
         const { title, url, icon } = socialLink.fields;
         const SocialIcon = FeatherIcon[icon];
         if (icon !== "null") {
@@ -29,7 +29,7 @@ const SocialNav = () => {
             </div>
           );
         }
-      })}
+      })} */}
     </div>
   ) : null;
 };
