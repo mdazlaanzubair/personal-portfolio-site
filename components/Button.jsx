@@ -7,7 +7,7 @@ const Button = ({ type, link, text, target = "_self" }) => {
       target={target}
       className="group text-primary max-w-32 font-medium leading-loose"
     >
-      <span className="relative overflow-x-hidden inline-flex">
+      <span className="relative overflow-x-hidden inline-flex text-xs lg:text-base">
         {text}
         <span className="absolute w-full h-0.5 bg-primary left-0 bottom-0 -translate-x-2/3 group-hover:translate-x-0 transition-all ease-in-out duration-200"></span>
       </span>

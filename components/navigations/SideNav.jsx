@@ -76,7 +76,7 @@ const SideNav = () => {
               onClick={() => navActivator(title)}
             >
               <li
-                className={`[writing-mode:vertical-rl] rotate-180 border-l-2 p-3 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
+                className={`[writing-mode:vertical-rl] rotate-180 border-l-2 py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
                   title === activeNav
                     ? "font-semibold text-primary border-l-primary bg-dark"
                     : "font-normal text-base-content border-l-base-100 bg-base-100 hover:bg-base-100 hover:font-semibold hover:border-l-base-content"

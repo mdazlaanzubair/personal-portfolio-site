@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div
       id="about-section"
-      className="flex flex-row min-h-screen justify-start items-center gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col lg:flex-row min-h-screen justify-start items-center gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
     >
       <div className="w-full lg:max-w-1/3">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
@@ -28,24 +28,55 @@ const About = () => {
           Know about me, myself & my skills.
         </h2>
         <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
-          Hello! myself{" "}
+          Hello, my name is{" "}
           <strong title="mdazlaanzubair" className="text-primary">
             Muhammad Azlaan Zubair
           </strong>
-          , a dedicated web designer & developer. My expertise lies in crafting
+          , and I am a web designer and developer. I specialize in creating
           clean, functional, and fully responsive websites that look amazing on
           any device.
         </p>
+        <p className="mb-5 font-semibold leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
+          I have a proven track record of success. I have worked with a variety
+          of businesses, from small startups to large corporations. I have
+          helped them create websites that have helped them increase their
+          online presence, generate leads, and improve their bottom line.
+        </p>
+        <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
+          I have a deep appreciation for minimal and clean designs, as they
+          effectively convey a brand's message and identity. I am able to create
+          websites that are both visually appealing and technically sound.
+        </p>
         <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
           <Button type={"btn"} link={"/about"} text={"Credentials"} />
-          <Button type={"btn"} link={"/portfolio"} text={"Work Archive"} />
-          <Button type={"btn"} link={"#about-section"} text={"Resume"} />
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">
+        <p className="mb-5 font-semibold leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
+          If you are looking for a web designer and developer who can help you
+          create a website that will make a difference, then I am the person for
+          you. I am confident that I can help you create a website that you will
+          be proud of.
+        </p>
+        <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
+          I am able to clearly understand your needs and translate them into a
+          website that meets your requirements.
+        </p>
         <p className="mb-5 font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
-          I have a deep appreciation for minimal and clean designs, as they
-          effectively convey a brand&apos;s message and identity.
+          I would be happy to discuss your project with you in more detail.
+          Please feel free to contact me via{" "}
+          <Button
+            link="mailto:mdazlaan1996@gmail.com"
+            type="link"
+            text="Email"
+          />{" "}
+          or{" "}
+          <Button
+            link="https://wa.me/923113046692?text=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.%20I%20just%20want%20to%20discuss%20a%20project%20with%20you.%20Please%20contact."
+            type="link"
+            text="WhatsApp"
+          />{" "}
+          .
         </p>
         <p className="mb-3 font-semibold leading-loose w-full md:max-w-3xl text-xs md:text-base">
           To be precise, I do:

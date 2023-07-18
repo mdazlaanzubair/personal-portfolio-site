@@ -12,9 +12,9 @@ const ServiceCard = () => {
     ? services.map((service, index) => (
         <div
           key={index}
-          className="group card rounded-sm shadow hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
+          className="group card rounded-sm bg-dark shadow hover:shadow-2xl hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all ease-in-out duration-300"
         >
-          <div className="card-body">
+          <div className="card-body text-center">
             <div className="flex flex-col justify-between items-center">
               <img
                 src={

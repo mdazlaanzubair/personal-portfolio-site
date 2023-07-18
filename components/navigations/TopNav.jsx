@@ -5,7 +5,7 @@ import Link from "next/link";
 import * as FeatherIcon from "react-icons/fi";
 import Button from "../Button";
 
-const SocialNav = () => {
+const TopNav = () => {
   const { socialLinks } = useSocialContext();
 
   return socialLinks && socialLinks.length > 0 ? (
@@ -20,8 +20,8 @@ const SocialNav = () => {
               <Link
                 key={index}
                 href={url}
+                target="_blank"
                 className="bg-base-100 p-3 hover:text-primary hover:bg-transparent rounded"
-                onClick={() => navToggler()}
                 title={title}
               >
                 <SocialIcon />
@@ -30,11 +30,11 @@ const SocialNav = () => {
           }
         })}
       </div>
-      <div className="flex flex-row gap-3 items-center justify-end">
+      <div className="hidden lg:flex flex-row gap-3 items-center justify-end">
         <Button type={"btn"} text={"Resume"} link={"#about-section"} />
       </div>
     </nav>
   ) : null;
 };
 
-export default SocialNav;
+export default TopNav;

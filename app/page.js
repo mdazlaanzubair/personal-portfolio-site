@@ -5,7 +5,7 @@ import MainSection from "@/components/MainSection";
 import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
 import SideNav from "@/components/navigations/SideNav";
-import SocialNav from "@/components/navigations/SocialNav";
+import TopNav from "@/components/navigations/TopNav";
 import SocialContextProvider from "@/context/SocialContext";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <main data-theme={isDark ? "night" : "winter"}>
       <SocialContextProvider>
-        <SocialNav />
+        <TopNav />
       </SocialContextProvider>
 
       <div className="bg-dark pl-16 pr-3 lg:px-16 py-16">

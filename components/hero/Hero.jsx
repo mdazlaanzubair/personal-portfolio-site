@@ -1,5 +1,6 @@
 import Animator from "../Animator";
 import * as home_animation from "../../public/home_animation.json";
+import Button from "../Button";
 
 const Hero = () => {
   return (
@@ -23,9 +24,12 @@ const Hero = () => {
           I&apos;m a software engineer, specialized in building &amp; designing
           things for the web.
         </p>
-        <p className="font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
+        <p className="mb-5 font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
           My aim is to help people establish their online presence.
         </p>
+        <div className="flex lg:hidden">
+          <Button type={"btn"} text={"Resume"} link={"#about-section"} />
+        </div>
       </div>
 
       <div className="hidden max-w-full lg:flex">

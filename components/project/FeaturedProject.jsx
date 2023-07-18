@@ -3,8 +3,8 @@ import Link from "next/link";
 const FeaturedProject = ({ url, title, desc, imgUrl, skills }) => {
   return (
     <Link href={url} target="_blank" className="group">
-      <div className="card rounded-sm bg-base-100">
-        <div className="card-body rounded-sm shadow-sm group-hover:shadow-xl transition-all ease-in-out duration-300">
+      <div className="card rounded-sm bg-dark shadow group-hover:shadow-xl transition-all ease-in-out duration-300">
+        <div className="card-body">
           <img
             src={"https:" + imgUrl}
             alt="featured project"
@@ -15,7 +15,7 @@ const FeaturedProject = ({ url, title, desc, imgUrl, skills }) => {
             <span className="paragraph block text-xs lg:text-sm">{desc}</span>
             <div className="flex flex-row flex-wrap gap-1 justify-end items-center mt-5">
               {skills.map((skill, index) => (
-                <div key={index} className="badge badge-primary">
+                <div key={index} className="badge badge-primary text-xs">
                   <span className="text-xs font-semibold">{skill}</span>
                 </div>
               ))}
