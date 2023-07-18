@@ -9,11 +9,11 @@ const Service = () => {
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <div className="my-auto">
-          <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
+          <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
             Solutions
           </h3>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
-            Services
+            Services<span className="text-primary">.</span>
           </h1>
           <p className="mb-5 font-light leading-loose w-full md:max-w-2xl text-xs md:text-base">
             I offer services to cater to your specific requirements.

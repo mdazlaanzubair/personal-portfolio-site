@@ -1,4 +1,3 @@
-import SpotLight from "@/components/SpotLight";
 import "./globals.css";
 import { Montserrat } from "next/font/google";
 

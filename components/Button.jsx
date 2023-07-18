@@ -16,7 +16,7 @@ const Button = ({ type, link, text, target = "_self" }) => {
     <Link
       href={link}
       target={target}
-      className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize mr-2 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
+      className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
     >
       {text}
     </Link>

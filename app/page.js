@@ -4,9 +4,9 @@ import { useEffect } from "react";
 import MainSection from "@/components/MainSection";
 import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
-import SpotLight from "@/components/SpotLight";
 import SideNav from "@/components/navigations/SideNav";
 import SocialNav from "@/components/navigations/SocialNav";
+import SocialContextProvider from "@/context/SocialContext";
 
 export default function Home() {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -26,10 +26,11 @@ export default function Home() {
 
   return (
     <main data-theme={isDark ? "night" : "winter"}>
-      {/* <SpotLight /> */}
-      <div className="bg-dark pl-16 pr-2 lg:px-16 py-16">
+      <SocialContextProvider>
         <SocialNav />
-        {/* <FloatingNav /> */}
+      </SocialContextProvider>
+
+      <div className="bg-dark pl-16 pr-3 lg:px-16 py-16">
         <SideNav />
         <MainSection />
       </div>

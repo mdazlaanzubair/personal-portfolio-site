@@ -14,11 +14,11 @@ const Project = () => {
       className="flex flex-col min-h-screen justify-center shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
     >
       <div className="w-full flex flex-col my-5 justify-start items-start">
-        <h3 className="text-accent-focus tracking-widest font-semibold mb-3 px-1">
-          Client&apos;s Projects
+        <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
+          Featured projects
         </h3>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-black mb-5">
-          Portfolio
+          Portfolio<span className="text-primary">.</span>
         </h1>
         <h2 className="text-3xl md:text-3xl lg:text-4xl tracking-tight font-bold text-neutral-content mb-5">
           Let&apos;s sneak a peek at my work.

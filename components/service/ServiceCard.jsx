@@ -22,7 +22,8 @@ const ServiceCard = () => {
                     ? "https:" + service.fields.lightIcon.fields.file.url
                     : "https:" + service.fields.darkIcon.fields.file.url
                 }
-                className="w-32 mx-auto rounded-full group-hover:-rotate-6 group-hover:-translate-y-2 transition-all ease-in-out duration-300"
+                alt="service icon"
+                className="w-24 mx-auto rounded-full group-hover:-rotate-6 group-hover:-translate-y-2 transition-all ease-in-out duration-300"
               />
               <div className="w-full h-full flex flex-col justify-between items-center">
                 <h2 className="text-2xl mb-3 font-bold group-hover:text-primary transition-all ease-in-out duration-300">

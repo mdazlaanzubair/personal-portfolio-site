@@ -39,7 +39,7 @@ module.exports = {
       {
         night: {
           ...require("daisyui/src/theming/themes")["[data-theme=night]"],
-          primary: "#00e6b0",
+          primary: "#0aff9d",
           "base-100": "#0a192f",
           ".bg-dark": {
             "background-color": "#09162a",
@@ -50,7 +50,7 @@ module.exports = {
 
         winter: {
           ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
-          primary: "#40C4FF",
+          primary: "#0aff9d",
           ".bg-dark": {
             "background-color": "#fafafa",
           },
