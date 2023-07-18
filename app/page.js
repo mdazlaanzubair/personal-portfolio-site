@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import MainSection from "@/components/MainSection";
-import FloatingNav from "@/components/navigations/FloatingNav";
 import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
 import SpotLight from "@/components/SpotLight";
