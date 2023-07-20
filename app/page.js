@@ -2,14 +2,12 @@
 
 import { useEffect } from "react";
 import MainSection from "@/components/MainSection";
-import useThemeStore from "@/store/ThemeStore";
 import useScrollStore from "@/store/ScrollStore";
 import SideNav from "@/components/navigations/SideNav";
 import TopNav from "@/components/navigations/TopNav";
 import SocialContextProvider from "@/context/SocialContext";
 
 export default function Home() {
-  const isDark = useThemeStore((state) => state.isDarkMode);
   const scrollTracker = useScrollStore((state) => state.scrollTracker);
 
   const handleScroll = () => {
@@ -25,7 +23,7 @@ export default function Home() {
   });
 
   return (
-    <main data-theme={isDark ? "night" : "winter"}>
+    <main>
       <SocialContextProvider>
         <TopNav />
       </SocialContextProvider>

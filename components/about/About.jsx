@@ -48,7 +48,12 @@ const About = () => {
           websites that are both visually appealing and technically sound.
         </p>
         <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
-          <Button type={"btn"} link={"/about"} text={"Credentials"} />
+          <Button
+            type={"btn"}
+            link={"/credentials"}
+            text={"Credentials"}
+            active_nav_title={"Credentials"}
+          />
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">

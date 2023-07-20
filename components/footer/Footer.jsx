@@ -29,12 +29,22 @@ const Footer = () => {
           <ImHeart />
         </span>
         <span>by</span>
-        <Button type="link" link="/" text="Md Azlaan Zubair" />
+        <Button
+          type="link"
+          link="/"
+          text="Md Azlaan Zubair"
+          active_nav_title={"Home"}
+        />
       </div>
 
       <div className="flex lg:hidden flex-row gap-3 items-center justify-center">
         <span>Crafted by</span>
-        <Button type="link" link="/" text="Md Azlaan Zubair" />
+        <Button
+          type="link"
+          link="/"
+          text="Md Azlaan Zubair"
+          active_nav_title={"Home"}
+        />
       </div>
     </footer>
   );

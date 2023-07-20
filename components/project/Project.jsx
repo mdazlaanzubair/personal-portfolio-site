@@ -45,7 +45,12 @@ const Project = () => {
       ) : null}
 
       <div className="flex justify-center mt-5">
-        <Button type={"btn"} link={"/archive"} text={"View more"} />
+        <Button
+          type={"btn"}
+          link={"/archive"}
+          text={"View more"}
+          active_nav_title={"Archive"}
+        />
       </div>
     </div>
   );

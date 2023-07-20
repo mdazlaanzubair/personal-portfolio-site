@@ -1,6 +1,5 @@
 "use client";
 
-import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 
 import useNavStore from "@/store/NavStore";
@@ -12,8 +11,9 @@ import ThemeToggler from "../ThemeToggler";
 import lightLogo from "../../public/logo/light/plain.svg";
 import darkLogo from "../../public/logo/dark/plain.svg";
 import accentLogo from "../../public/logo/accent/plain.svg";
+import Link from "next/link";
 
-const SideNav = () => {
+const NextSideNav = () => {
   const [activeLogo, setActiveLogo] = useState(lightLogo.src);
   const isDarkMode = useThemeStore((state) => state.isDarkMode);
   const activeNav = useNavStore((state) => state.activeNav);
@@ -27,20 +27,15 @@ const SideNav = () => {
   );
 
   const nav_links = [
-    { title: "About", link: "about-section" },
-    { title: "Services", link: "service-section" },
-    { title: "Exp.", link: "experience-section" },
-    { title: "Work", link: "project-section" },
-    { title: "Contact", link: "contact-section" },
+    { title: "Credentials", link: "/credentials" },
+    { title: "Offerings", link: "/offers" },
+    { title: "Archive", link: "/archive" },
   ];
 
   return (
     <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 overflow-hidden">
       <Link
-        to={"home-section"}
-        smooth={true}
-        offset={-200}
-        duration={500}
+        href="/#home-section"
         className="btn btn-ghost btn-square bg-base-100 hover:bg-transparent text-xl rounded-sm"
         onMouseEnter={() => setActiveLogo(accentLogo.src)}
         onMouseLeave={() =>
@@ -67,14 +62,7 @@ const SideNav = () => {
         {nav_links.map((item, index) => {
           const { title, link } = item;
           return (
-            <Link
-              key={index}
-              to={link}
-              smooth={true}
-              offset={-62}
-              duration={500}
-              onClick={() => navActivator(title)}
-            >
+            <Link key={index} href={link} onClick={() => navActivator(title)}>
               <li
                 className={`[writing-mode:vertical-rl] rotate-180 border-l-2 py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
                   title === activeNav
@@ -94,4 +82,4 @@ const SideNav = () => {
   );
 };
 
-export default SideNav;
+export default NextSideNav;

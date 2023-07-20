@@ -8,10 +8,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-.dark-spotlight {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background: hsl(218, 71%, 44%);
-}

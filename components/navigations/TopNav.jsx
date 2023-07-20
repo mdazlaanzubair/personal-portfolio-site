@@ -31,7 +31,7 @@ const TopNav = () => {
         })}
       </div>
       <div className="hidden lg:flex flex-row gap-3 items-center justify-end">
-        <Button type={"btn"} text={"Resume"} link={"#about-section"} />
+        <Button type={"btn"} text={"Resume"} link={"#"} />
       </div>
     </nav>
   ) : null;

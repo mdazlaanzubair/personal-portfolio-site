@@ -11,8 +11,6 @@ const ProjectContextProvider = ({ children }) => {
   // initial position coordinates
   const [featuredProjects, setFeaturedProjects] = useState([]);
   const [personalProjects, setPersonalProjects] = useState([]);
-  const [lessProjects, setLessProjects] = useState([]);
-  const [showMore, setShowMore] = useState(false);
 
   // fetch services content from contentful
   useEffect(() => {
@@ -23,18 +21,10 @@ const ProjectContextProvider = ({ children }) => {
           data.filter((project) => project.fields.type === "Featured")
         );
 
-        // setting personal projects conditionally
-        const personal_projects = data.filter(
-          (project) => project.fields.type === "Personal"
-        );
-
         // setting all projects - list all personal_projects
-        setPersonalProjects(personal_projects);
-
-        // setting less projects - list half of personal_projects
-        setLessProjects([
-          ...personal_projects.slice(0, personal_projects.length / 2),
-        ]);
+        setPersonalProjects(
+          data.filter((project) => project.fields.type === "Personal")
+        );
       })
       .catch((err) =>
         console.log("Error while fetching experience data:\n\n", err)
@@ -44,9 +34,6 @@ const ProjectContextProvider = ({ children }) => {
   const value = {
     featuredProjects,
     personalProjects,
-    lessProjects,
-    showMore,
-    setShowMore,
   };
 
   return (

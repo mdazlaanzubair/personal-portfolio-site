@@ -1,11 +1,17 @@
+"use client";
+
+import useNavStore from "@/store/NavStore";
 import Link from "next/link";
 
-const Button = ({ type, link, text, target = "_self" }) => {
+const Button = ({ type, link, text, target = "_self", active_nav_title }) => {
+  const navActivator = useNavStore((state) => state.navActivator);
+
   return type !== "btn" ? (
     <Link
       href={link}
       target={target}
       className="group text-primary max-w-32 font-medium leading-loose"
+      onClick={() => navActivator(active_nav_title)}
     >
       <span className="relative overflow-x-hidden inline-flex text-xs lg:text-base">
         {text}
@@ -17,6 +23,7 @@ const Button = ({ type, link, text, target = "_self" }) => {
       href={link}
       target={target}
       className="btn btn-sm sm:btn-md btn-outline btn-primary rounded-sm capitalize hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
+      onClick={() => navActivator(active_nav_title)}
     >
       {text}
     </Link>
