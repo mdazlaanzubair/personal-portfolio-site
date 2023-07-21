@@ -85,7 +85,7 @@ const Skills = () => {
           </h2>
         </div>
         <div className="w-full lg:max-w-1/2 flex flex-col justify-center gap-5 shadow bg-dark">
-          <ul className="flex flex-row lg:justify-evenly overflow-x-auto gap-0 bg-base-100">
+          <ul className="flex flex-row overflow-x-auto gap-0 bg-base-100">
             {skills.map((skill, index) => {
               const { title } = skill;
               return (
@@ -112,16 +112,16 @@ const Skills = () => {
                       return (
                         <div
                           key={index}
-                          className="flex flex-row flex-wrap items-center gap-1"
+                          className="flex flex-row flex-wrap items-center gap-0"
                         >
-                          <h2 className="text-base font-extrabold p-3 mr-2">
+                          <h2 className="text-base font-extrabold lg:pt-3 mr-2">
                             {sub_title}
                           </h2>
 
                           {technologies.map((tech, index) => (
                             <div
                               key={index}
-                              className="stat-desc p-3 badge badge-md badge-primary font-bold rounded-sm"
+                              className="stat-desc lg:p-3 badge badge-md badge-primary font-bold rounded-sm mr-1 mb-1"
                             >
                               {tech}
                             </div>

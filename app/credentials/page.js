@@ -10,27 +10,25 @@ import EducationContextProvider from "@/context/EducationContext";
 
 const AboutPage = () => {
   return (
-    <main>
-      <SocialContextProvider>
-        <TopNav />
-      </SocialContextProvider>
+    <main className="w-full bg-dark pl-16 pr-3 lg:px-16 py-5">
+      <div className="container mx-auto">
+        <SocialContextProvider>
+          <TopNav />
+        </SocialContextProvider>
 
-      <div className="bg-dark pl-16 pr-3 lg:px-16 py-16">
         <NextSideNav />
 
-        <div className="container">
-          <Intro />
+        <Intro />
 
-          <div className="my-20"></div>
+        <div className="my-20"></div>
 
-          <Skills />
+        <Skills />
 
-          <div className="my-20"></div>
+        <div className="my-20"></div>
 
-          <EducationContextProvider>
-            <Education />
-          </EducationContextProvider>
-        </div>
+        <EducationContextProvider>
+          <Education />
+        </EducationContextProvider>
       </div>
     </main>
   );

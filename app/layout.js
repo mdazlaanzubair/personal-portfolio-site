@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 export default function RootLayout({ children }) {
   const isDark = useThemeStore((state) => state.isDarkMode);
   return (
-    <html lang="en" data-theme={isDark ? "night" : "winter"}>
+    <html lang="en">
       <Head>
         <meta
           name="keywords"
@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body
+        data-theme={isDark ? "night" : "winter"}
         className={`relative overflow-x-hidden text-base-content m-0 p-0 ${montserrat.className}`}
       >
         {children}

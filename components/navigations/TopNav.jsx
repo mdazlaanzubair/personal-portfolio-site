@@ -9,9 +9,9 @@ const TopNav = () => {
   const { socialLinks } = useSocialContext();
 
   return socialLinks && socialLinks.length > 0 ? (
-    <nav className="absolute top-2 pl-16 pr-3 lg:px-16 flex flex-row w-full gap-3 items-center justify-between text-xs">
+    <nav className="flex flex-row w-full gap-3 items-center justify-between text-xs mb-5">
       <div className="flex flex-row gap-3 items-center justify-center">
-        <span className="text-primary font-medium">I&apos;m Social</span>
+        <span className="font-black">I&apos;m Social</span>
         {socialLinks.map((socialLink, index) => {
           const { title, url, icon } = socialLink.fields;
           const SocialIcon = FeatherIcon[icon];
@@ -21,7 +21,7 @@ const TopNav = () => {
                 key={index}
                 href={url}
                 target="_blank"
-                className="bg-base-100 p-3 hover:text-primary hover:bg-transparent rounded"
+                className="bg-base-100 p-3 hover:text-primary hover:bg-transparent rounded font-black"
                 title={title}
               >
                 <SocialIcon />
