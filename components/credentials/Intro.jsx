@@ -83,26 +83,27 @@ const Intro = () => {
           , a web developer and UI/UX designer with a passion for creating
           beautiful, functional, and user-centered digital experiences. I
           believe that design is about more than just making things look pretty.
-          It's about solving problems and creating intuitive, enjoyable
+          It&apos;s about solving problems and creating intuitive, enjoyable
           experiences for users.
         </p>
         <p className="mb-5 font-semibold leading-relaxed w-full text-sm md:text-base">
-          I've been working in the design field for over years now, and I've had
-          the opportunity to work on a wide range of projects, from websites to
-          web applications and scrapers. I've learned that the best products are
-          those that are based on a deep understanding of its user's needs.
+          I&apos;ve been working in the design field for over years now, and
+          I&apos;ve had the opportunity to work on a wide range of projects,
+          from websites to web applications and scrapers. I&apos;ve learned that
+          the best products are those that are based on a deep understanding of
+          its user&apos;s needs.
         </p>
         <p className="mb-5 font-normal leading-relaxed w-full text-sm md:text-base">
-          If you're looking for someone who can create a digital experience that
-          your users will love, I'm the person you need to talk to. I'm
-          passionate about my work, and I'm always looking for new challenges.
-          I'm confident that I can help you achieve your goals.
+          If you&apos;re looking for someone who can create a digital experience
+          that your users will love, I&apos;m the person you need to talk to.
+          I&apos;m passionate about my work, and I&apos;m always looking for new
+          challenges. I&apos;m confident that I can help you achieve your goals.
         </p>
         <p className="mb-5 font-normal leading-relaxed w-full text-sm md:text-base">
-          I'm a valuable asset to any team, and I'm sure to add a new level of
-          excitement and creativity to your next project. I look forward to the
-          opportunity to talk to you about your needs and how I can help you
-          achieve your goals.
+          I&apos;m a valuable asset to any team, and I&apos;m sure to add a new
+          level of excitement and creativity to your next project. I look
+          forward to the opportunity to talk to you about your needs and how I
+          can help you achieve your goals.
         </p>
         <p className="mb-5 font-semibold leading-relaxed w-full text-sm md:text-base">
           Contact me today to learn more about my work and how I can help you.

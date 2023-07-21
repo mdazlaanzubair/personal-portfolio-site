@@ -11,8 +11,14 @@ const Skills = () => {
       abilities: [
         { sub_title: "Core", technologies: ["HTML", "CSS", "Javascript"] },
         {
-          sub_title: "Libs & Fwks",
-          technologies: ["Bootstrap", "Tailwind CSS", "Vue JS", "React JS"],
+          sub_title: "Libraries & Frameworks",
+          technologies: [
+            "Bootstrap",
+            "Tailwind CSS",
+            "Vue JS",
+            "React JS",
+            "Next JS",
+          ],
         },
       ],
     },
@@ -65,7 +71,7 @@ const Skills = () => {
   useEffect(() => setActiveSkill(skills[0]), []);
 
   return (
-    <div className="flex flex-col shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100">
+    <div className="flex flex-col px-5 shadow-lg bg-base-100 lg:px-16 py-5 lg:py-16">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between items-start">
         <div className="w-full lg:max-w-1/2">
           <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
@@ -78,16 +84,16 @@ const Skills = () => {
             I am a digital chameleon.
           </h2>
         </div>
-        <div className="w-full lg:max-w-1/2 flex flex-col justify-start gap-5">
-          <ul className="flex flex-row lg:justify-evenly overflow-x-auto gap-0">
+        <div className="w-full lg:max-w-1/2 flex flex-col justify-center gap-5 shadow bg-dark">
+          <ul className="flex flex-row lg:justify-evenly overflow-x-auto gap-0 bg-base-100">
             {skills.map((skill, index) => {
               const { title } = skill;
               return (
                 <li
                   key={index}
-                  className={`p-3 border-b-4 border-dark font-bold cursor-pointer ${
+                  className={`p-3 lg:p-5 grow border-b-4 border-dark font-bold cursor-pointer ${
                     title === activeSkill.title
-                      ? "border-primary text-primary"
+                      ? "border-primary text-primary bg-dark"
                       : "border-dark text-base-content"
                   }`}
                   onClick={() => setActiveSkill(skill)}
@@ -98,26 +104,28 @@ const Skills = () => {
             })}
           </ul>
           <div className="max-w-3/4">
-            <div className="card w-full">
-              <div className="card-body bg-dark">
+            <div className="card w-full rounded-sm">
+              <div className="card-body">
                 {activeSkill?.abilities?.length > 0
                   ? activeSkill.abilities.map((ability, index) => {
                       const { sub_title, technologies } = ability;
                       return (
-                        <div key={index} className="mb-5">
-                          <h2 className="text-base font-semibold">
+                        <div
+                          key={index}
+                          className="flex flex-row flex-wrap items-center gap-1"
+                        >
+                          <h2 className="text-base font-extrabold p-3 mr-2">
                             {sub_title}
                           </h2>
-                          <div className="flex flex-row flex-wrap gap-1">
-                            {technologies.map((tech, index) => (
-                              <div
-                                key={index}
-                                className="stat-desc badge-sm badge badge-primary font-bold rounded-sm"
-                              >
-                                {tech}
-                              </div>
-                            ))}
-                          </div>
+
+                          {technologies.map((tech, index) => (
+                            <div
+                              key={index}
+                              className="stat-desc p-3 badge badge-md badge-primary font-bold rounded-sm"
+                            >
+                              {tech}
+                            </div>
+                          ))}
                         </div>
                       );
                     })
