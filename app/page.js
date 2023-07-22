@@ -1,9 +1,5 @@
 import IndexMainSection from "@/components/IndexMainSection";
 
-export const metadata = {
-  title: "Home",
-};
-
-export default function Home() {
+export default function homePage() {
   return <IndexMainSection />;
 }

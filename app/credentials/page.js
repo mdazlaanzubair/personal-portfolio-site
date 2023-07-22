@@ -4,8 +4,6 @@ export const metadata = {
   title: "Credentials",
 };
 
-const AboutPage = () => {
+export default function credentialsPage() {
   return <CredentialsMainSection />;
-};
-
-export default AboutPage;
+}
