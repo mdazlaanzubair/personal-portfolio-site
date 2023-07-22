@@ -3,11 +3,24 @@ import Link from "next/link";
 
 const QualificationTimeline = ({ qualifications }) => {
   return (
-    <ul className="relative w-full flex flex-col">
-      <div className="absolute top-0 left-0 w-1 inset-0 h-full bg-black bg-opacity-50"></div>
+    <ul className="relative w-full lg:w-1/2 flex flex-col">
+      <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10">
+        {qualifications[0].type === "Degree"
+          ? "Qualifications"
+          : "Certifications"}
+      </h2>
       {qualifications?.map((qualification, index) => (
-        <li key={index} className="relative pb-10 flex flex-col items-center">
-          <span className="absolute -top-1 -left-1.5 inline-block text-base text-base-100 bg-primary p-1 rounded-full">
+        <li
+          key={index}
+          className={`relative pb-10 flex flex-col items-center border-primary ${
+            qualification.type === "Degree" ? "border-l-4" : "border-r-4"
+          }`}
+        >
+          <span
+            className={`absolute -top-1 inline-block text-base text-base-100 bg-primary p-1 rounded-full ${
+              qualification.type === "Degree" ? "-left-2.5" : "-right-2.5"
+            }`}
+          >
             <svg
               className="w-2 h-2"
               aria-hidden="true"
@@ -25,12 +38,20 @@ const QualificationTimeline = ({ qualifications }) => {
               />
             </svg>
           </span>
-          <span className="absolute -top-2 left-5 badge badge-primary font-bold text-xs rounded-sm z-20">
+          <span
+            className={`absolute -top-2 right-5 badge badge-primary font-bold text-xs rounded-sm z-20 ${
+              qualification.type === "Degree" ? "left-5" : "right-5"
+            }`}
+          >
             {qualification.from !== "null"
               ? qualification.from + " - " + qualification.to
               : qualification.to}
           </span>
-          <div className="flex flex-col p-5 ml-5 mt-5 shadow bg-base-100">
+          <div
+            className={`flex flex-col p-5 mt-5 shadow bg-base-100  ${
+              qualification.type === "Degree" ? "ml-5" : "mr-5"
+            }`}
+          >
             <h1 className="text-sm lg:text-base font-black">
               {qualification.title}{" "}
               <Link

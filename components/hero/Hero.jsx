@@ -1,6 +1,7 @@
 import Animator from "../Animator";
 import * as home_animation from "../../public/home_animation.json";
 import Button from "../Button";
+import ResumeDownloadBtn from "../ResumeDownloadBtn";
 
 const Hero = () => {
   return (
@@ -27,8 +28,14 @@ const Hero = () => {
         <p className="mb-5 font-normal leading-loose w-full md:max-w-3xl text-xs md:text-base">
           My aim is to help people establish their online presence.
         </p>
-        <div className="flex lg:hidden">
-          <Button type={"btn"} text={"Resume"} link={"#about-section"} />
+        <div className="flex lg:hidden gap-3">
+          <Button
+            type={"btn"}
+            link={"/credentials"}
+            text={"Credentials"}
+            active_nav_title={"Credentials"}
+          />
+          <ResumeDownloadBtn />
         </div>
       </div>
 

@@ -9,9 +9,9 @@ import useThemeStore from "@/store/ThemeStore";
 import NavToggler from "./NavToggler";
 import ThemeToggler from "../ThemeToggler";
 
-import lightLogo from "../../public/logo/light/plain.svg";
-import darkLogo from "../../public/logo/dark/plain.svg";
-import accentLogo from "../../public/logo/accent/plain.svg";
+import lightLogo from "@/public/logo/light/plain.svg";
+import darkLogo from "@/public/logo/dark/plain.svg";
+import accentLogo from "@/public/logo/accent/plain.svg";
 
 const SideNav = () => {
   const [activeLogo, setActiveLogo] = useState(lightLogo.src);

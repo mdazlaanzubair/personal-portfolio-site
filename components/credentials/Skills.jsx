@@ -114,7 +114,7 @@ const Skills = () => {
                           key={index}
                           className="flex flex-row flex-wrap items-center gap-0"
                         >
-                          <h2 className="text-base font-extrabold lg:pt-3 mr-2">
+                          <h2 className="text-base font-extrabold lg:py-3 mr-2">
                             {sub_title}
                           </h2>
 

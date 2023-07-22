@@ -1,6 +1,7 @@
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 
 import Button from "../Button";
+import ResumeDownloadBtn from "../ResumeDownloadBtn";
 
 const About = () => {
   const skill_tags = [
@@ -42,19 +43,20 @@ const About = () => {
           helped them create websites that have helped them increase their
           online presence, generate leads, and improve their bottom line.
         </p>
-        <p className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
+        <p className="mb-0 lg:mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
           I have a deep appreciation for minimal and clean designs, as they
           effectively convey a brand&apos;s message and identity. I am able to
           create websites that are both visually appealing and technically
           sound.
         </p>
-        <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
+        <div className="hidden lg:flex flex-row flex-wrap gap-3 mt-5 items-center">
           <Button
             type={"btn"}
             link={"/credentials"}
             text={"Credentials"}
             active_nav_title={"Credentials"}
           />
+          <ResumeDownloadBtn />
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">

@@ -1,31 +1,26 @@
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { GoTriangleRight as Bullet } from "react-icons/go";
 
-const ExperienceTab = ({ activeExperience }) => {
-  return activeExperience && Object.keys(activeExperience).length > 0 ? (
+const ExperienceCard = ({ recentExperience }) => {
+  return recentExperience && Object.keys(recentExperience).length > 0 ? (
     <div className="card rounded-sm">
       <div className="card-body pl-0">
         <h1 className="font-semibold text-lg">
-          {activeExperience.fields.title}{" "}
-          <span className="text-primary">
-            @ {activeExperience.fields.company}
-          </span>
+          {recentExperience.title}{" "}
+          <span className="text-primary">@ {recentExperience.company}</span>
         </h1>
         <h2 className="font-medium text-xs text-neutral-content tracking-widest">
-          {activeExperience.fields.period.from} -{" "}
-          {activeExperience.fields.period.to} -{" "}
-          <div className="badge badge-primary">
-            <span className="text-xs font-semibold">
-              {activeExperience.fields.type}
-            </span>
+          {recentExperience.from} - {recentExperience.to} -{" "}
+          <div className="badge badge-primary rounded-sm">
+            <span className="text-xs font-bold">{recentExperience.type}</span>
           </div>
         </h2>
         <div className="my-3 text-sm leading-relaxed tracking-wider">
-          {documentToReactComponents(activeExperience.fields.description)}
+          {documentToReactComponents(recentExperience.description)}
         </div>
         <h3 className="font-semibold text-sm mb-3">Contributions:</h3>
         <ul className="mb-3">
-          {activeExperience.fields.tasks.map((task, index) => (
+          {recentExperience.tasks.map((task, index) => (
             <li
               key={index}
               className="flex flex-row justify-between items-start gap-3 my-2"
@@ -41,9 +36,9 @@ const ExperienceTab = ({ activeExperience }) => {
         </ul>
 
         <div className="flex flex-row flex-wrap gap-2 items-center">
-          {activeExperience.fields.skills.map((skill, index) => (
-            <div key={index} className="badge badge-primary">
-              <span className="text-xs font-semibold">{skill}</span>
+          {recentExperience.skills.map((skill, index) => (
+            <div key={index} className="badge badge-primary rounded-sm">
+              <span className="text-xs font-bold">{skill}</span>
             </div>
           ))}
         </div>
@@ -52,4 +47,4 @@ const ExperienceTab = ({ activeExperience }) => {
   ) : null;
 };
 
-export default ExperienceTab;
+export default ExperienceCard;

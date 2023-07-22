@@ -2,6 +2,8 @@
 
 import { useEducationContext } from "@/context/EducationContext";
 import QualificationTimeline from "./QualificationTimeline";
+import ExperienceTimeline from "./ExperienceTimeline";
+import ExperienceContextProvider from "@/context/ExperienceContext";
 
 const Education = () => {
   const { degrees, certificates, sortQualification } = useEducationContext();
@@ -23,24 +25,19 @@ const Education = () => {
             Qualifications are the foundation, passion is the building.
           </h2>
         </div>
+        <div className="w-full flex flex-col justify-center items-start gap-5">
+          <ExperienceContextProvider>
+            <ExperienceTimeline qualifications={sortedDegrees} />
+          </ExperienceContextProvider>
+        </div>
       </div>
-      <div className="w-full flex flex-col lg:flex-row justify-center items-start gap-5 px-0 lg:px-5 py-16">
-        <div className="w-full lg:w-1/2 p-5 flex flex-col">
-          <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10">
-            Qualifications
-          </h2>
-          {sortedDegrees && sortedDegrees.length > 0 && (
-            <QualificationTimeline qualifications={sortedDegrees} />
-          )}
-        </div>
-        <div className="w-full lg:w-1/2 p-5 flex flex-col">
-          <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10">
-            Certifications
-          </h2>
-          {sortedCertificates && sortedCertificates.length > 0 && (
-            <QualificationTimeline qualifications={sortedCertificates} />
-          )}
-        </div>
+      <div className="w-full p-5 flex flex-col lg:flex-row gap-10 mt-16">
+        {sortedDegrees && sortedDegrees.length > 0 && (
+          <QualificationTimeline qualifications={sortedDegrees} />
+        )}
+        {sortedCertificates && sortedCertificates.length > 0 && (
+          <QualificationTimeline qualifications={sortedCertificates} />
+        )}
       </div>
     </>
   );
