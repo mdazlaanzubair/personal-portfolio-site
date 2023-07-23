@@ -73,7 +73,7 @@ export const metadata = {
     type: "website",
   },
   title: {
-    default: "Muhammad Azlaan Zubair",
+    default: "Portfolio | Muhammad Azlaan Zubair",
     template: "%s | Muhammad Azlaan Zubair",
   },
   applicationName: "Muhammad Azlaan Zubair - Portfolio Website",

@@ -15,7 +15,7 @@ const ServiceContextProvider = ({ children }) => {
   useEffect(() => {
     fetchContent("service")
       .then((data) => {
-        setServices(data);
+        setServices(data.map((service) => service.fields));
       })
       .catch((err) =>
         console.log("Error while fetching experience data:\n\n", err)
