@@ -52,11 +52,11 @@ const ExperienceTimeline = () => {
             <div className="my-5 text-xs lg:text-sm font-medium">
               {documentToReactComponents(experience.description)}
             </div>
-            <ul className="mb-3">
+            <ul className="mb-3 hidden lg:flex flex-col gap-3">
               {experience.tasks.map((task, index) => (
                 <li
                   key={index}
-                  className="flex flex-row justify-between items-start gap-3 my-2"
+                  className="flex flex-row justify-between items-start gap-3"
                 >
                   <span className="shrink text-xs text-primary">
                     <Bullet />

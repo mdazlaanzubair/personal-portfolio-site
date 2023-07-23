@@ -1,16 +1,11 @@
-"use client";
-
-import useThemeStore from "@/store/ThemeStore";
 import profilePic from "@/public/profile.jpg";
 import Button from "../Button";
 
 const Contact = () => {
-  const isDarkMode = useThemeStore((state) => state.isDarkMode);
-
   const nest_about_link = [
     {
       title: "Sent Email",
-      url: "mailto:mdazlaan1996@gmail.com",
+      url: `mailto:mdazlaan1996@gmail.com?subject=Hi%20There!&body=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.%20I%20just%20want%20to%20discuss%20a%20project%20with%20you.%20Please%20contact.`,
       email: "mdazlaan1996@gmail.com",
     },
     {

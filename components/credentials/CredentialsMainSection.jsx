@@ -9,7 +9,8 @@ import TopNav from "../navigation/TopNav";
 import NextSideNav from "../navigation/NextSideNav";
 import Intro from "./Intro";
 import Skills from "./Skills";
-import Education from "./Education";
+import Qualification from "./Qualification";
+import Footer from "../footer/Footer";
 
 const CredentialsMainSection = () => {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -33,8 +34,12 @@ const CredentialsMainSection = () => {
           <div className="my-20"></div>
 
           <EducationContextProvider>
-            <Education />
+            <Qualification />
           </EducationContextProvider>
+
+          <div className="my-20"></div>
+
+          <Footer />
         </div>
       </div>
     </main>

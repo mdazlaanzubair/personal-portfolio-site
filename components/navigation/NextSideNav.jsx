@@ -27,13 +27,14 @@ const NextSideNav = () => {
   );
 
   const nav_links = [
+    { title: "Home", link: "/" },
     { title: "Credentials", link: "/credentials" },
     { title: "Offerings", link: "/offers" },
     { title: "Archive", link: "/archive" },
   ];
 
   return (
-    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 overflow-hidden">
+    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 shadow overflow-hidden">
       <Link
         href="/#home-section"
         className="btn btn-ghost btn-square bg-base-100 hover:bg-transparent text-xl rounded-sm"

@@ -68,7 +68,7 @@ const OfferFilters = () => {
             </select>
           </div>
         </div>
-        <div className="flex flex-row justify-between items-center gap-3">
+        <div className="flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center gap-3">
           <div className="w-auto flex flex-row gap-3 justify-start items-center">
             <h1 className="text-xs lg:text-sm font-semibold shrink">
               Offer Types

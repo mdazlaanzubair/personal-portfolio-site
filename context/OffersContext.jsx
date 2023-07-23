@@ -12,13 +12,13 @@ const OffersContextProvider = ({ children }) => {
   const [offers, setOffers] = useState([]);
   const [filteredOffers, setFilteredOffers] = useState([]);
 
-  // performing filter on "filteredOffers" by types
+  // performing filter on "offers" by types
   function filterByType(type = "Both") {
     if (type === "Both") {
-      setFilteredOffers(filteredOffers);
+      setFilteredOffers(offers);
     } else {
       setFilteredOffers(
-        filteredOffers.filter(
+        offers.filter(
           (offer) => offer.type.toLowerCase() === type.toLowerCase()
         )
       );
@@ -40,11 +40,14 @@ const OffersContextProvider = ({ children }) => {
 
   // performing sort on "filteredOffers" by pricing
   function sortByPrice(ascending = "true") {
+    let sortedList = [...filteredOffers];
+
     if (ascending === "true") {
-      setFilteredOffers(filteredOffers.sort((a, b) => a.price - b.price));
+      sortedList.sort((a, b) => a.cost - b.cost);
     } else {
-      setFilteredOffers(filteredOffers.sort((a, b) => b.price - a.price));
+      sortedList.sort((a, b) => b.cost - a.cost);
     }
+    setFilteredOffers(sortedList);
   }
 
   // fetch services content from contentful
@@ -57,6 +60,9 @@ const OffersContextProvider = ({ children }) => {
       .catch((err) =>
         console.log("Error while fetching experience data:\n\n", err)
       );
+
+    // sorting offers
+    sortByPrice();
   }, []);
 
   const value = {

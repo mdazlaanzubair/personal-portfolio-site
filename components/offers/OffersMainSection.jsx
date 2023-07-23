@@ -9,6 +9,7 @@ import NextSideNav from "../navigation/NextSideNav";
 import Offerings from "./Offerings";
 import OffersContextProvider from "@/context/OffersContext";
 import ServiceContextProvider from "@/context/ServiceContext";
+import Footer from "../footer/Footer";
 
 const OffersMainSection = () => {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -28,6 +29,10 @@ const OffersMainSection = () => {
               <Offerings />
             </ServiceContextProvider>
           </OffersContextProvider>
+
+          <div className="my-20"></div>
+
+          <Footer />
         </div>
       </div>
     </main>

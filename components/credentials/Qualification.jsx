@@ -5,7 +5,7 @@ import QualificationTimeline from "./QualificationTimeline";
 import ExperienceTimeline from "./ExperienceTimeline";
 import ExperienceContextProvider from "@/context/ExperienceContext";
 
-const Education = () => {
+const Qualification = () => {
   const { degrees, certificates, sortQualification } = useEducationContext();
 
   const sortedDegrees = sortQualification(degrees);
@@ -13,8 +13,8 @@ const Education = () => {
 
   return (
     <>
-      <div className="flex flex-col min-h justify-center items-start gap-5 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100">
-        <div className="w-full">
+      <div className="flex flex-col min-h justify-center items-start gap-5 shadow-lg py-5 lg:py-16 bg-base-100">
+        <div className="w-full px-5 lg:px-16">
           <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
             My qualifications
           </h3>
@@ -43,4 +43,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Qualification;

@@ -7,20 +7,6 @@ import CountUp from "react-countup";
 
 const OfferCard = () => {
   const { filteredOffers } = useOffersContext();
-  console.log(filteredOffers);
-
-  // tilt options
-  const defaultOptions = {
-    reverse: false, // reverse the tilt direction
-    max: 50, // max tilt rotation (degrees)
-    perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-    scale: 1.5, // 2 = 200%, 1.5 = 150%, etc..
-    speed: 1000, // Speed of the enter/exit transition
-    transition: true, // Set a transition on enter/exit.
-    axis: null, // What axis should be disabled. Can be X or Y.
-    reset: true, // If the tilt effect has to be reset on exit.
-    easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
-  };
 
   return (
     filteredOffers &&
@@ -36,7 +22,7 @@ const OfferCard = () => {
                 src={"https:" + offer.img.fields.file.url}
                 alt="Service thumbnail"
               />
-              <div className="absolute bottom-0 right-0 pricing p-3 bg-base-100 bg-opacity-60 text-neutral font-black text-xl group-hover:bg-primary group-hover:shadow-2xl transition-all ease-in-out duration-300">
+              <div className="absolute bottom-0 right-0 pricing p-3 bg-base-100 bg-opacity-60 text-base-content font-black text-xl group-hover:text-base-200 group-hover:bg-primary group-hover:shadow-2xl transition-all ease-in-out duration-300">
                 $ <CountUp start={0} end={offer.cost} duration={2.75} />
               </div>
             </figure>
@@ -59,9 +45,11 @@ const OfferCard = () => {
               </div>
               <div className="card-actions justify-center items-center mt-5 gap-3">
                 <Button
-                  link={
-                    "https://calendly.com/mdazlaanzubair/virtual-interaction"
-                  }
+                  link={`mailto:mdazlaan1996@gmail.com?subject=Inquiry%20about%20${
+                    offer.title
+                  }%20Service&body=Hi%20Azlaan!%20Hope%20you're%20doing%20well.%20I%20want%20to%20discuss%20about${
+                    "'" + offer.title + "'"
+                  }%20with%20you.%20Please%20contact.`}
                   type="link"
                   target="_blank"
                   text={"Inquire now"}

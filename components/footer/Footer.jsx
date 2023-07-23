@@ -1,22 +1,33 @@
-import { Link } from "react-scroll";
+"use client";
+
+import Link from "next/link";
 import Button from "../Button";
 import { ImHeart } from "react-icons/im";
+import useNavStore from "@/store/NavStore";
 
 const Footer = () => {
+  const navActivator = useNavStore((state) => state.navActivator);
+  const activeNav = useNavStore((state) => state.activeNav);
+
   const footerNav = [
     { title: "Home", link: "/" },
-    { title: "About", link: "/about" },
+    { title: "Credentials", link: "/credentials" },
     { title: "Work", link: "/archives" },
-    { title: "Offers", link: "/services" },
+    { title: "Offers", link: "/offers" },
   ];
+
   return (
     <footer className="flex flex-col lg:flex-row items-center justify-between gap-5 text-xs lg:text-base shadow-lg px-5 lg:px-16 py-5 bg-base-100">
       <ul className="flex flex-row gap-3 items-center justify-center">
         {footerNav.map((item, index) => {
           const { title, link } = item;
           return (
-            <Link key={index} href={link}>
-              <li className="py-1 border-b-2 text-base-content border-transparent hover:font-semibold hover:border-b-2 hover:text-primary hover:border-primary transition-all ease-in-out duration-300">
+            <Link key={index} href={link} onClick={() => navActivator(title)}>
+              <li
+                className={`py-1 text-base-content font-medium hover:font-semibold hover:text-primary transition-all ease-in-out duration-300 ${
+                  title === activeNav ? "font-semibold text-primary" : ""
+                }`}
+              >
                 {title}
               </li>
             </Link>

@@ -15,7 +15,10 @@ const FeaturedProject = ({ url, title, desc, imgUrl, skills }) => {
             <span className="paragraph block text-xs lg:text-sm">{desc}</span>
             <div className="flex flex-row flex-wrap gap-1 justify-end items-center mt-5">
               {skills.map((skill, index) => (
-                <div key={index} className="badge badge-primary text-xs">
+                <div
+                  key={index}
+                  className="badge badge-primary text-xs rounded-sm"
+                >
                   <span className="text-xs font-semibold">{skill}</span>
                 </div>
               ))}

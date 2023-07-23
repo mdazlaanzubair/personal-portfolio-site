@@ -27,6 +27,7 @@ const SideNav = () => {
   );
 
   const nav_links = [
+    { title: "Home", link: "home-section" },
     { title: "About", link: "about-section" },
     { title: "Services", link: "service-section" },
     { title: "Exp.", link: "experience-section" },
@@ -35,7 +36,7 @@ const SideNav = () => {
   ];
 
   return (
-    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 overflow-hidden">
+    <nav className="fixed flex flex-col gap-2 justify-center items-center shadow-lg top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 overflow-hidden">
       <Link
         to={"home-section"}
         smooth={true}

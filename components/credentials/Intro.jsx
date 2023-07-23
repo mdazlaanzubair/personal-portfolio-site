@@ -37,7 +37,7 @@ const Intro = () => {
   return (
     <div className="flex flex-col lg:flex-row-reverse min-h-screen justify-between items-start gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100">
       <div className="w-full lg:w-auto text-center">
-        <div className="p-5 rounded-xl bg-dark shadow">
+        <div className="p-5 rounded-sm bg-dark shadow">
           <Tilt options={defaultOptions}>
             <div className="w-1/2 avatar rounded-full shadow-2xl mx-auto">
               <div className="w-full mask mask-squircle">
@@ -51,12 +51,12 @@ const Intro = () => {
           {stats.map((item, index) => {
             const { title, sub_head, count } = item;
             return (
-              <div key={index} className="stat p-5 rounded-xl shadow bg-dark">
+              <div key={index} className="stat p-5 rounded-sm shadow bg-dark">
                 <div className="stat-title text-base-content">{title}</div>
                 <div className="stat-value font-black">
                   <CountUp start={0} end={count} duration={2.75} />+
                 </div>
-                <div className="stat-desc badge badge-primary font-bold mt-2 mx-auto">
+                <div className="stat-desc badge badge-primary font-bold mt-2 mx-auto rounded-sm">
                   {sub_head}
                 </div>
               </div>
