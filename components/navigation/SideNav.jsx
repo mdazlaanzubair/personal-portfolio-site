@@ -49,7 +49,7 @@ const SideNav = () => {
             ? setActiveLogo(lightLogo.src)
             : setActiveLogo(darkLogo.src)
         }
-        onClick={() => navActivator("home-section")}
+        onSetActive={() => navActivator("home-section")}
       >
         <img
           src={activeLogo}
@@ -71,10 +71,11 @@ const SideNav = () => {
             <Link
               key={index}
               to={link}
+              spy={true}
               smooth={true}
-              offset={-62}
+              offset={-50}
               duration={500}
-              onClick={() => navActivator(title)}
+              onSetActive={() => navActivator(title)}
             >
               <li
                 className={`[writing-mode:vertical-rl] rotate-180 border-l-2 py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
