@@ -14,6 +14,7 @@ const Footer = () => {
     { title: "Credentials", link: "/credentials" },
     { title: "Offers", link: "/offers" },
     { title: "Archives", link: "/archives" },
+    { title: "Resume", link: "/resume" },
   ];
 
   return (
