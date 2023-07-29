@@ -2,6 +2,8 @@ import { BiChevronRight as ListIcon } from "react-icons/bi";
 
 import Button from "../Button";
 import ResumeDownloadBtn from "../ResumeDownloadBtn";
+import Animator from "../Animator";
+import * as home_animation from "../../public/home_animation.json";
 
 const About = () => {
   const skill_tags = [
@@ -49,7 +51,7 @@ const About = () => {
           create websites that are both visually appealing and technically
           sound.
         </p>
-        <div className="hidden lg:flex flex-row flex-wrap gap-3 mt-5 items-center">
+        <div className="flex flex-row flex-wrap gap-3 mt-5 items-center">
           <Button
             type={"btn"}
             link={"/credentials"}
@@ -60,6 +62,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">
+        <Animator animation={home_animation} />
         <p className="mb-5 font-semibold leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
           If you are looking for a web designer and developer who can help you
           create a website that will make a difference, then I am the person for

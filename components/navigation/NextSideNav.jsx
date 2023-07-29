@@ -29,8 +29,8 @@ const NextSideNav = () => {
   const nav_links = [
     { title: "Home", link: "/" },
     { title: "Credentials", link: "/credentials" },
-    { title: "Offerings", link: "/offers" },
-    { title: "Archive", link: "/archive" },
+    { title: "Offers", link: "/offers" },
+    { title: "Archives", link: "/archives" },
   ];
 
   return (

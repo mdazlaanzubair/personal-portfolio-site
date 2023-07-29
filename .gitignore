@@ -19,6 +19,10 @@
 .DS_Store
 *.pem
 *.ai
+featured_projects
+personal_projects
+offers
+icons
 
 # debug
 npm-debug.log*

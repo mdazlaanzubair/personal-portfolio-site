@@ -25,7 +25,7 @@ const Qualification = () => {
             Qualifications are the foundation, passion is the building.
           </h2>
         </div>
-        <div className="w-full flex flex-col justify-center items-start gap-5">
+        <div className="w-full lg:px-14 flex flex-col justify-center items-start gap-5">
           <ExperienceContextProvider>
             <ExperienceTimeline qualifications={sortedDegrees} />
           </ExperienceContextProvider>

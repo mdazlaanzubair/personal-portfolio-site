@@ -12,19 +12,26 @@ const ProjectContextProvider = ({ children }) => {
   const [featuredProjects, setFeaturedProjects] = useState([]);
   const [personalProjects, setPersonalProjects] = useState([]);
 
+  // segregate projects into Featured / Personal
+  const segregateProjects = (projects) => {
+    setFeaturedProjects(
+      projects
+        .filter((project) => project.fields.type === "Featured")
+        .map((project) => project.fields)
+    );
+
+    setPersonalProjects(
+      projects
+        .filter((project) => project.fields.type !== "Featured")
+        .map((project) => project.fields)
+    );
+  };
+
   // fetch services content from contentful
   useEffect(() => {
     fetchContent("project")
       .then((data) => {
-        // setting featured projects
-        setFeaturedProjects(
-          data.filter((project) => project.fields.type === "Featured")
-        );
-
-        // setting all projects - list all personal_projects
-        setPersonalProjects(
-          data.filter((project) => project.fields.type === "Personal")
-        );
+        segregateProjects(data);
       })
       .catch((err) =>
         console.log("Error while fetching experience data:\n\n", err)

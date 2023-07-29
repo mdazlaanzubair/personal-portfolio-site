@@ -12,8 +12,8 @@ const Footer = () => {
   const footerNav = [
     { title: "Home", link: "/" },
     { title: "Credentials", link: "/credentials" },
-    { title: "Work", link: "/archives" },
     { title: "Offers", link: "/offers" },
+    { title: "Archives", link: "/archives" },
   ];
 
   return (

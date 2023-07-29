@@ -40,7 +40,7 @@ const ExperienceTimeline = () => {
           <span className="absolute -top-2 left-5 badge badge-primary font-bold text-xs rounded-sm z-20">
             {experience.from + " - " + experience.to}
           </span>
-          <div className="flex flex-col p-5 ml-5 mt-5 shadow-lg bg-dark">
+          <div className="flex flex-col p-5 ml-5 mt-5 shadow bg-dark">
             <h1 className="text-sm lg:text-base font-black">
               {experience.title}{" "}
               <span className="text-primary">@{experience.company}</span>

@@ -1,9 +1,9 @@
-import CredentialsMainSection from "@/components/credentials/CredentialsMainSection";
+import ArchivesMainSection from "@/components/archives/ArchivesMainSection";
 
 export const metadata = {
   title: "Archives",
 };
 
 export default function Credentials() {
-  return <CredentialsMainSection />;
+  return <ArchivesMainSection />;
 }
