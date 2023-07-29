@@ -3,7 +3,7 @@
 import { useSocialContext } from "@/context/SocialContext";
 import Link from "next/link";
 import * as FontAwesome6Icon from "react-icons/fa";
-import ResumeDownloadBtn from "../ResumeDownloadBtn";
+import ResumeLinkBtn from "../resume/ResumeLinkBtn";
 import { useState } from "react";
 
 const TopNav = () => {
@@ -48,7 +48,7 @@ const TopNav = () => {
         </div>
       </div>
       <div className="hidden lg:flex flex-row gap-3 items-center justify-end">
-        <ResumeDownloadBtn />
+        <ResumeLinkBtn />
       </div>
     </nav>
   ) : null;

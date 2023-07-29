@@ -1,7 +1,7 @@
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 
 import Button from "../Button";
-import ResumeDownloadBtn from "../ResumeDownloadBtn";
+import ResumeLinkBtn from "../resume/ResumeLinkBtn";
 import Animator from "../Animator";
 import * as home_animation from "../../public/home_animation.json";
 
@@ -58,7 +58,7 @@ const About = () => {
             text={"Credentials"}
             active_nav_title={"Credentials"}
           />
-          <ResumeDownloadBtn />
+          <ResumeLinkBtn />
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">

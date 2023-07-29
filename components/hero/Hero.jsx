@@ -1,5 +1,5 @@
 import Button from "../Button";
-import ResumeDownloadBtn from "../ResumeDownloadBtn";
+import ResumeLinkBtn from "../resume/ResumeLinkBtn";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
             text={"Credentials"}
             active_nav_title={"Credentials"}
           />
-          <ResumeDownloadBtn />
+          <ResumeLinkBtn />
         </div>
       </div>
     </div>

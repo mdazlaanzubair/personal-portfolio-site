@@ -1,10 +1,9 @@
 import Link from "next/link";
 
-const ResumeDownloadBtn = () => {
+const ResumeLinkBtn = () => {
   return (
     <Link
-      href="3"
-      target="_blank"
+      href="/resume"
       className="btn btn-outline btn-primary rounded-sm capitalize hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"
     >
       Resume
@@ -12,4 +11,4 @@ const ResumeDownloadBtn = () => {
   );
 };
 
-export default ResumeDownloadBtn;
+export default ResumeLinkBtn;
