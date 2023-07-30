@@ -1,0 +1,2315 @@
+{
+  "projects": [
+    {
+      "title": "Wildfire Tracker",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "A basic implementation of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Web GIS",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". This project is using the data that is coming from ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "NASA's EONET API",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " and plots it on ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Google Maps",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " on their respective coordinates.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "3zWbTKXJsfRYaMciSlH66c",
+          "type": "Asset",
+          "createdAt": "2023-07-28T17:02:09.215Z",
+          "updatedAt": "2023-07-28T17:02:09.215Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Wild Fire Tracker",
+          "description": "Wild Fire Tracker Web App",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/3zWbTKXJsfRYaMciSlH66c/1cbda40903051447a0ee2f90e2687857/fire.jpg",
+            "details": {
+              "size": 263701,
+              "image": {
+                "width": 870,
+                "height": 580
+              }
+            },
+            "fileName": "fire.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "tech": [
+        "javascript",
+        "nasa api",
+        "react js",
+        "google maps api",
+        "web gis"
+      ],
+      "url": "https://fire-tracking.vercel.app/",
+      "source": "https://github.com/mdazlaanzubair/fire-tracking",
+      "type": "Personal"
+    },
+    {
+      "title": "Promptare",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "A social media hub for ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Chat GPT ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "users. Discover and share ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "powerful prompts",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "commands ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "to enhance your Chat GPT experience.",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "ZXuoWieO5SMlZ4PJVN8gt",
+          "type": "Asset",
+          "createdAt": "2023-07-29T08:22:39.945Z",
+          "updatedAt": "2023-07-29T08:22:39.945Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "prompt",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/ZXuoWieO5SMlZ4PJVN8gt/4d6f5ad9c650c94bf67ecfb18d145009/prompt.jpg",
+            "details": {
+              "size": 151944,
+              "image": {
+                "width": 1920,
+                "height": 1224
+              }
+            },
+            "fileName": "prompt.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "tech": ["next js", "next auth", "mongo db", "chat gpt", "react js"],
+      "url": "https://promptare.vercel.app/",
+      "source": "https://github.com/mdazlaanzubair/Promptare",
+      "type": "Personal"
+    },
+    {
+      "title": "Covid-19 Visualizer",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Web GIS",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " project showcasing an interactive ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "3D visualization",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "COVID-19",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "3rgSdVlutoNd1MlwElo1B2",
+          "type": "Asset",
+          "createdAt": "2023-07-29T08:22:39.942Z",
+          "updatedAt": "2023-07-29T08:22:39.942Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "covid",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/3rgSdVlutoNd1MlwElo1B2/c07abb611176960ded226be2db7d70ea/covid.jpg",
+            "details": {
+              "size": 268308,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "covid.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      },
+      "tech": [
+        "javascript",
+        "snow pack",
+        "three js",
+        "covid 19",
+        "world o meter"
+      ],
+      "url": "https://track-covid-19.vercel.app/",
+      "source": "https://github.com/mdazlaanzubair/Covid-3d",
+      "type": "Personal"
+    },
+    {
+      "title": "Getting Chic Done",
+      "description": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "It is a lifestyle blog for modern moms using the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "WordPress ",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "platform and the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Genesis Framework Theme",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ". The blog posts are written in ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "HTML",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "CSS",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", and ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "JavaScript",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", and the website uses ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Google Analytics ",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "to track traffic. It is hosted on the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Amazon Web Services (AWS)",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " platform.\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "The blog covers pregnancy, motherhood, fashion, and self-care topics. It is monetized through affiliate marketing and advertising. The blog has a mailing list of over ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "10,000 subscribers",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".\n\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "3OMOtHgtmIEaBS210m8JNJ",
+          "type": "Asset",
+          "createdAt": "2023-07-18T07:31:54.833Z",
+          "updatedAt": "2023-07-18T07:31:54.833Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "Getting Chic Done",
+          "description": "",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/3OMOtHgtmIEaBS210m8JNJ/20722ce51d1c55f8768ef9f3740c1ce6/gettingchicdone.png",
+            "details": {
+              "size": 540341,
+              "image": {
+                "width": 1800,
+                "height": 760
+              }
+            },
+            "fileName": "gettingchicdone.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      "tech": [
+        "WordPress",
+        "Google Analytics",
+        "html/css/js",
+        "AWS",
+        "Genesis Framework"
+      ],
+      "url": "https://gettingchicdone.com/",
+      "type": "Featured"
+    },
+    {
+      "title": "JomRun",
+      "description": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "It is a Southeast Asia-based running app that helps users find and register for running events. The website is built on a number of technologies, along with some third-party services, such as ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Google Maps",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " and ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Facebook",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", to provide users with additional functionality. Jomrun is built on a number of reliable and scalable technologies, which ensures that it will be able to ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "handle the growing number of users",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "6nRhFZAhhsdU7Nxjf6X4kB",
+          "type": "Asset",
+          "createdAt": "2023-07-17T12:42:58.183Z",
+          "updatedAt": "2023-07-17T12:42:58.183Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "jomrun",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/6nRhFZAhhsdU7Nxjf6X4kB/bca3909c7efa54d8a399f57333bd8c03/jomrun.png",
+            "details": {
+              "size": 1639611,
+              "image": {
+                "width": 1800,
+                "height": 760
+              }
+            },
+            "fileName": "jomrun.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      "tech": ["html", "css", "javascript", "php", "mysql"],
+      "url": "https://www.jomrun.com/",
+      "type": "Featured"
+    },
+    {
+      "title": "Epakai Commerce",
+      "description": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "It is an online store that sells bathroom and kitchen accessories. The website was built for ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Pakai Industries Berhad",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", a ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Malaysian Company ",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "that has been in the ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "sanitaryware industry",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " for over ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "30 years",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ". The website accepts payments via ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "credit card",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "PayPal",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", and ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "bank transfer",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ", and has a ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "4.5 out of 5-star",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": " rating on ",
+                "marks": [],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": "Google Reviews",
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "data": {}
+              },
+              {
+                "nodeType": "text",
+                "value": ".",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "2jrMlN0touqv5YcO63oXlM",
+          "type": "Asset",
+          "createdAt": "2023-07-17T12:42:58.185Z",
+          "updatedAt": "2023-07-17T12:42:58.185Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "epakai",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/2jrMlN0touqv5YcO63oXlM/773b349f202deaba00072a822323e7e0/epakai.png",
+            "details": {
+              "size": 579095,
+              "image": {
+                "width": 1800,
+                "height": 760
+              }
+            },
+            "fileName": "epakai.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      "tech": ["wordpress", "php", "sql", "stripe"],
+      "url": "https://epakai.com/",
+      "type": "Featured"
+    },
+    {
+      "title": "Analyticsmart",
+      "description": {
+        "nodeType": "document",
+        "data": {},
+        "content": [
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "It is a data analytics company that provides smart analytical services and solutions to businesses of all sizes. This responsive website was made for a Canadian client on WordPress and optimized for search engines.",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          },
+          {
+            "nodeType": "paragraph",
+            "data": {},
+            "content": [
+              {
+                "nodeType": "text",
+                "value": "\n\n",
+                "marks": [],
+                "data": {}
+              }
+            ]
+          }
+        ]
+      },
+      "image": {
+        "metadata": {
+          "tags": []
+        },
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "atb1p2ainonv"
+            }
+          },
+          "id": "4XNAaSewBzNZhr6C2Ef3Gm",
+          "type": "Asset",
+          "createdAt": "2023-07-17T12:42:58.188Z",
+          "updatedAt": "2023-07-17T12:42:58.188Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "revision": 1,
+          "locale": "en-US"
+        },
+        "fields": {
+          "title": "analyticsmart",
+          "file": {
+            "url": "//images.ctfassets.net/atb1p2ainonv/4XNAaSewBzNZhr6C2Ef3Gm/26149e7d1ef6d38dc1c8fc6eeab0afd3/analyticsmart.png",
+            "details": {
+              "size": 1028874,
+              "image": {
+                "width": 1800,
+                "height": 760
+              }
+            },
+            "fileName": "analyticsmart.png",
+            "contentType": "image/png"
+          }
+        }
+      },
+      "tech": ["wordpress", "php ", "sql", "google analytics"],
+      "url": "https://analyticsmart.com/",
+      "type": "Featured"
+    }
+  ],
+  "experiences": {
+    "recent": [
+      {
+        "title": "IT Assistant",
+        "company": "Federal Govt.",
+        "type": "Contract",
+        "description": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "I joined the ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "Federal Government",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": " as an ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "IT Assistant",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": " and effectively manage procurement records, optimized website/software, and propose technical solutions. Provide guidance/training, resolve database/server issues, and excel in web development, documentation, content writing, and Microsoft Office.",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "tasks": [
+          "Data management of procurement records, insights generation, and retrieval of documents on request.",
+          "Optimize website and software on users' issues and queries.",
+          "Analyze and propose technical solutions based on users' needs and requirements.",
+          "Provide guidance and training to users",
+          "Administrate, support, and monitor databases by proactively resolving database and server issues."
+        ],
+        "skills": [
+          "Web Development",
+          "Documentation",
+          "Content Writing",
+          "Microsoft Office"
+        ],
+        "to": "Present",
+        "from": "Feb 2020"
+      }
+    ],
+    "all": [
+      {
+        "title": "Jr. Developer",
+        "company": "Famespark",
+        "type": "Internship",
+        "description": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "During my ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "Jr. Developer Internship ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "at ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "Famespark",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": ", I excelled in React.js, web development, JSON, JavaScript, and Git. I built reusable components, translated designs to pixel-perfect code, and optimized performance across devices. I actively contributed to the company's component library, fostering reusability and streamlining development processes.",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "tasks": [
+          "Developed new user-facing features using React.js, enhancing the functionality and user experience of web applications.",
+          "Built reusable components and front-end libraries, ensuring efficient development and easy maintenance of code for future projects.",
+          "Translated designs and wireframes into high-quality code, bringing visual concepts to life with attention to detail and adherence to coding best practices.",
+          "Optimized components for maximum performance across a wide range of web-capable devices and browsers, ensuring smooth and seamless user interactions.",
+          "Contributed to the company's custom-made component library, fostering code reusability and accelerating development processes."
+        ],
+        "skills": ["Web Development", "HTML/CSS", "Javascript", "JSON", "Git"],
+        "to": "May 2019",
+        "from": "Dec 2018"
+      },
+      {
+        "title": "Ghost Designer",
+        "company": "Famespark",
+        "type": "Freelance",
+        "description": {
+          "data": {},
+          "content": [
+            {
+              "data": {},
+              "content": [
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": "As a ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "Ghost Designer",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": " at ",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [
+                    {
+                      "type": "bold"
+                    }
+                  ],
+                  "value": "Famespark",
+                  "nodeType": "text"
+                },
+                {
+                  "data": {},
+                  "marks": [],
+                  "value": ", I created visually stunning interfaces meeting client requirements. With expertise in web design, responsive design, Adobe tools, and UX, I crafted captivating websites. Collaborating with UX teams, I defined functional requirements and conducted live user testing for effective designs. Utilizing wireframes and prototypes, I ensured cohesive and intuitive experiences.",
+                  "nodeType": "text"
+                }
+              ],
+              "nodeType": "paragraph"
+            }
+          ],
+          "nodeType": "document"
+        },
+        "tasks": [
+          "Designed user interfaces that aligned with client specifications and briefs, ensuring visually captivating and user-friendly websites.",
+          "Crafted website content by combining copywriting skills with image designing, resulting in engaging and compelling online experiences.",
+          "Collaborated closely with UX and product teams to define visually appealing yet functional requirements, incorporating user-centered design principles.",
+          "Conducted live user testing of components and functionality to evaluate the effectiveness of designs and identify areas for improvements.",
+          "Utilized wireframes, mock-ups, and prototypes to establish a solid foundation for user interface design and architecture."
+        ],
+        "skills": [
+          "Responsive Web Designs",
+          "Adobe Photoshop",
+          "Adobe Illustrator",
+          "User Experience (UX)",
+          "User Interface (UI)"
+        ],
+        "to": "Feb 2020",
+        "from": "Jul 2019"
+      }
+    ]
+  },
+  "degrees": [
+    {
+      "title": "Graduation",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "What a thrill! my ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "paper crane",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " production line had to be ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "shut down",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", so I could finally discover my true passion: ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "coding ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "chasing bugs",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " & ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "errors ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "all day long. I'm so excited to spend the rest of my life in this ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "stimulating ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "fulfilling career",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Degree",
+      "institute": "Ilma University",
+      "from": "2016",
+      "to": "2020",
+      "url": "http://www.google.com/search?q=ilma+university+formerly+ibt",
+      "field": "BS - Software Engineering"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Introduction to AI",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "It is a ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "4-module",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course that teaches you the basics of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Artificial",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Intelligence",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The course is taught by ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Andrew Ng",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", a renowned ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "AI Researcher and Educator",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "AI For Everyone",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course is a great introduction to ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Artificial",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Intelligence",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " for anyone who wants to learn more about this rapidly growing field. The course is ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "well-structured",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "engaging",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Andrew Ng",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " is an ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "excellent instructor",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Certification",
+      "institute": "Deep Learning AI",
+      "from": "null",
+      "to": "2019",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/W2CWXZ2FHD3Q",
+      "field": "Artificial Intelligence"
+    },
+    {
+      "title": "Image Processing and OCR",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "It ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "is a ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "five-module",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course that teaches you how to use three ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "popular Python libraries ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "like: ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Pillow",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Tesseract",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "OpenCV",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". This comprehensive and practical course taught me how to use ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Python ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "for I",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "mage Processing",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Certification",
+      "institute": "University of Michigan",
+      "from": "null",
+      "to": "2019",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/F42TMF48MXZP",
+      "field": "Computer Vision"
+    },
+    {
+      "title": "Python Programming",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "It is a ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "5-module",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course that teaches you the basics of programming using the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Python programming language",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The course is taught by ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Dr. Charles Severance",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", a professor of C",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "omputer Science",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " at the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "University of Michigan",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". This",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": " ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "course is a great introduction to programming for anyone who wants to learn more about this important skill. It is well-structured and engaging, and Dr. Severance is an excellent instructor.\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Certification",
+      "institute": "University of Michigan",
+      "from": "null",
+      "to": "2016",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/893KLF5Y6NL9",
+      "field": "Python Programming"
+    },
+    {
+      "title": "Web Structuring",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "It ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "is a ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "4-module",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course that teaches you the basics of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "HTML5",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ", the latest version of the ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "HyperText Markup Language (HTML)",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Introduction to HTML5",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course is a great introduction to HTML5 for anyone who wants to learn more about this important ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "web development technology",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The course is ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "well-structured ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "and ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "engaging",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Certification",
+      "institute": "University of Michigan",
+      "from": "null",
+      "to": "2016",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/6UK5ZXUCXU72",
+      "field": "Web Development"
+    },
+    {
+      "title": "Data Structures in Python",
+      "description": {
+        "data": {},
+        "content": [
+          {
+            "data": {},
+            "content": [
+              {
+                "data": {},
+                "marks": [],
+                "value": "It ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "is a 4-module course that teaches you the basics of ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "data structures",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " in ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Python",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ". The ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Python Data Structures",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " course is a great introduction to ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "data structures ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "in ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "Python ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": "for anyone who wants to learn more about this important topic. It is also a good choice for learners who want to learn how to use ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "data structures",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": " to solve ",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [
+                  {
+                    "type": "bold"
+                  }
+                ],
+                "value": "real-world problems",
+                "nodeType": "text"
+              },
+              {
+                "data": {},
+                "marks": [],
+                "value": ".\n\n",
+                "nodeType": "text"
+              }
+            ],
+            "nodeType": "paragraph"
+          }
+        ],
+        "nodeType": "document"
+      },
+      "type": "Certification",
+      "institute": "University of Michigan",
+      "from": "null",
+      "to": "2016",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/33JDM48G7YVB",
+      "field": "Python Programming"
+    }
+  ],
+  "constant_details": {
+    "header": {
+      "greetings": "Hi, myself",
+      "title": "Muhammad Azlaan",
+      "overview": [
+        "I'm a software engineering graduate, specialized in building & designing things for the web. You can call me a Web Engineer cause I can Layout & Prototype, Design & Structure, Develop & Build, Manage & Maintain, Repair & Construct web related products.",
+        "With more than 2 years of experience I have demonstrated my skills & talent in the field of web to optimize online appearances."
+      ]
+    },
+    "bios": [
+      {
+        "title": "Full Name",
+        "desc": "Muhammad Azlaan Zubair"
+      },
+      {
+        "title": "Date of Birth",
+        "desc": "25 July, 1996"
+      },
+      {
+        "title": "Staying at",
+        "desc": "Karachi, Sindh, Pakistan"
+      },
+      {
+        "title": "Nationality",
+        "desc": "Pakistani"
+      },
+      {
+        "title": "Native Language",
+        "desc": "Urdu"
+      }
+    ],
+    "favorites": [
+      {
+        "title": "Content Creators",
+        "desc": [
+          {
+            "name": "Brad Traversy",
+            "link": "https://www.youtube.com/user/TechGuyWeb"
+          },
+          {
+            "name": "Geeks for Geeks",
+            "link": "https://www.geeksforgeeks.org/"
+          }
+        ]
+      },
+      {
+        "title": "AI Tools",
+        "desc": [
+          {
+            "name": "Bard",
+            "link": "https://bard.google.com/"
+          },
+          {
+            "name": "Chat GPT",
+            "link": "https://chat.openai.com/"
+          }
+        ]
+      },
+      {
+        "title": "Video Games",
+        "desc": [
+          {
+            "name": "CS GO",
+            "link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"
+          },
+          {
+            "name": "Valorant",
+            "link": "https://playvalorant.com/en-gb/"
+          }
+        ]
+      },
+      {
+        "title": "Indoor Game",
+        "desc": [
+          {
+            "name": "Chess",
+            "link": "https://www.chess.com/member/mdazlaanzubair"
+          }
+        ]
+      },
+      {
+        "title": "Movie",
+        "desc": [
+          {
+            "name": "The Imitation Game",
+            "link": "https://www.imdb.com/title/tt2084970/"
+          }
+        ]
+      },
+      {
+        "title": "Series",
+        "desc": [
+          {
+            "name": "Money Heist",
+            "link": "https://www.imdb.com/title/tt6468322/"
+          }
+        ]
+      },
+      {
+        "title": "Pets",
+        "desc": [
+          {
+            "name": "Cat",
+            "link": "https://www.google.com/search?q=pets+cat+fluffy"
+          },
+          {
+            "name": "Dog",
+            "link": "https://www.google.com/search?q=animal+dog+husky"
+          }
+        ]
+      }
+    ],
+    "skill": [
+      {
+        "title": "Frontend",
+        "abilities": [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Bootstrap",
+          "Tailwind CSS",
+          "Vue JS",
+          "React JS",
+          "Next JS"
+        ]
+      },
+      {
+        "title": "Backend",
+        "abilities": [
+          "Express JS",
+          "Next JS",
+          "Flask",
+          "Node JS",
+          "PHP",
+          "Python",
+          "C++"
+        ]
+      },
+      {
+        "title": "Databases",
+        "abilities": [
+          "SQL",
+          "Mongo DB",
+          "Firebase",
+          "Supabase",
+          "Mongo DB Atlas"
+        ]
+      },
+      {
+        "title": "Generic",
+        "abilities": [
+          "Layouts",
+          "Prototyping",
+          "MVC",
+          "OOP",
+          "Problem Solving",
+          "Formal Writing"
+        ]
+      }
+    ],
+    "social": [
+      {
+        "title": "Email",
+        "url": "mailto:mdazlaan1996@gmail.com?subject=Hi%20There!&body=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.",
+        "icon": "FaGooglePlusG",
+        "username": "mdazlaan1996@gmail.com"
+      },
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/mdazlaanzubair/",
+        "icon": "null",
+        "username": ".com/mdazlaanzubair"
+      },
+      {
+        "title": "Chess",
+        "url": "https://www.chess.com/member/mdazlaanzubair",
+        "icon": "FaChessKnight",
+        "username": ".com/member/mdazlaanzubair"
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/mdazlaanzubair",
+        "icon": "FaGithub",
+        "username": ".com/mdazlaanzubair"
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/mdazlaanzubair",
+        "icon": "FaTwitter",
+        "username": ".com/mdazlaanzubair"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/mdazlaanzubair/",
+        "icon": "FaInstagram",
+        "username": "@mdazlaanzubair"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/mdazlaanzubair/",
+        "icon": "FaLinkedinIn",
+        "username": ".com/in/mdazlaanzubair"
+      },
+      {
+        "title": "Whatsapp",
+        "url": "https://wa.me/923113046692?text=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.%20I%20just%20want%20to%20discuss%20a%20project%20with%20you.%20Please%20contact.",
+        "icon": "FaWhatsapp",
+        "username": "+92-311-3046692"
+      }
+    ]
+  },
+  "isDataLoaded": true
+}

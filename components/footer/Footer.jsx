@@ -14,7 +14,10 @@ const Footer = () => {
     { title: "Credentials", link: "/credentials" },
     { title: "Offers", link: "/offers" },
     { title: "Archives", link: "/archives" },
-    { title: "Resume", link: "/resume" },
+    {
+      title: "Resume",
+      link: "https://rxresu.me/mdazlaan1996/resume-mdazlaanzubair",
+    },
   ];
 
   return (
@@ -23,7 +26,12 @@ const Footer = () => {
         {footerNav.map((item, index) => {
           const { title, link } = item;
           return (
-            <Link key={index} href={link} onClick={() => navActivator(title)}>
+            <Link
+              key={index}
+              href={link}
+              target={title === "Resume" ? "_blank" : "_self"}
+              onClick={() => navActivator(title)}
+            >
               <li
                 className={`py-1 text-base-content font-medium hover:font-semibold hover:text-primary transition-all ease-in-out duration-300 ${
                   title === activeNav ? "font-semibold text-primary" : ""

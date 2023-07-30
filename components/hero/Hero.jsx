@@ -1,5 +1,5 @@
 import Button from "../Button";
-import ResumeLinkBtn from "../resume/ResumeLinkBtn";
+import ResumeLinkBtn from "../ResumeLinkBtn";
 import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {

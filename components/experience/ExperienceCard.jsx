@@ -1,4 +1,3 @@
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { GoTriangleRight as Bullet } from "react-icons/go";
 
 const ExperienceCard = ({ recentExperience }) => {
@@ -17,11 +16,8 @@ const ExperienceCard = ({ recentExperience }) => {
               <span className="text-xs font-bold">{recentExperience.type}</span>
             </div>
           </h2>
-          <div className="my-3 text-sm leading-relaxed tracking-wider">
-            {documentToReactComponents(recentExperience.description)}
-          </div>
           <h3 className="font-semibold text-sm mb-3">Contributions:</h3>
-          <ul className="mb-3">
+          <ul className="my-3">
             {recentExperience.tasks.map((task, index) => (
               <li
                 key={index}

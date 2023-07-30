@@ -1,7 +1,6 @@
 "use client";
 
 import { useExperienceContext } from "@/context/ExperienceContext";
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { GoTriangleRight as Bullet } from "react-icons/go";
 
 const ExperienceTimeline = () => {
@@ -17,7 +16,7 @@ const ExperienceTimeline = () => {
       {sortedExperiences?.map((experience, index) => (
         <li
           key={index}
-          className="relative pb-10 flex flex-col items-center border-l-4 border-primary"
+          className="relative pb-10 flex flex-col border-l-4 border-primary"
         >
           <span className="absolute -top-1 -left-2.5 inline-block text-base text-base-100 bg-primary p-1 rounded-full">
             <svg
@@ -48,11 +47,7 @@ const ExperienceTimeline = () => {
             <h2 className="text-xs lg:text-sm font-semibold">
               {experience.type}
             </h2>
-
-            <div className="my-5 text-xs lg:text-sm font-medium">
-              {documentToReactComponents(experience.description)}
-            </div>
-            <ul className="mb-3 hidden lg:flex flex-col gap-3">
+            <ul className="my-3 hidden lg:flex flex-col gap-3">
               {experience.tasks.map((task, index) => (
                 <li
                   key={index}

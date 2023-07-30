@@ -3,7 +3,7 @@
 import { useSocialContext } from "@/context/SocialContext";
 import Link from "next/link";
 import * as FontAwesome6Icon from "react-icons/fa";
-import ResumeLinkBtn from "../resume/ResumeLinkBtn";
+import ResumeLinkBtn from "../ResumeLinkBtn";
 import { useState } from "react";
 
 const TopNav = () => {

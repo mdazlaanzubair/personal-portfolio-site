@@ -1,9 +1,9 @@
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 
 import Button from "../Button";
-import ResumeLinkBtn from "../resume/ResumeLinkBtn";
+import ResumeLinkBtn from "../ResumeLinkBtn";
 import Animator from "../Animator";
-import * as home_animation from "../../public/home_animation.json";
+import * as about_animation from "../../public/about_animation.json";
 
 const About = () => {
   const skill_tags = [
@@ -62,7 +62,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full lg:max-w-1/2">
-        <Animator animation={home_animation} />
+        <Animator animation={about_animation} />
         <p className="mb-5 font-semibold leading-relaxed w-full md:max-w-3xl text-sm md:text-base">
           If you are looking for a web designer and developer who can help you
           create a website that will make a difference, then I am the person for
