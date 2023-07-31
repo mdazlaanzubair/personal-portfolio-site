@@ -10,7 +10,6 @@ const OfferFilters = () => {
   const [activeFilter, setActiveFilter] = useState("");
 
   useEffect(() => {
-    console.log("Filters", services);
     setActiveFilter("All");
   }, []);
 

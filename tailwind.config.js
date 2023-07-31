@@ -44,7 +44,7 @@ module.exports = {
           ".bg-dark": {
             "background-color": "#09162a",
           },
-          "base-content": "#ffffff",
+          "base-content": "#fafafa",
           "neutral-content": "#a6a6a6",
         },
 
@@ -54,7 +54,7 @@ module.exports = {
           ".bg-dark": {
             "background-color": "#fafafa",
           },
-          "base-100": "#ffffff",
+          "base-100": "#fafafa",
           "base-content": "#0a192f",
           "neutral-content": "#3b4759",
         },
