@@ -3,7 +3,6 @@
 import useThemeStore from "@/store/ThemeStore";
 import accentLogo from "../public/logo/accent/radial-grad.svg";
 import darkLogo from "../public/logo/dark/radial-grad.svg";
-import lightLogo from "../public/logo/light/radial-grad.svg";
 
 function LoaderLogo() {
   const isDark = useThemeStore((state) => state.isDarkMode);
@@ -11,7 +10,7 @@ function LoaderLogo() {
   return (
     <div
       className={`fixed top-0 left-0 bottom-0 right-0 bg-opacity-95 min-w-full z-50 ${
-        isDark ? "bg-neutral" : "bg-slate-100"
+        isDark ? "bg-neutral" : "bg-white"
       }`}
     >
       <img

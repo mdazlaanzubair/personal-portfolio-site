@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div
       id="contact-section"
-      className="flex flex-col min-h-screen justify-start items-center text-center shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col min-h-screen justify-start items-center text-center px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="avatar my-10">
         <div className="w-24 lg:w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-4">

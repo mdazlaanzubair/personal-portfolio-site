@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <div
       id="experience-section"
-      className="flex flex-col lg:flex-row min-h-screen gap-5 justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col lg:flex-row min-h-screen gap-5 justify-start px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="w-full grid grid-cols-1 mt-5 gap-5 justify-start my-5">
         <div className="flex flex-col w-full">

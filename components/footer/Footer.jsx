@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex flex-col lg:flex-row items-center justify-between gap-5 text-xs lg:text-base shadow-lg px-5 lg:px-16 py-5 bg-base-100">
+    <footer className="flex flex-col lg:flex-row items-center justify-between gap-5 text-xs lg:text-base px-5 lg:px-16 py-5">
       <ul className="flex flex-row gap-3 items-center justify-center">
         {footerNav.map((item, index) => {
           const { title, link } = item;

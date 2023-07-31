@@ -35,7 +35,7 @@ const Intro = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row-reverse min-h-screen justify-between items-start gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100">
+    <div className="flex flex-col lg:flex-row-reverse min-h-screen justify-between items-start gap-10 px-5 lg:px-16 py-5 lg:py-16">
       <div className="w-full lg:w-auto text-center">
         <div className="p-5 rounded-sm bg-dark shadow">
           <Tilt options={defaultOptions}>

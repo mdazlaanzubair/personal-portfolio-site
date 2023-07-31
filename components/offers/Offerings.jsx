@@ -3,7 +3,7 @@ import OfferFilters from "./OfferFilters";
 
 const Offerings = () => {
   return (
-    <div className="flex flex-col min-h-screen justify-start items-start gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100">
+    <div className="flex flex-col min-h-screen justify-start items-start gap-10 px-5 lg:px-16 py-5 lg:py-16">
       <div className="w-full">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">
           Solutions you&apos;ll need

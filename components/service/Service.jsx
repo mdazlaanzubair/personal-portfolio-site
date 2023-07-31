@@ -5,7 +5,7 @@ const Service = () => {
   return (
     <div
       id="service-section"
-      className="flex flex-col min-h-screen justify-start shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col min-h-screen justify-start px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="my-auto">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">

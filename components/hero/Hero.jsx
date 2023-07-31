@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="home-section"
-      className="flex flex-row min-h-screen justify-start items-center gap-5 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-row min-h-screen justify-start items-center gap-5 px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="max-w-full">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">

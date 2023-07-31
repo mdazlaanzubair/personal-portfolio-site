@@ -11,7 +11,7 @@ const Project = () => {
   return (
     <div
       id="project-section"
-      className="flex flex-col min-h-screen justify-center shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col min-h-screen justify-center px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="w-full flex flex-col my-5 justify-start items-start">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">

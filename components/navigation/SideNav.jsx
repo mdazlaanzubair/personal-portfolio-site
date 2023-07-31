@@ -19,6 +19,7 @@ const SideNav = () => {
   const activeNav = useNavStore((state) => state.activeNav);
   const navActivator = useNavStore((state) => state.navActivator);
   const toggleNav = useNavStore((state) => state.toggleNav);
+  const navToggler = useNavStore((state) => state.navToggler);
 
   useEffect(
     () =>
@@ -36,7 +37,7 @@ const SideNav = () => {
   ];
 
   return (
-    <nav className="fixed flex flex-col gap-2 justify-center items-center shadow-lg top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 overflow-hidden">
+    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 z-20 overflow-hidden">
       <Link
         to={"home-section"}
         smooth={true}
@@ -49,7 +50,10 @@ const SideNav = () => {
             ? setActiveLogo(lightLogo.src)
             : setActiveLogo(darkLogo.src)
         }
-        onSetActive={() => navActivator("home-section")}
+        onSetActive={() => {
+          navActivator("home-section");
+          navToggler();
+        }}
       >
         <img
           src={activeLogo}

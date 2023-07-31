@@ -18,7 +18,7 @@ const About = () => {
   return (
     <div
       id="about-section"
-      className="flex flex-col lg:flex-row min-h-screen justify-start items-center gap-10 shadow-lg px-5 lg:px-16 py-5 lg:py-16 bg-base-100"
+      className="flex flex-col lg:flex-row min-h-screen justify-start items-center gap-10 px-5 lg:px-16 py-5 lg:py-16"
     >
       <div className="w-full lg:max-w-1/3">
         <h3 className="text-primary font-bold tracking-widest mb-3 px-1">

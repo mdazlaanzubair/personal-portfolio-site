@@ -3,7 +3,7 @@ import { devtools } from "zustand/middleware";
 
 const useNavStore = create(
   devtools((set) => ({
-    toggleNav: true,
+    toggleNav: false,
     navToggler: () => set((state) => ({ toggleNav: !state.toggleNav })),
 
     activeNav: "Home",

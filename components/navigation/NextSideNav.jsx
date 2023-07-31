@@ -19,6 +19,7 @@ const NextSideNav = () => {
   const activeNav = useNavStore((state) => state.activeNav);
   const navActivator = useNavStore((state) => state.navActivator);
   const toggleNav = useNavStore((state) => state.toggleNav);
+  const navToggler = useNavStore((state) => state.navToggler);
 
   useEffect(
     () =>
@@ -34,7 +35,7 @@ const NextSideNav = () => {
   ];
 
   return (
-    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 bg-base-100 z-20 shadow overflow-hidden">
+    <nav className="fixed flex flex-col gap-2 justify-center items-center top-0 left-0 bottom-0 py-3 px-0 z-20 overflow-hidden">
       <Link
         href="/#home-section"
         className="btn btn-ghost btn-square bg-base-100 hover:bg-transparent text-xl rounded-sm"
@@ -44,7 +45,10 @@ const NextSideNav = () => {
             ? setActiveLogo(lightLogo.src)
             : setActiveLogo(darkLogo.src)
         }
-        onClick={() => navActivator("home-section")}
+        onClick={() => {
+          navActivator("home-section");
+          navToggler();
+        }}
       >
         <img
           src={activeLogo}
@@ -63,7 +67,14 @@ const NextSideNav = () => {
         {nav_links.map((item, index) => {
           const { title, link } = item;
           return (
-            <Link key={index} href={link} onClick={() => navActivator(title)}>
+            <Link
+              key={index}
+              href={link}
+              onClick={() => {
+                navActivator(title);
+                navToggler();
+              }}
+            >
               <li
                 className={`[writing-mode:vertical-rl] rotate-180 border-l-2 py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
                   title === activeNav
