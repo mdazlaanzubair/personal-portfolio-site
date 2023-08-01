@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { useOffersContext } from "@/context/OffersContext";
 import { useServiceContext } from "@/context/ServiceContext";
 import { useEffect, useState } from "react";
@@ -19,7 +21,10 @@ const OfferFilters = () => {
       <div className="w-full flex flex-col justify-center gap-3">
         <div className="flex flex-row justify-start items-center gap-3">
           <ul className="w-full grow hidden lg:flex flex-row flex-wrap justify-center items-center">
-            <li
+            <motion.li
+              initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+              whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+              transition={{ duration: 0.3, delay: 0.4 }}
               className={`p-3 text-base border-b-4 rounded-sm cursor-pointer ${
                 activeFilter.toLowerCase() === "all"
                   ? "font-bold text-primary bg-dark border-primary"
@@ -31,9 +36,12 @@ const OfferFilters = () => {
               }}
             >
               All
-            </li>
+            </motion.li>
             {services.map((service, index) => (
-              <li
+              <motion.li
+                initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+                whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
                 key={index}
                 className={`p-3 text-base border-b-4 rounded-sm cursor-pointer ${
                   activeFilter.toLowerCase() === service.title.toLowerCase()
@@ -46,10 +54,15 @@ const OfferFilters = () => {
                 }}
               >
                 {service.title}
-              </li>
+              </motion.li>
             ))}
           </ul>
-          <div className="w-full grow flex lg:hidden flex-row gap-3 justify-start items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
+            className="w-full grow flex lg:hidden flex-row gap-3 justify-start items-center"
+          >
             <h1 className="text-base font-bold shrink">Filter</h1>
             <select
               className="w-full select select-bordered select-sm rounded-sm focus:outline-none"
@@ -65,10 +78,15 @@ const OfferFilters = () => {
                 </option>
               ))}
             </select>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center gap-3">
-          <div className="w-auto flex flex-row gap-3 justify-start items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
+            className="w-auto flex flex-row gap-3 justify-start items-center"
+          >
             <h1 className="text-xs lg:text-sm font-semibold shrink">
               Offer Types
             </h1>
@@ -80,8 +98,13 @@ const OfferFilters = () => {
               <option value="Basic">Basic</option>
               <option value="Premium">Premium</option>
             </select>
-          </div>
-          <div className="w-auto flex flex-row gap-3 justify-start items-center">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: 0.5 }}
+            className="w-auto flex flex-row gap-3 justify-start items-center"
+          >
             <h1 className="text-xs lg:text-sm font-semibold shrink">
               Sort by Price
             </h1>
@@ -92,7 +115,7 @@ const OfferFilters = () => {
               <option value="true">Low to High</option>
               <option value="false">High to Low</option>
             </select>
-          </div>
+          </motion.div>
         </div>
       </div>
     )

@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { BiChevronRight as ListIcon } from "react-icons/bi";
 import { useOffersContext } from "@/context/OffersContext";
 import Button from "../Button";
@@ -13,37 +15,77 @@ const OfferCard = () => {
     filteredOffers.length > 0 && (
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
         {filteredOffers.map((offer, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+            whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+            transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
             key={index}
             className="group card w-fill bg-dark shadow hover:shadow-lg rounded-sm transition-all ease-in-out duration-300"
           >
             <figure className="relative ">
-              <img
+              <motion.img
+                initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+                whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
                 src={"https:" + offer.img.fields.file.url}
                 alt="Service thumbnail"
               />
-              <div className="absolute bottom-0 right-0 pricing p-3 bg-base-100 bg-opacity-60 text-base-content font-black text-xl group-hover:text-base-200 group-hover:bg-primary group-hover:shadow-2xl transition-all ease-in-out duration-300">
+              <div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                className="absolute bottom-0 right-0 pricing p-3 bg-base-100 bg-opacity-60 text-base-content font-black text-xl group-hover:text-base-200 group-hover:bg-primary group-hover:shadow-2xl transition-all ease-in-out duration-300"
+              >
                 $ <CountUp start={0} end={offer.cost} duration={2.75} />
               </div>
             </figure>
             <div className="relative card-body flex flex-col justify-between">
               <div className="flex flex-col justify-between">
-                <h2 className="text-lg font-bold mb-5">{offer.title}</h2>
+                <motion.h2
+                  initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+                  whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                  transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                  className="text-lg font-bold mb-5"
+                >
+                  {offer.title}
+                </motion.h2>
                 <ul>
                   {offer.offers.map((item, index) => (
                     <li
                       key={index}
                       className="text-sm flex flex-row items-center mb-3 ml-1"
                     >
-                      <span className="text-primary mr-2 font-medium">
+                      <motion.span
+                        initial={{ opacity: 0, translateX: 10 }}
+                        whileInView={{
+                          opacity: 1,
+                          translateX: 0,
+                        }}
+                        transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                        className="text-primary mr-2 font-medium"
+                      >
                         <ListIcon />
-                      </span>
-                      {item}
+                      </motion.span>
+                      <motion.span
+                        initial={{ opacity: 0, translateX: -10 }}
+                        whileInView={{
+                          opacity: 1,
+                          translateX: 0,
+                        }}
+                        transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                      >
+                        {item}
+                      </motion.span>
                     </li>
                   ))}
                 </ul>
               </div>
-              <div className="card-actions justify-center items-center mt-5 gap-3">
+              <motion.div
+                initial={{ opacity: 0, translateX: 10, translateY: 10 }}
+                whileInView={{ opacity: 1, translateX: 0, translateY: 0 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                className="card-actions justify-center items-center mt-5 gap-3"
+              >
                 <Button
                   link={`mailto:mdazlaan1996@gmail.com?subject=Inquiry%20about%20${
                     offer.title
@@ -62,9 +104,9 @@ const OfferCard = () => {
                   target="_blank"
                   text={"Book a Call"}
                 />
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     )

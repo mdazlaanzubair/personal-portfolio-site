@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { useEffect, useState } from "react";
 
 import useNavStore from "@/store/NavStore";
@@ -28,7 +30,7 @@ const NextSideNav = () => {
   );
 
   const nav_links = [
-    { title: "Home", link: "/" },
+    // { title: "Home", link: "/" },
     { title: "Credentials", link: "/credentials" },
     { title: "Offers", link: "/offers" },
     { title: "Archives", link: "/archives" },
@@ -50,7 +52,10 @@ const NextSideNav = () => {
           navToggler();
         }}
       >
-        <img
+        <motion.img
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.3, delay: 0 }}
           src={activeLogo}
           className="w-8"
           alt="Muhammad Azlaan Zubair logo"
@@ -75,21 +80,31 @@ const NextSideNav = () => {
                 navToggler();
               }}
             >
-              <li
-                className={`[writing-mode:vertical-rl] rotate-180 border-l-2 py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
+              <motion.li
+                initial={{ opacity: 0, translateX: -2 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                className={`border-r-[3px] py-3 px-4 text-xs lg:text-sm cursor-pointer transition-all ease-in-out duration-300 ${
                   title === activeNav
-                    ? "font-semibold text-primary border-l-primary bg-dark"
-                    : "font-normal text-base-content border-l-base-100 bg-base-100 hover:bg-base-100 hover:font-semibold hover:border-l-base-content"
+                    ? "font-semibold text-primary border-r-primary bg-dark"
+                    : "font-normal text-base-content border-r-base-100 bg-base-100 hover:bg-base-100 hover:font-semibold hover:border-r-base-content"
                 }`}
               >
-                {title}
-              </li>
+                <span className="[writing-mode:vertical-lr] rotate-180">
+                  {title}
+                </span>
+              </motion.li>
             </Link>
           );
         })}
       </ul>
       <ThemeToggler />
-      <span className="w-px h-1/2 bg-base-content mx-auto"></span>
+      <motion.span
+        initial={{ opacity: 0, y: -100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.8 }}
+        className="w-px h-1/2 bg-base-content mx-auto"
+      ></motion.span>
     </nav>
   );
 };

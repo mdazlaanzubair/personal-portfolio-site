@@ -10,7 +10,7 @@ function LoaderLogo() {
   return (
     <div
       className={`fixed top-0 left-0 bottom-0 right-0 bg-opacity-95 min-w-full z-50 ${
-        isDark ? "bg-neutral" : "bg-white"
+        isDark ? "bg-base-100" : "bg-white"
       }`}
     >
       <img

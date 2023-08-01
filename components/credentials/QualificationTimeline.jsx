@@ -1,16 +1,26 @@
+import { motion } from "framer-motion";
+
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Link from "next/link";
 
 const QualificationTimeline = ({ qualifications }) => {
   return (
     <ul className="relative w-full lg:w-1/2 flex flex-col">
-      <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10">
+      <motion.h2
+        initial={{ opacity: 0, translateY: -10 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
+        className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10"
+      >
         {qualifications[0].type === "Degree"
           ? "Qualifications"
           : "Certifications"}
-      </h2>
+      </motion.h2>
       {qualifications?.map((qualification, index) => (
-        <li
+        <motion.li
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: (index + 1) * 0.2 }}
           key={index}
           className={`relative pb-10 flex flex-col items-center border-primary ${
             qualification.type === "Degree" ? "border-l-4" : "border-r-4"
@@ -52,25 +62,46 @@ const QualificationTimeline = ({ qualifications }) => {
               qualification.type === "Degree" ? "ml-5" : "mr-5"
             }`}
           >
-            <h1 className="text-sm lg:text-base font-black">
+            <motion.h1
+              initial={{ opacity: 0, translateY: -10 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              className="text-sm lg:text-base font-black"
+            >
               {qualification.title}{" "}
               <Link
                 href={qualification.url}
                 target="_blank"
                 className="text-primary"
               >
-                @{qualification.institute}
+                <motion.span
+                  initial={{ opacity: 0, translateY: -10 }}
+                  whileInView={{ opacity: 1, translateY: 0 }}
+                  transition={{ duration: 0.3, delay: 0.4 }}
+                >
+                  @{qualification.institute}
+                </motion.span>
               </Link>
-            </h1>
-            <h2 className="text-xs lg:text-sm font-semibold">
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0, translateY: -10 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: 0.5 }}
+              className="text-xs lg:text-sm font-semibold"
+            >
               {qualification.field}
-            </h2>
+            </motion.h2>
 
-            <div className="my-5 text-xs lg:text-sm font-medium">
+            <motion.div
+              initial={{ opacity: 0, translateY: -10 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: 0.6 }}
+              className="my-5 text-xs lg:text-sm font-medium"
+            >
               {documentToReactComponents(qualification.description)}
-            </div>
+            </motion.div>
           </div>
-        </li>
+        </motion.li>
       ))}
     </ul>
   );

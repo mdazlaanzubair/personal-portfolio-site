@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "framer-motion";
+
 import { useExperienceContext } from "@/context/ExperienceContext";
 import { GoTriangleRight as Bullet } from "react-icons/go";
 
@@ -9,9 +11,14 @@ const ExperienceTimeline = () => {
 
   return (
     <ul className="relative w-full p-5 flex flex-col">
-      <h2 className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10">
+      <motion.h2
+        initial={{ opacity: 0, translateY: -10 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 0.3, delay: 0.1 }}
+        className="text-xl md:text-2xl lg:text-3xl tracking-tight font-black text-neutral-content mb-8 lg:mb-10"
+      >
         Placements
-      </h2>
+      </motion.h2>
 
       {sortedExperiences?.map((experience, index) => (
         <li
@@ -36,37 +43,78 @@ const ExperienceTimeline = () => {
               />
             </svg>
           </span>
-          <span className="absolute -top-2 left-5 badge badge-primary font-bold text-xs rounded-sm z-20">
+          <motion.span
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+            className="absolute -top-2 left-5 badge badge-primary font-bold text-xs rounded-sm z-20"
+          >
             {experience.from + " - " + experience.to}
-          </span>
+          </motion.span>
           <div className="flex flex-col p-5 ml-5 mt-5 shadow bg-dark">
-            <h1 className="text-sm lg:text-base font-black">
+            <motion.h1
+              initial={{ opacity: 0, translateY: 10 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+              className="text-sm lg:text-base font-black"
+            >
               {experience.title}{" "}
-              <span className="text-primary">@{experience.company}</span>
-            </h1>
-            <h2 className="text-xs lg:text-sm font-semibold">
+              <motion.span
+                initial={{ opacity: 0, translateX: -10 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                className="text-primary"
+              >
+                @{experience.company}
+              </motion.span>
+            </motion.h1>
+            <motion.h2
+              initial={{ opacity: 0, translateY: 10 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+              className="text-xs lg:text-sm font-semibold"
+            >
               {experience.type}
-            </h2>
+            </motion.h2>
             <ul className="my-3 hidden lg:flex flex-col gap-3">
               {experience.tasks.map((task, index) => (
-                <li
+                <motion.li
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
                   key={index}
                   className="flex flex-row justify-between items-start gap-3"
                 >
-                  <span className="shrink text-xs text-primary">
+                  <motion.span
+                    initial={{ opacity: 0, translateX: 10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                    className="shrink text-xs text-primary"
+                  >
                     <Bullet />
-                  </span>
-                  <span className="grow text-xs leading-normal tracking-wider">
+                  </motion.span>
+                  <motion.span
+                    initial={{ opacity: 0, translateX: -10 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                    className="grow text-xs leading-normal tracking-wider"
+                  >
                     {task}
-                  </span>
-                </li>
+                  </motion.span>
+                </motion.li>
               ))}
             </ul>
             <div className="flex flex-row flex-wrap gap-2 items-center">
               {experience.skills.map((skill, index) => (
-                <div key={index} className="badge badge-primary rounded-sm">
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{ duration: 0.3, delay: (index + 1) * 0.1 }}
+                  key={index}
+                  className="badge badge-primary rounded-sm"
+                >
                   <span className="text-xs font-bold">{skill}</span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
