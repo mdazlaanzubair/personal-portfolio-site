@@ -23,7 +23,7 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  metadataBase: new URL("https://mdazlaanzubair.vercel.app"),
+  metadataBase: new URL("https://www.mdazlaanzubair.com/"),
   icons: {
     icon: "@/public/icons/favicons/icon.png",
     shortcut: "@/public/icons/favicons/shortcut-icon.png",
@@ -60,7 +60,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    url: "https://mdazlaanzubair.vercel.app",
+    url: "https://www.mdazlaanzubair.com/",
     title: "Muhammad Azlaan Zubair",
     siteName: "Muhammad Azlaan Zubair - Portfolio Website",
     creator: "Muhammad Azlaan Zubair",
