@@ -87,7 +87,7 @@ const OfferCard = () => {
                 className="card-actions justify-center items-center mt-5 gap-3"
               >
                 <Button
-                  link={`mailto:mdazlaan1996@gmail.com?subject=Inquiry%20about%20${
+                  link={`mailto:email@mdazlaanzubair.com?subject=Inquiry%20about%20${
                     offer.title
                   }%20Service&body=Hi%20Azlaan!%20Hope%20you're%20doing%20well.%20I%20want%20to%20discuss%20about${
                     "'" + offer.title + "'"
