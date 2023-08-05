@@ -18,7 +18,7 @@ const Footer = () => {
     { title: "Archives", link: "/archives" },
     {
       title: "Resume",
-      link: "https://rxresu.me/mdazlaan1996/resume-mdazlaanzubair",
+      link: "/resume",
     },
   ];
 
