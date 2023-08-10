@@ -7,8 +7,8 @@ const Contact = () => {
   const nest_about_link = [
     {
       title: "Sent Email",
-      url: `mailto:email@mdazlaanzubair.com?subject=Hi%20There!&body=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.%20I%20just%20want%20to%20discuss%20a%20project%20with%20you.%20Please%20contact.`,
-      email: "email@mdazlaanzubair.com",
+      url: `mailto:mdazlaan1996@gmail.com?subject=Hi%20There!&body=Hi%20Azlaan!%20Hope%20you're%20doin'%20well.%20I%20just%20want%20to%20discuss%20a%20project%20with%20you.%20Please%20contact.`,
+      email: "mdazlaan1996@gmail.com",
     },
     {
       title: "Book a call",
@@ -63,11 +63,7 @@ const Contact = () => {
         className="mb-5 font-normal leading-relaxed w-full md:max-w-3xl text-sm md:text-base"
       >
         Shoot me an{" "}
-        <Button
-          link="mailto:email@mdazlaanzubair.com"
-          type="link"
-          text="email"
-        />{" "}
+        <Button link="mailto:mdazlaan1996@gmail.com" type="link" text="email" />{" "}
         if you want to connect! You can also connect by scheduling a video call
         to discuss your gosals and ideas.
       </motion.p>

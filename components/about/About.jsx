@@ -135,7 +135,7 @@ const About = () => {
           I would be happy to discuss your project with you in more detail.
           Please feel free to contact me via{" "}
           <Button
-            link="mailto:email@mdazlaanzubair.com"
+            link="mailto:mdazlaan1996@gmail.com"
             type="link"
             text="Email"
           />{" "}
